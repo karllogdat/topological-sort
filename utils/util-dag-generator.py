@@ -17,6 +17,13 @@ def insert_edge(g, src, dest):
     g[src].append(dest)
 
 
+def get_nodes(g):
+    nodes = []
+    for n in g:
+        nodes.append(dict(id=n))
+    return nodes
+
+
 def get_edges(g):
     links = []
     for n, edges in g.items():
@@ -31,6 +38,17 @@ def input_edge():
     return edge
 
 
+def serialize(g):
+    n = get_nodes(g)
+    e = get_edges(g)
+    return json.dumps(dict(nodes=n, links=e), indent=4)
+
+
+def write_to_file(g, file):
+    with open(file, 'w') as f:
+        f.write(serialize(g))
+
+
 def main():
     graph = {}
     for i in range(0, 10):
@@ -42,6 +60,7 @@ def main():
     pos = nx.spring_layout(dgraph)
     nx.draw(dgraph, pos, with_labels=True, node_color='skyblue', arrows=True)
     plt.show()
+    write_to_file(graph, 'test_graph.json')
 
 
 if __name__ == "__main__":
