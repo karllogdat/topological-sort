@@ -1,0 +1,40 @@
+{
+    "nodes": [
+        {
+            "id": "Algorithms"
+        },
+        {
+            "id": "Asymptotic Analysis"
+        },
+        {
+            "id": "Summations"
+        },
+        {
+            "id": "Algorithmic Design"
+        },
+        {
+            "id": "Graphs"
+        },
+        {
+            "id": "Djikstra's Algorithm"
+        }
+    ],
+    "links": [
+        {
+            "source": "Algorithms",
+            "target": "Asymptotic Analysis"
+        },
+        {
+            "source": "Asymptotic Analysis",
+            "target": "Algorithmic Design"
+        },
+        {
+            "source": "Summations",
+            "target": "Asymptotic Analysis"
+        },
+        {
+            "source": "Graphs",
+            "target": "Djikstra's Algorithm"
+        }
+    ]
+}
