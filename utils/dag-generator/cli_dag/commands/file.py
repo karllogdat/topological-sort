@@ -22,6 +22,14 @@ def read(file):
     return g
 
 
+def list_lines(file):
+    lines = []
+    with open(file, 'r') as file:
+        for line in file.readlines():
+            lines.append(line.strip())
+    return lines
+
+
 def write(g, file):
     """Save graph g to JSON file"""
     graph = {'nodes': [], 'links': []}
