@@ -1,1 +1,3 @@
 node_modules/
+utils/dag-generator/cli-dag/__pycache__
+utils/dag-generator/cli-dag/commands/__pycache__
