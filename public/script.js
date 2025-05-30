@@ -1,81 +1,126 @@
-fetch('/api/graph')
-    .then(res => res.json())
-    .then(data => {
-        console.log('Graph data: ', data);
+fetch("/api/graph")
+  .then((res) => res.json())
+  .then((data) => {
+    console.log("Graph data: ", data);
+    draw_graph(data);
+  });
 
-        const width = 600;
-        const height = 400;
+document.getElementById("search").addEventListener("click", () => {
+  const target = document.getElementById("target").value;
 
-        const links = data.links.map(d => ({...d}));
-        const nodes = data.nodes.map(d => ({...d}));
+  if (!target) {
+    fetch("/api/graph")
+      .then((res) => res.json())
+      .then((data) => {
+        console.log("Graph data: ", data);
+        draw_graph(data);
+      });
 
-        const svg = d3.select("body")
-            .append("svg")
-            .attr("width", width)
-            .attr("height", height);
+    return;
+  }
 
-        svg.append("defs").append("marker")
-            .attr("id", "arrowhead")
-            .attr("viewBox", "-0 -5 10 10")
-            .attr("refX", 18)  // adjust based on node radius
-            .attr("refY", 0)
-            .attr("orient", "auto")
-            .attr("markerWidth", 5)
-            .attr("markerHeight", 5)
-            .attr("xoverflow", "visible")
-            .append("svg:path")
-            .attr("d", "M 0,-5 L 10 ,0 L 0,5")
-            .attr("fill", "#999")
-            .style("stroke", "none");
+  fetch(`/api/graph/subgraph?target=${encodeURIComponent(target)}`)
+    .then((res) => res.json())
+    .then((data) => {
+      draw_graph(data);
+    });
+});
 
-        const simulation = d3.forceSimulation(nodes)
-            .force("link", d3.forceLink(links).id(d => d.id).distance(150))
-            .force("charge", d3.forceManyBody().strength(-400))
-            .force("center", d3.forceCenter(width / 2, height / 2));
+function draw_graph(data) {
+  const links = data.links.map((d) => ({ ...d }));
+  const nodes = data.nodes.map((d) => ({ ...d }));
 
-        const link = svg.append("g")
-            .attr("class", "links")
-            .selectAll("line")
-            .data(links)
-            .enter().append("line")
-            .attr("stroke", "#999")
-            .attr("stroke-width", 2)
-            .attr("marker-end", "url(#arrowhead)");
+  const svg = d3.select("#graph");
+  svg.selectAll("*").remove();
 
-        const node = svg.append("g")
-            .attr("class", "nodes")
-            .selectAll("circle")
-            .data(nodes)
-            .enter().append("circle")
-            .attr("r", 9)
-            .attr("fill", "steelblue")
-            .call(drag(simulation));
-        
-        const label = svg.append("g")
-            .selectAll("text")
-            .data(nodes)
-            .enter().append("text")
-            .attr("dy", -15)
-            .attr("dx", -10)
-            .text(d => d.id)
-            .style("fill", "#777");
+  // container for zooming
+  const container = svg.append("g");
 
-        simulation.on("tick", () => {
-            link
-                .attr("x1", d => d.source.x)
-                .attr("y1", d => d.source.y)
-                .attr("x2", d => d.target.x)
-                .attr("y2", d => d.target.y);
+  const width = +svg.attr("width");
+  const height = +svg.attr("height");
 
-            node
-                .attr("cx", d => d.x)
-                .attr("cy", d => d.y);
-            
-            label
-                .attr("x", d => d.x)
-                .attr("y", d => d.y)
-        });
-    })
+  svg
+    .append("defs")
+    .append("marker")
+    .attr("id", "arrowhead")
+    .attr("viewBox", "-0 -5 10 10")
+    .attr("refX", 18) // adjust based on node radius
+    .attr("refY", 0)
+    .attr("orient", "auto")
+    .attr("markerWidth", 5)
+    .attr("markerHeight", 5)
+    .attr("xoverflow", "visible")
+    .append("svg:path")
+    .attr("d", "M 0,-5 L 10 ,0 L 0,5")
+    .attr("fill", "#999")
+    .style("stroke", "none");
+
+  const simulation = d3
+    .forceSimulation(nodes)
+    .force(
+      "link",
+      d3
+        .forceLink(links)
+        .id((d) => d.id)
+        .distance(20)
+    )
+    .force("charge", d3.forceManyBody().strength(-400))
+    .force("center", d3.forceCenter(width / 2, height / 2));
+
+  const link = container
+    .append("g")
+    .attr("class", "links")
+    .selectAll("line")
+    .data(links)
+    .enter()
+    .append("line")
+    .attr("stroke", "#999")
+    .attr("stroke-width", 3)
+    .attr("marker-end", "url(#arrowhead)");
+
+  const node = container
+    .append("g")
+    .attr("class", "nodes")
+    .selectAll("circle")
+    .data(nodes)
+    .enter()
+    .append("circle")
+    .attr("r", 9)
+    .attr("fill", "steelblue")
+    .call(drag(simulation));
+
+  const label = container
+    .append("g")
+    .selectAll("text")
+    .data(nodes)
+    .enter()
+    .append("text")
+    .attr("dy", -15)
+    .attr("dx", -10)
+    .text((d) => d.id)
+    .style("fill", "#777");
+
+  simulation.on("tick", () => {
+    link
+      .attr("x1", (d) => d.source.x)
+      .attr("y1", (d) => d.source.y)
+      .attr("x2", (d) => d.target.x)
+      .attr("y2", (d) => d.target.y);
+
+    node.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
+
+    label.attr("x", (d) => d.x).attr("y", (d) => d.y);
+  });
+
+  svg.call(
+    d3
+      .zoom()
+      .scaleExtent([0.1, 4]) // min and max zoom levels
+      .on("zoom", (event) => {
+        container.attr("transform", event.transform);
+      })
+  );
+}
 
 function drag(simulation) {
   function dragstarted(event, d) {
@@ -95,7 +140,8 @@ function drag(simulation) {
     d.fy = null;
   }
 
-  return d3.drag()
+  return d3
+    .drag()
     .on("start", dragstarted)
     .on("drag", dragged)
     .on("end", dragended);
