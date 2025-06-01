@@ -19,7 +19,7 @@ document.getElementById("search").addEventListener("click", () => {
     return;
   }
 
-  fetch(`/api/graph/subgraph?target=${encodeURIComponent(target)}`)
+  fetch(`/graph/subgraph?target=${encodeURIComponent(target)}`)
     .then((res) => res.json())
     .then((data) => {
       draw_graph(data);
