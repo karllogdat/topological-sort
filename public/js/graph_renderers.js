@@ -1,32 +1,4 @@
-fetch("/graph")
-  .then((res) => res.json())
-  .then((data) => {
-    console.log("Graph data: ", data);
-    draw_graph(data);
-  });
-
-document.getElementById("search").addEventListener("click", () => {
-  const target = document.getElementById("target").value;
-
-  if (!target) {
-    fetch("/graph")
-      .then((res) => res.json())
-      .then((data) => {
-        console.log("Graph data: ", data);
-        draw_graph(data);
-      });
-
-    return;
-  }
-
-  fetch(`/graph/subgraph?target=${encodeURIComponent(target)}`)
-    .then((res) => res.json())
-    .then((data) => {
-      draw_graph(data);
-    });
-});
-
-function draw_graph(data) {
+export function draw_graph_arrowless(data) {
   const links = data.links.map((d) => ({ ...d }));
   const nodes = data.nodes.map((d) => ({ ...d }));
 
@@ -35,25 +7,30 @@ function draw_graph(data) {
 
   // container for zooming
   const container = svg.append("g");
+  // tooltip container for tooltip hover
+  // tooltip div moves on node location when hovering
+  const tooltip = d3.select("#tooltip");
 
   const width = +svg.attr("width");
   const height = +svg.attr("height");
 
-  svg
-    .append("defs")
-    .append("marker")
-    .attr("id", "arrowhead")
-    .attr("viewBox", "-0 -5 10 10")
-    .attr("refX", 18) // adjust based on node radius
-    .attr("refY", 0)
-    .attr("orient", "auto")
-    .attr("markerWidth", 5)
-    .attr("markerHeight", 5)
-    .attr("xoverflow", "visible")
-    .append("svg:path")
-    .attr("d", "M 0,-5 L 10 ,0 L 0,5")
-    .attr("fill", "#999")
-    .style("stroke", "none");
+  // Arrowhead svg for edges
+  // -----------------------
+  // svg
+  //   .append("defs")
+  //   .append("marker")
+  //   .attr("id", "arrowhead")
+  //   .attr("viewBox", "-0 -5 10 10")
+  //   .attr("refX", 18) // adjust based on node radius
+  //   .attr("refY", 0)
+  //   .attr("orient", "auto")
+  //   .attr("markerWidth", 5)
+  //   .attr("markerHeight", 5)
+  //   .attr("xoverflow", "visible")
+  //   .append("svg:path")
+  //   .attr("d", "M 0,-5 L 10 ,0 L 0,5")
+  //   .attr("fill", "#999")
+  //   .style("stroke", "none");
 
   const simulation = d3
     .forceSimulation(nodes)
@@ -64,7 +41,7 @@ function draw_graph(data) {
         .id((d) => d.id)
         .distance(20)
     )
-    .force("charge", d3.forceManyBody().strength(-400))
+    .force("charge", d3.forceManyBody().strength(-50))
     .force("center", d3.forceCenter(width / 2, height / 2));
 
   const link = container
@@ -75,11 +52,13 @@ function draw_graph(data) {
     .enter()
     .append("line")
     .attr("stroke", "#999")
-    .attr("stroke-width", 3)
+    .attr("stroke-width", 4)
     .attr("marker-end", "url(#arrowhead)");
 
   const node = container
     .append("g")
+    .attr("stroke", "#fff")
+    .attr("stroke-width", 2.5)
     .attr("class", "nodes")
     .selectAll("circle")
     .data(nodes)
@@ -87,18 +66,30 @@ function draw_graph(data) {
     .append("circle")
     .attr("r", 9)
     .attr("fill", "steelblue")
-    .call(drag(simulation));
+    .call(drag(simulation))
+    .on("mouseover", (event, d) => {
+      tooltip.style("opacity", 1).html(d.id);
+    })
+    .on("mousemove", (event, d) => {
+      tooltip
+        .style("left", event.pageX + 10 + "px")
+        .style("top", event.pageY - 20 + "px");
+    })
+    .on("mouseout", () => {
+      tooltip.style("opacity", 0);
+    });
 
-  const label = container
-    .append("g")
-    .selectAll("text")
-    .data(nodes)
-    .enter()
-    .append("text")
-    .attr("dy", -15)
-    .attr("dx", -10)
-    .text((d) => d.id)
-    .style("fill", "#777");
+  // add labels static
+  // const label = container
+  //   .append("g")
+  //   .selectAll("text")
+  //   .data(nodes)
+  //   .enter()
+  //   .append("text")
+  //   .attr("dy", -15)
+  //   .attr("dx", -10)
+  //   .text((d) => d.id)
+  //   .style("fill", "#777");
 
   simulation.on("tick", () => {
     link
@@ -109,7 +100,8 @@ function draw_graph(data) {
 
     node.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
 
-    label.attr("x", (d) => d.x).attr("y", (d) => d.y);
+    // for static labels
+    // label.attr("x", (d) => d.x).attr("y", (d) => d.y);
   });
 
   svg.call(
