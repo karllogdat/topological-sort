@@ -28,7 +28,7 @@ app.get("/api/graph/subgraph", (req, res) => {
     adj_list.get(link.target).push(link.source);
   });
 
-  const visited = new Set();
+  const visited = new Set(target);
 
   function dfs(node) {
     const deps = adj_list.get(node) || [];
@@ -43,6 +43,12 @@ app.get("/api/graph/subgraph", (req, res) => {
 
   dfs(target);
 
+	graph.links.forEach((link) => {
+		if (visited.has(link.target) && visited.has(link.source)) {
+			subgraph.push(link)
+		}
+	});
+
   // Create graph data (D3 format)
   const create_graph = (edges) => {
     const nodes = new Set();
@@ -56,6 +62,8 @@ app.get("/api/graph/subgraph", (req, res) => {
       links: edges,
     };
   };
+
+	console.log(subgraph);
 
   return res.json(create_graph(subgraph));
 });
