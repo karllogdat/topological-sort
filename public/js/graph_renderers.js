@@ -7,6 +7,9 @@ export function draw_graph_arrowless(data) {
 
   // container for zooming
   const container = svg.append("g");
+  // tooltip container for tooltip hover
+  // tooltip div moves on node location when hovering
+  const tooltip = d3.select("#tooltip");
 
   const width = +svg.attr("width");
   const height = +svg.attr("height");
@@ -49,32 +52,44 @@ export function draw_graph_arrowless(data) {
     .enter()
     .append("line")
     .attr("stroke", "#999")
-    .attr("stroke-width", 3)
+    .attr("stroke-width", 4)
     .attr("marker-end", "url(#arrowhead)");
 
   const node = container
     .append("g")
     .attr("stroke", "#fff")
-    .attr("stroke-width", 2)
+    .attr("stroke-width", 2.5)
     .attr("class", "nodes")
     .selectAll("circle")
     .data(nodes)
     .enter()
     .append("circle")
-    .attr("r", 6)
+    .attr("r", 9)
     .attr("fill", "steelblue")
-    .call(drag(simulation));
+    .call(drag(simulation))
+    .on("mouseover", (event, d) => {
+      tooltip.style("opacity", 1).html(d.id);
+    })
+    .on("mousemove", (event, d) => {
+      tooltip
+        .style("left", event.pageX + 10 + "px")
+        .style("top", event.pageY - 20 + "px");
+    })
+    .on("mouseout", () => {
+      tooltip.style("opacity", 0);
+    });
 
-  const label = container
-    .append("g")
-    .selectAll("text")
-    .data(nodes)
-    .enter()
-    .append("text")
-    .attr("dy", -15)
-    .attr("dx", -10)
-    .text((d) => d.id)
-    .style("fill", "#777");
+  // add labels (always visible)
+  // const label = container
+  //   .append("g")
+  //   .selectAll("text")
+  //   .data(nodes)
+  //   .enter()
+  //   .append("text")
+  //   .attr("dy", -15)
+  //   .attr("dx", -10)
+  //   .text((d) => d.id)
+  //   .style("fill", "#777");
 
   simulation.on("tick", () => {
     link

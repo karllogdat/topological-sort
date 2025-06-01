@@ -4,11 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Topological Sort</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/graph.css" />
   </head>
   <body>
+    <div id="tooltip"></div>
+    <svg id="graph" width="800" height="550"></svg>
     <input type="text" name="target" id="target" placeholder="Target topic" />
     <button type="submit" id="search">Search</button>
-    <svg id="graph" width="800" height="550"></svg>
 
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script type="module" src="./js/script.js"></script>
