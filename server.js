@@ -5,9 +5,15 @@ const { link } = require("fs");
 const path = require("path");
 const app = express();
 
+
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(express.json());
+
+// routes
+const graphRoutes = require('./routes/graph');
+
+app.use('/graph', graphRoutes);
 
 app.get("/api/graph", (req, res) => {
   res.sendFile(path.join(__dirname, "./public/data/graph.json"));
@@ -68,4 +74,6 @@ app.get("/api/graph/subgraph", (req, res) => {
   return res.json(create_graph(subgraph));
 });
 
-app.listen(3000);
+app.listen(3000, () => {
+  console.log('Server is running at port 3000');
+});

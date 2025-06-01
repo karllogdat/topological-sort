@@ -1,4 +1,4 @@
-fetch("/api/graph")
+fetch("/graph")
   .then((res) => res.json())
   .then((data) => {
     console.log("Graph data: ", data);
@@ -9,7 +9,7 @@ document.getElementById("search").addEventListener("click", () => {
   const target = document.getElementById("target").value;
 
   if (!target) {
-    fetch("/api/graph")
+    fetch("/graph")
       .then((res) => res.json())
       .then((data) => {
         console.log("Graph data: ", data);
