@@ -1,32 +1,4 @@
-fetch("/graph")
-  .then((res) => res.json())
-  .then((data) => {
-    console.log("Graph data: ", data);
-    draw_graph(data);
-  });
-
-document.getElementById("search").addEventListener("click", () => {
-  const target = document.getElementById("target").value;
-
-  if (!target) {
-    fetch("/graph")
-      .then((res) => res.json())
-      .then((data) => {
-        console.log("Graph data: ", data);
-        draw_graph(data);
-      });
-
-    return;
-  }
-
-  fetch(`/graph/subgraph?target=${encodeURIComponent(target)}`)
-    .then((res) => res.json())
-    .then((data) => {
-      draw_graph(data);
-    });
-});
-
-function draw_graph(data) {
+export function draw_graph_arrowless(data) {
   const links = data.links.map((d) => ({ ...d }));
   const nodes = data.nodes.map((d) => ({ ...d }));
 
@@ -39,21 +11,23 @@ function draw_graph(data) {
   const width = +svg.attr("width");
   const height = +svg.attr("height");
 
-  svg
-    .append("defs")
-    .append("marker")
-    .attr("id", "arrowhead")
-    .attr("viewBox", "-0 -5 10 10")
-    .attr("refX", 18) // adjust based on node radius
-    .attr("refY", 0)
-    .attr("orient", "auto")
-    .attr("markerWidth", 5)
-    .attr("markerHeight", 5)
-    .attr("xoverflow", "visible")
-    .append("svg:path")
-    .attr("d", "M 0,-5 L 10 ,0 L 0,5")
-    .attr("fill", "#999")
-    .style("stroke", "none");
+  // Arrowhead svg for edges
+  // -----------------------
+  // svg
+  //   .append("defs")
+  //   .append("marker")
+  //   .attr("id", "arrowhead")
+  //   .attr("viewBox", "-0 -5 10 10")
+  //   .attr("refX", 18) // adjust based on node radius
+  //   .attr("refY", 0)
+  //   .attr("orient", "auto")
+  //   .attr("markerWidth", 5)
+  //   .attr("markerHeight", 5)
+  //   .attr("xoverflow", "visible")
+  //   .append("svg:path")
+  //   .attr("d", "M 0,-5 L 10 ,0 L 0,5")
+  //   .attr("fill", "#999")
+  //   .style("stroke", "none");
 
   const simulation = d3
     .forceSimulation(nodes)
@@ -64,7 +38,7 @@ function draw_graph(data) {
         .id((d) => d.id)
         .distance(20)
     )
-    .force("charge", d3.forceManyBody().strength(-400))
+    .force("charge", d3.forceManyBody().strength(-50))
     .force("center", d3.forceCenter(width / 2, height / 2));
 
   const link = container
@@ -80,12 +54,14 @@ function draw_graph(data) {
 
   const node = container
     .append("g")
+    .attr("stroke", "#fff")
+    .attr("stroke-width", 2)
     .attr("class", "nodes")
     .selectAll("circle")
     .data(nodes)
     .enter()
     .append("circle")
-    .attr("r", 9)
+    .attr("r", 6)
     .attr("fill", "steelblue")
     .call(drag(simulation));
 
