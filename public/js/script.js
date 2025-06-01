@@ -28,5 +28,27 @@ document.getElementById("search").addEventListener("click", () => {
     .then((res) => res.json())
     .then((data) => {
       draw_graph_arrowless(data);
+    })
+    .catch((err) => {
+      console.error(`Error fetching subgraph of target ${target}`);
+    });
+
+  fetch(`/graph/tsort?target=${encodeURIComponent(target)}`)
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
+
+      const tlist = document.getElementById("tlist");
+      tlist.replaceChildren();
+
+      data.forEach((item) => {
+        console.log(`Creating <p> for item ${item}`);
+        const item_html = document.createElement("li");
+        item_html.textContent = item;
+        tlist.appendChild(item_html);
+      });
+    })
+    .catch((err) => {
+      console.error(`Error fetching tsort of target ${target}.\nError: ${err}`);
     });
 });

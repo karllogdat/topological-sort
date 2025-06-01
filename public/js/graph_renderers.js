@@ -79,7 +79,7 @@ export function draw_graph_arrowless(data) {
       tooltip.style("opacity", 0);
     });
 
-  // add labels (always visible)
+  // add labels static
   // const label = container
   //   .append("g")
   //   .selectAll("text")
@@ -100,7 +100,8 @@ export function draw_graph_arrowless(data) {
 
     node.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
 
-    label.attr("x", (d) => d.x).attr("y", (d) => d.y);
+    // for static labels
+    // label.attr("x", (d) => d.x).attr("y", (d) => d.y);
   });
 
   svg.call(
