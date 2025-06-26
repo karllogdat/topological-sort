@@ -1,18 +1,10 @@
-a--b
-b--c
-c--d
-d--h
-a--e
-e--i
-h--i
-d--f
-f--g 
-g--i
-g--h
-h--j
-j--k
-h--l
-d--k
-d--l
-x--y
-y--z
+MSF-Pre: Pre Calculus--MSF-Discrete: Discrete Mathematics
+MSF-Pre: Pre Calculus--MSF-Probability: Probability
+MSF-Pre: Pre Calculus--MSF-Statistics: Statistics
+MSF-Pre: Pre Calculus--MSF-Linear: Linear Algebra
+MSF-Pre: Pre Calculus--MSF-Calculus
+MSF-Discrete: Discrete Mathematics--MSF-Probability: Probability
+MSF-Calculus--MSF-Probability: Probability
+MSF-Probability: Probability--MSF-Statistics: Statistics
+MSF-Linear: Linear Algebra--MSF-Statistics: Statistics
+MSF-Calculus--MSF-Statistics: Statistics

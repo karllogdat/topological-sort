@@ -1,123 +1,456 @@
 {
     "nodes": [
         {
-            "id": "a"
+            "id": "MSF-Discrete: Discrete Mathematics"
         },
         {
-            "id": "b"
+            "id": "AL-Foundational: Foundational Data Structures and Algorithms"
         },
         {
-            "id": "c"
+            "id": "AL-Strategies: Algorithmic Strategies"
         },
         {
-            "id": "d"
+            "id": "AL-Complexity: Complexity"
         },
         {
-            "id": "h"
+            "id": "AL-Models: Computational Models and Formal Languages"
         },
         {
-            "id": "e"
+            "id": "\"MSF-Discrete: Discrete Mathematics"
         },
         {
-            "id": "i"
+            "id": "AL-SEP: Society, Ethics, and the Profession\""
         },
         {
-            "id": "f"
+            "id": "DM-Modeling: Data Modeling"
         },
         {
-            "id": "g"
+            "id": "DM-Relational: Relational Databases"
         },
         {
-            "id": "j"
+            "id": "DM-Querying: Query Construction"
         },
         {
-            "id": "k"
+            "id": "DM-Processing: Query Processing"
         },
         {
-            "id": "l"
+            "id": "DM-Internals: DBMS Internals"
         },
         {
-            "id": "x"
+            "id": "DM-NoSQL: NoSQL Systems"
         },
         {
-            "id": "y"
+            "id": "DM-Security: Data Security and Privacy"
         },
         {
-            "id": "z"
+            "id": "DM-Analytics: Data Analytics"
+        },
+        {
+            "id": "DM-Distributed: Distributed Databases/Cloud Computing"
+        },
+        {
+            "id": "DM-Unstructured: Semi-structured and Unstructured Databases"
+        },
+        {
+            "id": "DM-SEP: Society, Ethics, and the Profession\""
+        },
+        {
+            "id": "FPL-OOP: Object-Oriented Programming"
+        },
+        {
+            "id": "FPL-Functional: Functional Programming"
+        },
+        {
+            "id": "FPL-Logic: Logic Programming"
+        },
+        {
+            "id": "FPL-Scripting: Shell Scripting"
+        },
+        {
+            "id": "FPL-Event-Driven: Event-Driven and Reactive Programming"
+        },
+        {
+            "id": "FPL-Parallel: Parallel and Distributed Computing"
+        },
+        {
+            "id": "FPL-Aspect: Aspect-Oriented Programming"
+        },
+        {
+            "id": "FPL-Types: Type Systems"
+        },
+        {
+            "id": "FPL-Systems: Systems Execution and Memory Mode"
+        },
+        {
+            "id": "FPL-Translation: Language Translation and Execution"
+        },
+        {
+            "id": "FPL-Abstraction: Program Abstraction and Representation"
+        },
+        {
+            "id": "FPL-Syntax: Syntax Analysis"
+        },
+        {
+            "id": "FPL-Semantics: Compiler Semantic Analysis"
+        },
+        {
+            "id": "FPL-Analysis: Program Analysis and Analyzers"
+        },
+        {
+            "id": "FPL-Code: Code Generation"
+        },
+        {
+            "id": "FPL-Run-Time: Run-time Behavior and Systems"
+        },
+        {
+            "id": "FPL-Constructs: Advanced Programming Constructs"
+        },
+        {
+            "id": "FPL-Pragmatics: Language Pragmatics"
+        },
+        {
+            "id": "FPL-Formalism: Formal Semantics"
+        },
+        {
+            "id": "FPL-Methodologies: Formal Development Methodologies"
+        },
+        {
+            "id": "FPL-Design: Design Principles of Programming Languages"
+        },
+        {
+            "id": "FPL-SEP: Society, Ethics, and the Profession\""
+        },
+        {
+            "id": "MSF-Pre: Pre Calculus"
+        },
+        {
+            "id": "MSF-Probability: Probability"
+        },
+        {
+            "id": "MSF-Statistics: Statistics"
+        },
+        {
+            "id": "MSF-Linear: Linear Algebra"
+        },
+        {
+            "id": "MSF-Calculus"
+        },
+        {
+            "id": "NC-Fundamentals: Fundamentals"
+        },
+        {
+            "id": "NC-Applications: Networked Applications"
+        },
+        {
+            "id": "NC-Reliability: Reliability Support"
+        },
+        {
+            "id": "NC-Routing: Routing and Forwarding"
+        },
+        {
+            "id": "NC-SingleHop: Single Hop Communication"
+        },
+        {
+            "id": "NC-Security: Network Security"
+        },
+        {
+            "id": "NC-Mobility: Mobility"
+        },
+        {
+            "id": "NC-Emerging: Emerging Topics"
+        },
+        {
+            "id": "NC-Security: Security"
         }
     ],
     "links": [
         {
-            "source": "a",
-            "target": "b"
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "AL-Foundational: Foundational Data Structures and Algorithms"
         },
         {
-            "source": "a",
-            "target": "e"
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "AL-Strategies: Algorithmic Strategies"
         },
         {
-            "source": "b",
-            "target": "c"
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "AL-Complexity: Complexity"
         },
         {
-            "source": "c",
-            "target": "d"
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "AL-Models: Computational Models and Formal Languages"
         },
         {
-            "source": "d",
-            "target": "h"
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "DM-Modeling: Data Modeling"
         },
         {
-            "source": "d",
-            "target": "f"
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "DM-Relational: Relational Databases"
         },
         {
-            "source": "d",
-            "target": "k"
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "DM-Querying: Query Construction"
         },
         {
-            "source": "d",
-            "target": "l"
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "DM-Processing: Query Processing"
         },
         {
-            "source": "h",
-            "target": "i"
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "DM-Internals: DBMS Internals"
         },
         {
-            "source": "h",
-            "target": "j"
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "DM-NoSQL: NoSQL Systems"
         },
         {
-            "source": "h",
-            "target": "l"
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "DM-Security: Data Security and Privacy"
         },
         {
-            "source": "e",
-            "target": "i"
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "DM-Analytics: Data Analytics"
         },
         {
-            "source": "f",
-            "target": "g"
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "DM-Distributed: Distributed Databases/Cloud Computing"
         },
         {
-            "source": "g",
-            "target": "i"
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "DM-Unstructured: Semi-structured and Unstructured Databases"
         },
         {
-            "source": "g",
-            "target": "h"
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "FPL-OOP: Object-Oriented Programming"
         },
         {
-            "source": "j",
-            "target": "k"
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "FPL-Functional: Functional Programming"
         },
         {
-            "source": "x",
-            "target": "y"
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "FPL-Logic: Logic Programming"
         },
         {
-            "source": "y",
-            "target": "z"
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "FPL-Scripting: Shell Scripting"
+        },
+        {
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "FPL-Event-Driven: Event-Driven and Reactive Programming"
+        },
+        {
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "FPL-Parallel: Parallel and Distributed Computing"
+        },
+        {
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "FPL-Aspect: Aspect-Oriented Programming"
+        },
+        {
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "FPL-Types: Type Systems"
+        },
+        {
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "FPL-Systems: Systems Execution and Memory Mode"
+        },
+        {
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "FPL-Translation: Language Translation and Execution"
+        },
+        {
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "FPL-Abstraction: Program Abstraction and Representation"
+        },
+        {
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "FPL-Syntax: Syntax Analysis"
+        },
+        {
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "FPL-Semantics: Compiler Semantic Analysis"
+        },
+        {
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "FPL-Analysis: Program Analysis and Analyzers"
+        },
+        {
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "FPL-Code: Code Generation"
+        },
+        {
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "FPL-Run-Time: Run-time Behavior and Systems"
+        },
+        {
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "FPL-Constructs: Advanced Programming Constructs"
+        },
+        {
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "FPL-Pragmatics: Language Pragmatics"
+        },
+        {
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "FPL-Formalism: Formal Semantics"
+        },
+        {
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "FPL-Methodologies: Formal Development Methodologies"
+        },
+        {
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "FPL-Design: Design Principles of Programming Languages"
+        },
+        {
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "MSF-Probability: Probability"
+        },
+        {
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "NC-Fundamentals: Fundamentals"
+        },
+        {
+            "source": "\"MSF-Discrete: Discrete Mathematics",
+            "target": "AL-SEP: Society, Ethics, and the Profession\""
+        },
+        {
+            "source": "\"MSF-Discrete: Discrete Mathematics",
+            "target": "DM-SEP: Society, Ethics, and the Profession\""
+        },
+        {
+            "source": "\"MSF-Discrete: Discrete Mathematics",
+            "target": "FPL-SEP: Society, Ethics, and the Profession\""
+        },
+        {
+            "source": "MSF-Pre: Pre Calculus",
+            "target": "MSF-Discrete: Discrete Mathematics"
+        },
+        {
+            "source": "MSF-Pre: Pre Calculus",
+            "target": "MSF-Probability: Probability"
+        },
+        {
+            "source": "MSF-Pre: Pre Calculus",
+            "target": "MSF-Statistics: Statistics"
+        },
+        {
+            "source": "MSF-Pre: Pre Calculus",
+            "target": "MSF-Linear: Linear Algebra"
+        },
+        {
+            "source": "MSF-Pre: Pre Calculus",
+            "target": "MSF-Calculus"
+        },
+        {
+            "source": "MSF-Probability: Probability",
+            "target": "MSF-Statistics: Statistics"
+        },
+        {
+            "source": "MSF-Probability: Probability",
+            "target": "NC-Fundamentals: Fundamentals"
+        },
+        {
+            "source": "MSF-Statistics: Statistics",
+            "target": "NC-Fundamentals: Fundamentals"
+        },
+        {
+            "source": "MSF-Linear: Linear Algebra",
+            "target": "MSF-Statistics: Statistics"
+        },
+        {
+            "source": "MSF-Linear: Linear Algebra",
+            "target": "NC-Fundamentals: Fundamentals"
+        },
+        {
+            "source": "MSF-Calculus",
+            "target": "MSF-Probability: Probability"
+        },
+        {
+            "source": "MSF-Calculus",
+            "target": "MSF-Statistics: Statistics"
+        },
+        {
+            "source": "NC-Fundamentals: Fundamentals",
+            "target": "NC-Applications: Networked Applications"
+        },
+        {
+            "source": "NC-Fundamentals: Fundamentals",
+            "target": "NC-Reliability: Reliability Support"
+        },
+        {
+            "source": "NC-Fundamentals: Fundamentals",
+            "target": "NC-Routing: Routing and Forwarding"
+        },
+        {
+            "source": "NC-Fundamentals: Fundamentals",
+            "target": "NC-SingleHop: Single Hop Communication"
+        },
+        {
+            "source": "NC-Fundamentals: Fundamentals",
+            "target": "NC-Security: Network Security"
+        },
+        {
+            "source": "NC-Fundamentals: Fundamentals",
+            "target": "NC-Mobility: Mobility"
+        },
+        {
+            "source": "NC-Fundamentals: Fundamentals",
+            "target": "NC-Emerging: Emerging Topics"
+        },
+        {
+            "source": "NC-Applications: Networked Applications",
+            "target": "NC-Security: Security"
+        },
+        {
+            "source": "NC-Applications: Networked Applications",
+            "target": "NC-Emerging: Emerging Topics"
+        },
+        {
+            "source": "NC-Reliability: Reliability Support",
+            "target": "NC-Mobility: Mobility"
+        },
+        {
+            "source": "NC-Reliability: Reliability Support",
+            "target": "NC-Emerging: Emerging Topics"
+        },
+        {
+            "source": "NC-Routing: Routing and Forwarding",
+            "target": "NC-Applications: Networked Applications"
+        },
+        {
+            "source": "NC-Routing: Routing and Forwarding",
+            "target": "NC-Reliability: Reliability Support"
+        },
+        {
+            "source": "NC-Routing: Routing and Forwarding",
+            "target": "NC-Security: Security"
+        },
+        {
+            "source": "NC-Routing: Routing and Forwarding",
+            "target": "NC-Mobility: Mobility"
+        },
+        {
+            "source": "NC-SingleHop: Single Hop Communication",
+            "target": "NC-Routing: Routing and Forwarding"
+        },
+        {
+            "source": "NC-SingleHop: Single Hop Communication",
+            "target": "NC-Security: Security"
+        },
+        {
+            "source": "NC-SingleHop: Single Hop Communication",
+            "target": "NC-Mobility: Mobility"
+        },
+        {
+            "source": "NC-Security: Network Security",
+            "target": "NC-Emerging: Emerging Topics"
+        },
+        {
+            "source": "NC-Mobility: Mobility",
+            "target": "NC-Emerging: Emerging Topics"
         }
     ]
 }
