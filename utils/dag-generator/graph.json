@@ -1,106 +1,64 @@
 {
     "nodes": [
         {
-            "id": "a"
+            "id": "MSF-Pre: Pre Calculus"
         },
         {
-            "id": "b"
+            "id": "MSF-Discrete: Discrete Mathematics"
         },
         {
-            "id": "c"
+            "id": "MSF-Probability: Probability"
         },
         {
-            "id": "d"
+            "id": "MSF-Statistics: Statistics"
         },
         {
-            "id": "h"
+            "id": "MSF-Linear: Linear Algebra"
         },
         {
-            "id": "e"
-        },
-        {
-            "id": "i"
-        },
-        {
-            "id": "f"
-        },
-        {
-            "id": "g"
-        },
-        {
-            "id": "j"
-        },
-        {
-            "id": "k"
-        },
-        {
-            "id": "l"
+            "id": "MSF-Calculus"
         }
     ],
     "links": [
         {
-            "source": "a",
-            "target": "b"
+            "source": "MSF-Pre: Pre Calculus",
+            "target": "MSF-Discrete: Discrete Mathematics"
         },
         {
-            "source": "a",
-            "target": "e"
+            "source": "MSF-Pre: Pre Calculus",
+            "target": "MSF-Probability: Probability"
         },
         {
-            "source": "b",
-            "target": "c"
+            "source": "MSF-Pre: Pre Calculus",
+            "target": "MSF-Statistics: Statistics"
         },
         {
-            "source": "c",
-            "target": "d"
+            "source": "MSF-Pre: Pre Calculus",
+            "target": "MSF-Linear: Linear Algebra"
         },
         {
-            "source": "d",
-            "target": "h"
+            "source": "MSF-Pre: Pre Calculus",
+            "target": "MSF-Calculus"
         },
         {
-            "source": "d",
-            "target": "f"
+            "source": "MSF-Discrete: Discrete Mathematics",
+            "target": "MSF-Probability: Probability"
         },
         {
-            "source": "d",
-            "target": "k"
+            "source": "MSF-Probability: Probability",
+            "target": "MSF-Statistics: Statistics"
         },
         {
-            "source": "d",
-            "target": "l"
+            "source": "MSF-Linear: Linear Algebra",
+            "target": "MSF-Statistics: Statistics"
         },
         {
-            "source": "h",
-            "target": "i"
+            "source": "MSF-Calculus",
+            "target": "MSF-Probability: Probability"
         },
         {
-            "source": "h",
-            "target": "j"
-        },
-        {
-            "source": "h",
-            "target": "l"
-        },
-        {
-            "source": "e",
-            "target": "i"
-        },
-        {
-            "source": "f",
-            "target": "g"
-        },
-        {
-            "source": "g",
-            "target": "i"
-        },
-        {
-            "source": "g",
-            "target": "h"
-        },
-        {
-            "source": "j",
-            "target": "k"
+            "source": "MSF-Calculus",
+            "target": "MSF-Statistics: Statistics"
         }
     ]
 }

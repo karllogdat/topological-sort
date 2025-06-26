@@ -41,7 +41,7 @@ export function draw_graph_arrowless(data) {
         .id((d) => d.id)
         .distance(20)
     )
-    .force("charge", d3.forceManyBody().strength(-50))
+    .force("charge", d3.forceManyBody().strength(-200))
     .force("center", d3.forceCenter(width / 2, height / 2));
 
   const link = container
@@ -90,6 +90,31 @@ export function draw_graph_arrowless(data) {
   //   .attr("dx", -10)
   //   .text((d) => d.id)
   //   .style("fill", "#777");
+
+  function forceCircular(radius, centerX, centerY) {
+    function force(alpha) {
+      for (const node of nodes) {
+        const dx = node.x - centerX;
+        const dy = node.y - centerY;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+
+        if (dist > radius) {
+          const angle = Math.atan2(dy, dx);
+          const targetX = centerX + radius * Math.cos(angle);
+          const targetY = centerY + radius * Math.sin(angle);
+
+          node.vx += (targetX - node.x) * 0.1 * alpha;
+          node.vy += (targetY - node.y) * 0.1 * alpha;
+        }
+      }
+    }
+
+    let nodes;
+    force.initialize = (_nodes) => (nodes = _nodes);
+    return force;
+  }
+
+  simulation.force("circular_bound", forceCircular(100, width / 2, height / 2));
 
   simulation.on("tick", () => {
     link
