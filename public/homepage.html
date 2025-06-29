@@ -1,270 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PUP Curriculum Navigator</title>
-    <link rel="stylesheet" href="homepage.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-</head>
-<body>
-
+    <link rel="stylesheet" href="./css/homepage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div id="landing-page" class="landing-page">
-        <div class="landing-overlay">
-            <div class="landing-content">
-                <div class="logo-container">
-                    <img src="PUPLogo.png" alt="PUP Logo" class="pup-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                    <div class="logo-fallback" style="display: none;">
-                        <div class="pup-logo-circle">
-                            <div class="star-emblem">★</div>
-                        </div>
-                    </div>
-                </div>
-                <h1 class="main-title">MULA SA'YO, PARA SA BAYAN</h1>
-                <h2 class="subtitle">PUP Curriculum Navigator</h2>
-                
-                <button class="proceed-btn" onclick="proceedToApp()">
-                    <span>Get Started</span>
-                    <i class="fas fa-arrow-right"></i>
-                </button>
-                
-                <div class="features-preview">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-project-diagram"></i>
-                        </div>
-                        <h3>Prerequisite Mapping</h3>
-                        <p>Visualize topic dependencies</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-route"></i>
-                        </div>
-                        <h3>Learning Paths</h3>
-                        <p>Personalized study sequences</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <h3>CS Curriculum</h3>
-                        <p>Structured learning approach</p>
-                    </div>
-                </div>
+      <div class="landing-overlay">
+        <div class="landing-content">
+          <div class="logo-container">
+            <img
+              src="PUPLogo.png"
+              alt="PUP Logo"
+              class="pup-logo"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+            />
+            <div class="logo-fallback" style="display: none">
+              <div class="pup-logo-circle">
+                <div class="star-emblem">★</div>
+              </div>
             </div>
-            
-            <div class="scroll-indicator">
-                <p>Scroll to learn more</p>
-                <i class="fas fa-chevron-down bounce"></i>
+          </div>
+          <h1 class="main-title">MULA SA'YO, PARA SA BAYAN</h1>
+          <h2 class="subtitle">PUP Curriculum Navigator</h2>
+
+          <button class="proceed-btn" onclick="proceedToApp()">
+            <span>Get Started</span>
+            <i class="fas fa-arrow-right"></i>
+          </button>
+
+          <div class="features-preview">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-project-diagram"></i>
+              </div>
+              <h3>Prerequisite Mapping</h3>
+              <p>Visualize topic dependencies</p>
             </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-route"></i>
+              </div>
+              <h3>Learning Paths</h3>
+              <p>Personalized study sequences</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <h3>CS Curriculum</h3>
+              <p>Structured learning approach</p>
+            </div>
+          </div>
         </div>
-        
-        <div class="about-section">
-            <div class="about-content">
-                <h2>About the Project</h2>
-                <p>The PUP Curriculum Navigator is designed to help self-learning students navigate the complex interdependencies of Computer Science topics. Using topological sorting algorithms, we create a structured and logical curriculum that ensures foundational concepts are mastered before advancing to more complex topics.</p>
-                
-                <div class="about-features">
-                    <div class="about-feature">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Identify prerequisite relationships between topics</span>
-                    </div>
-                    <div class="about-feature">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Generate customized learning paths</span>
-                    </div>
-                    <div class="about-feature">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Visualize topic dependencies through flowcharts</span>
-                    </div>
-                </div>
-                
-                <button class="proceed-btn secondary" onclick="proceedToApp()">
-                    <span>Explore the Navigator</span>
-                    <i class="fas fa-arrow-right"></i>
-                </button>
-            </div>
+
+        <div class="scroll-indicator">
+          <p>Scroll to learn more</p>
+          <i class="fas fa-chevron-down bounce"></i>
         </div>
-        
-        <footer class="landing-footer">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>PUP Curriculum Navigator</h3>
-                    <p>A project by BS Computer Science 2-2, Team 1</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Team Members</h3>
-                    <ul>
-                        <li>Biñas, John Benedict, S.</li>
-                        <li>Esperon, Trisha Mae P.</li>
-                        <li>Isais, Dominic Christian</li>
-                        <li>Logdat, Karl Joseph M.</li>
-                        <li>Samson, Lander D.</li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>College of Computer and Information Sciences</h3>
-                    <p>Polytechnic University of the Philippines</p>
-                    <p>Design and Analysis of Algorithm Final Project</p>
-                </div>
+      </div>
+
+      <div class="about-section">
+        <div class="about-content">
+          <h2>About the Project</h2>
+          <p>
+            The PUP Curriculum Navigator is designed to help self-learning
+            students navigate the complex interdependencies of Computer Science
+            topics. Using topological sorting algorithms, we create a structured
+            and logical curriculum that ensures foundational concepts are
+            mastered before advancing to more complex topics.
+          </p>
+
+          <div class="about-features">
+            <div class="about-feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Identify prerequisite relationships between topics</span>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 PUP Curriculum Navigator. All rights reserved.</p>
+            <div class="about-feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Generate customized learning paths</span>
             </div>
-        </footer>
+            <div class="about-feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Visualize topic dependencies through flowcharts</span>
+            </div>
+          </div>
+
+          <button class="proceed-btn secondary" onclick="proceedToApp()">
+            <span>Explore the Navigator</span>
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <footer class="landing-footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>PUP Curriculum Navigator</h3>
+            <p>A project by BS Computer Science 2-2, Team 1</p>
+          </div>
+          <div class="footer-section">
+            <h3>Team Members</h3>
+            <ul>
+              <li>Biñas, John Benedict, S.</li>
+              <li>Esperon, Trisha Mae P.</li>
+              <li>Isais, Dominic Christian</li>
+              <li>Logdat, Karl Joseph M.</li>
+              <li>Samson, Lander D.</li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>College of Computer and Information Sciences</h3>
+            <p>Polytechnic University of the Philippines</p>
+            <p>Design and Analysis of Algorithm Final Project</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 PUP Curriculum Navigator. All rights reserved.</p>
+        </div>
+      </footer>
     </div>
 
     <div id="main-app" class="main-app hidden">
-       
-        <header class="app-header">
-            <div class="header-content">
-                <div class="header-logo">
-                    <img src="PUPLogo.png" alt="PUP Logo" class="pup-logo-small" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                    <div class="logo-fallback-small" style="display: none;">
-                        <div class="pup-logo-circle-small">
-                            <div class="star-emblem-small">★</div>
-                        </div>
-                    </div>
-                    <div class="header-text">
-                        <span class="header-title">PUP CURRICULUM</span>
-                        <span class="header-subtitle">MULA SA'YO, PARA SA BAYAN</span>
-                    </div>
-                </div>
-                <div class="header-actions">
-                    <button class="help-btn" onclick="showHelp()">
-                        <i class="fas fa-question-circle"></i>
-                        <span>Help</span>
-                    </button>
-                    <button class="back-btn" onclick="backToLanding()">
-                        <i class="fas fa-home"></i>
-                        <span>Home</span>
-                    </button>
-                </div>
+      <header class="app-header">
+        <div class="header-content">
+          <div class="header-logo">
+            <img
+              src="PUPLogo.png"
+              alt="PUP Logo"
+              class="pup-logo-small"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+            />
+            <div class="logo-fallback-small" style="display: none">
+              <div class="pup-logo-circle-small">
+                <div class="star-emblem-small">★</div>
+              </div>
             </div>
-        </header>
-
-        <div class="app-content">
-    
-            <aside class="sidebar">
-                <div class="search-container">
-                    <input type="text" id="topic-search" placeholder="Search for a knowledge area..." class="search-input">
-                    <button class="search-btn"><i class="fas fa-search"></i></button>
-                </div>
-                
-                <div class="topics-list">
-                    <h3>Knowledge Areas</h3>
-                    <div class="ka-list">
-                        <div class="ka-item" data-ka="AI">
-                            <span class="ka-code">(AI)</span> Artificial Intelligence
-                        </div>
-                        <div class="ka-item" data-ka="AL">
-                            <span class="ka-code">(AL)</span> Algorithmic Foundations
-                        </div>
-                        <div class="ka-item" data-ka="AR">
-                            <span class="ka-code">(AR)</span> Architecture and Organization
-                        </div>
-                        <div class="ka-item" data-ka="DM">
-                            <span class="ka-code">(DM)</span> Data Management
-                        </div>
-                        <div class="ka-item" data-ka="FPL">
-                            <span class="ka-code">(FPL)</span> Foundations of Programming Languages
-                        </div>
-                        <div class="ka-item" data-ka="GIT">
-                            <span class="ka-code">(GIT)</span> Graphics and Interactive Techniques
-                        </div>
-                        <div class="ka-item" data-ka="HCI">
-                            <span class="ka-code">(HCI)</span> Human-Computer Interaction
-                        </div>
-                        <div class="ka-item" data-ka="MSF">
-                            <span class="ka-code">(MSF)</span> Mathematical and Statistical Foundations
-                        </div>
-                        <div class="ka-item" data-ka="NC">
-                            <span class="ka-code">(NC)</span> Networking and Communication
-                        </div>
-                        <div class="ka-item" data-ka="OS">
-                            <span class="ka-code">(OS)</span> Operating Systems
-                        </div>
-                        <div class="ka-item" data-ka="PDC">
-                            <span class="ka-code">(PDC)</span> Parallel and Distributed Computing
-                        </div>
-                        <div class="ka-item" data-ka="SDF">
-                            <span class="ka-code">(SDF)</span> Software Development Fundamentals
-                        </div>
-                        <div class="ka-item" data-ka="SE">
-                            <span class="ka-code">(SE)</span> Software Engineering
-                        </div>
-                        <div class="ka-item" data-ka="SEC">
-                            <span class="ka-code">(SEC)</span> Security
-                        </div>
-                        <div class="ka-item" data-ka="SEP">
-                            <span class="ka-code">(SEP)</span> Society, Ethics, and the Profession
-                        </div>
-                        <div class="ka-item" data-ka="SF">
-                            <span class="ka-code">(SF)</span> Systems Fundamentals
-                        </div>
-                        <div class="ka-item" data-ka="SPD">
-                            <span class="ka-code">(SPD)</span> Specialized Platform Development
-                        </div>
-                    </div>
-                </div>
-            </aside>
-
-            <!-- Main Content Area -->
-            <main class="main-content">
-                <div class="content-header">
-                    <h2>Learning Path</h2>
-                    <div class="selected-topic" id="selected-topic">
-                        Select a Knowledge Area to view its learning path
-                    </div>
-                </div>
-                
-                <div class="visualization-area" id="visualization-area">
-                </div>
-
-                <div class="learning-steps" id="learning-steps" style="display: none;">
-                    <h3>Recommended Learning Sequence</h3>
-                    <div class="steps-container" id="steps-container">
-                    </div>
-                </div>
-            </main>
+            <div class="header-text">
+              <span class="header-title">PUP CURRICULUM</span>
+              <span class="header-subtitle">MULA SA'YO, PARA SA BAYAN</span>
+            </div>
+          </div>
+          <div class="header-actions">
+            <button class="help-btn" onclick="showHelp()">
+              <i class="fas fa-question-circle"></i>
+              <span>Help</span>
+            </button>
+            <button class="back-btn" onclick="backToLanding()">
+              <i class="fas fa-home"></i>
+              <span>Home</span>
+            </button>
+          </div>
         </div>
+      </header>
+
+      <div class="app-content">
+        <aside class="sidebar">
+          <div class="search-container">
+            <input
+              type="text"
+              id="topic-search"
+              placeholder="Search for a knowledge area..."
+              class="search-input"
+            />
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+          </div>
+
+          <div class="topics-list">
+            <h3>Knowledge Areas</h3>
+            <div class="ka-list">
+              <div class="ka-item" data-ka="AI">
+                <span class="ka-code">(AI)</span> Artificial Intelligence
+              </div>
+              <div class="ka-item" data-ka="AL">
+                <span class="ka-code">(AL)</span> Algorithmic Foundations
+              </div>
+              <div class="ka-item" data-ka="AR">
+                <span class="ka-code">(AR)</span> Architecture and Organization
+              </div>
+              <div class="ka-item" data-ka="DM">
+                <span class="ka-code">(DM)</span> Data Management
+              </div>
+              <div class="ka-item" data-ka="FPL">
+                <span class="ka-code">(FPL)</span> Foundations of Programming
+                Languages
+              </div>
+              <div class="ka-item" data-ka="GIT">
+                <span class="ka-code">(GIT)</span> Graphics and Interactive
+                Techniques
+              </div>
+              <div class="ka-item" data-ka="HCI">
+                <span class="ka-code">(HCI)</span> Human-Computer Interaction
+              </div>
+              <div class="ka-item" data-ka="MSF">
+                <span class="ka-code">(MSF)</span> Mathematical and Statistical
+                Foundations
+              </div>
+              <div class="ka-item" data-ka="NC">
+                <span class="ka-code">(NC)</span> Networking and Communication
+              </div>
+              <div class="ka-item" data-ka="OS">
+                <span class="ka-code">(OS)</span> Operating Systems
+              </div>
+              <div class="ka-item" data-ka="PDC">
+                <span class="ka-code">(PDC)</span> Parallel and Distributed
+                Computing
+              </div>
+              <div class="ka-item" data-ka="SDF">
+                <span class="ka-code">(SDF)</span> Software Development
+                Fundamentals
+              </div>
+              <div class="ka-item" data-ka="SE">
+                <span class="ka-code">(SE)</span> Software Engineering
+              </div>
+              <div class="ka-item" data-ka="SEC">
+                <span class="ka-code">(SEC)</span> Security
+              </div>
+              <div class="ka-item" data-ka="SEP">
+                <span class="ka-code">(SEP)</span> Society, Ethics, and the
+                Profession
+              </div>
+              <div class="ka-item" data-ka="SF">
+                <span class="ka-code">(SF)</span> Systems Fundamentals
+              </div>
+              <div class="ka-item" data-ka="SPD">
+                <span class="ka-code">(SPD)</span> Specialized Platform
+                Development
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+          <div class="content-header">
+            <h2>Topic Graph</h2>
+            <div class="selected-topic" id="selected-topic">
+              Select a Knowledge Area to view its learning path
+            </div>
+          </div>
+
+          <div class="visualization-area" id="visualization-area">
+            <div id="tooltip"></div>
+            <svg id="graph" width="800" height="550"></svg>
+          </div>
+
+          <div class="learning-steps" id="learning-steps" style="display: none">
+            <h3>Recommended Learning Sequence</h3>
+            <div class="steps-container" id="steps-container"></div>
+          </div>
+        </main>
+      </div>
     </div>
 
     <div id="help-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal" onclick="closeHelp()">&times;</span>
-            <h2>How to Use the PUP Curriculum Navigator</h2>
-            
-            <div class="help-section">
-                <h3>1. Select a Knowledge Area</h3>
-                <p>Browse through the knowledge areas in the sidebar and click on any area you're interested in learning.</p>
-            </div>
-            
-            <div class="help-section">
-                <h3>2. View Learning Path</h3>
-                <p>The system will generate a personalized learning path for the selected knowledge area.</p>
-            </div>
-            
-            <div class="help-section">
-                <h3>3. Follow the Sequence</h3>
-                <p>Follow the recommended learning sequence to ensure you have all the necessary foundational knowledge.</p>
-            </div>
-            
-            <div class="help-section">
-                <h3>4. Search for Knowledge Areas</h3>
-                <p>Use the search bar to quickly find specific knowledge areas you're interested in.</p>
-            </div>
-            
-            <div class="help-footer">
-                <p>This tool uses topological sorting to determine the optimal learning sequence based on topic dependencies.</p>
-            </div>
+      <div class="modal-content">
+        <span class="close-modal" onclick="closeHelp()">&times;</span>
+        <h2>How to Use the PUP Curriculum Navigator</h2>
+
+        <div class="help-section">
+          <h3>1. Select a Knowledge Area</h3>
+          <p>
+            Browse through the knowledge areas in the sidebar and click on any
+            area you're interested in learning.
+          </p>
         </div>
+
+        <div class="help-section">
+          <h3>2. View Learning Path</h3>
+          <p>
+            The system will generate a personalized learning path for the
+            selected knowledge area.
+          </p>
+        </div>
+
+        <div class="help-section">
+          <h3>3. Follow the Sequence</h3>
+          <p>
+            Follow the recommended learning sequence to ensure you have all the
+            necessary foundational knowledge.
+          </p>
+        </div>
+
+        <div class="help-section">
+          <h3>4. Search for Knowledge Areas</h3>
+          <p>
+            Use the search bar to quickly find specific knowledge areas you're
+            interested in.
+          </p>
+        </div>
+
+        <div class="help-footer">
+          <p>
+            This tool uses topological sorting to determine the optimal learning
+            sequence based on topic dependencies.
+          </p>
+        </div>
+      </div>
     </div>
 
-    <script src="homepage.js"></script>
-</body>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script type="module" src="./js/script.js"></script>
+    <script src="./js/homepage.js"></script>
+  </body>
 </html>
-
