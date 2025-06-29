@@ -47,5 +47,29 @@ export function subgraph(graph, target) {
     }
   });
 
+  console.log(to_mermaid(subgraph));
+
   return subgraph;
+}
+
+export function to_mermaid(graph) {
+  let mermaid = "flowchart TD\n";
+  let nodes = [];
+
+  graph.forEach((link) => {
+    if (nodes.indexOf(link.source) === -1) {
+      nodes.push(link.source);
+    }
+    if (nodes.indexOf(link.target) === -1) {
+      nodes.push(link.target);
+    }
+  });
+
+  graph.forEach((link, i) => {
+    mermaid += `\t${nodes.indexOf(link.source)}[${
+      link.source
+    }]-->${nodes.indexOf(link.target)}[${link.target}]\n`;
+  });
+
+  return mermaid;
 }
