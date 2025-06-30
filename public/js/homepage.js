@@ -1,109 +1,42 @@
-const knowledgeAreas = {
-  AI: {
-    name: "Artificial Intelligence",
-    code: "AI",
-    description: "Covers fundamental concepts in artificial intelligence, machine learning, and intelligent systems.",
+const csTopics = {
+  subject1: {
+    name: "Subject1",
+    topics: ["Topic 1", "Topic 2", "Topic 3", "Topic 4", "Topic 5"],
   },
-  AL: {
-    name: "Algorithmic Foundations",
-    code: "AL",
-    description: "Focuses on algorithm design, analysis, and computational complexity theory.",
+  subject2: {
+    name: "Subject2",
+    topics: ["Topic 1", "Topic 2", "Topic 3", "Topic 4", "Topic 5"],
   },
-  AR: {
-    name: "Architecture and Organization",
-    code: "AR",
-    description: "Covers computer architecture, organization, and hardware-software interface.",
+  subject3: {
+    name: "Subject3",
+    topics: ["Topic 1", "Topic 2", "Topic 3", "Topic 4", "Topic 5"],
   },
-  DM: {
-    name: "Data Management",
-    code: "DM",
-    description: "Encompasses database systems, data modeling, and information management.",
+  subject4: {
+    name: "Subject4",
+    topics: ["Topic 1", "Topic 2", "Topic 3", "Topic 4", "Topic 5"],
   },
-  FPL: {
-    name: "Foundations of Programming Languages",
-    code: "FPL",
-    description: "Studies programming language design, implementation, and theoretical foundations.",
-  },
-  GIT: {
-    name: "Graphics and Interactive Techniques",
-    code: "GIT",
-    description: "Covers computer graphics, visualization, and interactive system design.",
-  },
-  HCI: {
-    name: "Human-Computer Interaction",
-    code: "HCI",
-    description: "Focuses on user interface design, usability, and human factors in computing.",
-  },
-  MSF: {
-    name: "Mathematical and Statistical Foundations",
-    code: "MSF",
-    description: "Provides mathematical and statistical background for computer science.",
-  },
-  NC: {
-    name: "Networking and Communication",
-    code: "NC",
-    description: "Covers network protocols, distributed systems, and communication technologies.",
-  },
-  OS: {
-    name: "Operating Systems",
-    code: "OS",
-    description: "Studies operating system design, implementation, and system programming.",
-  },
-  PDC: {
-    name: "Parallel and Distributed Computing",
-    code: "PDC",
-    description: "Focuses on parallel algorithms, distributed systems, and concurrent programming.",
-  },
-  SDF: {
-    name: "Software Development Fundamentals",
-    code: "SDF",
-    description: "Covers fundamental programming concepts and software development practices.",
-  },
-  SE: {
-    name: "Software Engineering",
-    code: "SE",
-    description: "Encompasses software design, development methodologies, and project management.",
-  },
-  SEC: {
-    name: "Security",
-    code: "SEC",
-    description: "Covers cybersecurity, cryptography, and secure system design.",
-  },
-  SEP: {
-    name: "Society, Ethics, and the Profession",
-    code: "SEP",
-    description: "Addresses ethical, legal, and social issues in computing.",
-  },
-  SF: {
-    name: "Systems Fundamentals",
-    code: "SF",
-    description: "Covers fundamental concepts in computer systems and system design.",
-  },
-  SPD: {
-    name: "Specialized Platform Development",
-    code: "SPD",
-    description: "Focuses on development for specific platforms and specialized environments.",
+  subject5: {
+    name: "Subject5",
+    topics: ["Topic 1", "Topic 2", "Topic 3", "Topic 4", "Topic 5"],
   },
 }
 
-// Global variables
-let selectedKA = null
+let selectedTopic = null
+let searchTerm = ""
 
-// Initialize the application
 document.addEventListener("DOMContentLoaded", () => {
-  initializeEventListeners()
   initializeSearch()
   animateLandingPage()
+  renderAllTopics()
+  manageFocus()
 })
 
-// Landing page animations
 function animateLandingPage() {
-  const elements = document.querySelectorAll(".landing-content > *")
+  const elements = document.querySelectorAll(".hero-container > *")
   elements.forEach((element, index) => {
     element.style.opacity = "0"
-    element.style.transform = "translateY(20px)"
-    element.style.transition = `all 0.5s ease ${index * 0.1}s`
-
+    element.style.transform = "translateY(40px)"
+    element.style.transition = `all 1s ease ${index * 0.3}s`
     setTimeout(() => {
       element.style.opacity = "1"
       element.style.transform = "translateY(0)"
@@ -120,8 +53,14 @@ function proceedToApp() {
 function backToLanding() {
   document.getElementById("main-app").classList.add("hidden")
   document.getElementById("landing-page").classList.remove("hidden")
-  selectedKA = null
+  selectedTopic = null
   clearSelection()
+}
+
+function scrollToAbout() {
+  document.getElementById("about-section").scrollIntoView({
+    behavior: "smooth",
+  })
 }
 
 function showHelp() {
@@ -139,101 +78,217 @@ window.onclick = (event) => {
   }
 }
 
-function initializeEventListeners() {
-  const kaItems = document.querySelectorAll(".ka-item")
+function initializeSearch() {
+  const searchInput = document.getElementById("topic-search")
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      searchTerm = this.value.toLowerCase()
+      debouncedSearch()
+    })
+  }
+}
 
-  kaItems.forEach((item) => {
+function renderAllTopics() {
+  const topicList = document.getElementById("topic-list")
+  if (!topicList) return
+
+  let html = ""
+
+  Object.entries(csTopics).forEach(([subjectKey, subjectData]) => {
+    html += `<div class="subject-header">${subjectData.name}</div>`
+
+    subjectData.topics.forEach((topic, index) => {
+      const topicId = `${subjectKey}-${index}`
+      html += `
+        <div class="topic-item" data-topic-id="${topicId}" data-topic-text="${topic}">
+          • ${topic}
+        </div>
+      `
+    })
+  })
+
+  topicList.innerHTML = html
+
+  const topicItems = topicList.querySelectorAll(".topic-item")
+  topicItems.forEach((item) => {
     item.addEventListener("click", function () {
-      const kaCode = this.getAttribute("data-ka")
-      selectKnowledgeArea(kaCode)
+      const topicId = this.getAttribute("data-topic-id")
+      const topicText = this.getAttribute("data-topic-text")
+      selectTopic(topicId, topicText)
     })
   })
 }
 
-function selectKnowledgeArea(kaCode) {
-  clearSelection()
+function filterTopics() {
+  const topicList = document.getElementById("topic-list")
+  if (!topicList) return
 
-  selectedKA = kaCode
-  const kaElement = document.querySelector(`[data-ka="${kaCode}"]`)
-  if (kaElement) {
-    kaElement.classList.add("selected")
+  let html = ""
+
+  Object.entries(csTopics).forEach(([subjectKey, subjectData]) => {
+    let filteredTopics = subjectData.topics
+
+    if (searchTerm) {
+      filteredTopics = subjectData.topics.filter((topic) => topic.toLowerCase().includes(searchTerm))
+    }
+
+    if (filteredTopics.length > 0) {
+      html += `<div class="subject-header">${subjectData.name}</div>`
+
+      filteredTopics.forEach((topic) => {
+        const originalIndex = subjectData.topics.indexOf(topic)
+        const topicId = `${subjectKey}-${originalIndex}`
+        html += `
+          <div class="topic-item" data-topic-id="${topicId}" data-topic-text="${topic}">
+            • ${topic}
+          </div>
+        `
+      })
+    }
+  })
+
+  topicList.innerHTML = html
+
+  const topicItems = topicList.querySelectorAll(".topic-item")
+  topicItems.forEach((item) => {
+    item.addEventListener("click", function () {
+      const topicId = this.getAttribute("data-topic-id")
+      const topicText = this.getAttribute("data-topic-text")
+      selectTopic(topicId, topicText)
+    })
+  })
+}
+
+function selectTopic(topicId, topicText) {
+  const selectedTopics = document.querySelectorAll(".topic-item.selected")
+  selectedTopics.forEach((topic) => topic.classList.remove("selected"))
+
+  const currentTopic = document.querySelector(`[data-topic-id="${topicId}"]`)
+  if (currentTopic) {
+    currentTopic.classList.add("selected")
   }
 
+  selectedTopic = topicText
+  updateSelectedTopicDisplay(topicText)
+}
+
+function updateSelectedTopicDisplay(topicText = null) {
   const selectedTopicElement = document.getElementById("selected-topic")
-  const kaData = knowledgeAreas[kaCode]
 
-  if (kaData) {
-    selectedTopicElement.innerHTML = `
-      <strong>Selected Knowledge Area:</strong> ${kaData.name} <span class="topic-category">(${kaData.code})</span>
-      <br><small>${kaData.description}</small>
-    `
-
-    showLearningSteps()
+  if (topicText) {
+    selectedTopicElement.innerHTML = `<strong>Selected Topic:</strong> ${topicText}`
+    selectedTopicElement.style.borderLeftColor = "#3b82f6"
+  } else {
+    selectedTopicElement.innerHTML = "Select a Computer Science topic to generate your learning path"
+    selectedTopicElement.style.borderLeftColor = "#d1d5db"
   }
 }
 
 function clearSelection() {
-  const selectedItems = document.querySelectorAll(".ka-item.selected")
-  selectedItems.forEach((item) => {
-    item.classList.remove("selected")
-  })
-
-  document.getElementById("selected-topic").textContent = "Select a Knowledge Area to view its learning path"
-  clearLearningSteps()
+  const selectedTopics = document.querySelectorAll(".topic-item.selected")
+  selectedTopics.forEach((topic) => topic.classList.remove("selected"))
 }
 
-function showLearningSteps() {
-  const learningStepsSection = document.getElementById("learning-steps")
-  const stepsContainer = document.getElementById("steps-container")
-
-  stepsContainer.innerHTML = ""
-
-  stepsContainer.innerHTML = `
-    <div class="step-placeholder">
-      <p>Learning sequence will be generated by the backend system.</p>
-    </div>
-  `
-
-  learningStepsSection.style.display = "block"
-}
-
-function clearLearningSteps() {
-  const learningStepsSection = document.getElementById("learning-steps")
-  learningStepsSection.style.display = "none"
-}
-
-function initializeSearch() {
-  const searchInput = document.getElementById("topic-search")
-  const searchBtn = document.querySelector(".search-btn")
-
-  function performSearch() {
-    const searchTerm = searchInput.value.toLowerCase().trim()
-    const kaItems = document.querySelectorAll(".ka-item")
-
-    kaItems.forEach((item) => {
-      const kaText = item.textContent.toLowerCase()
-      const kaCode = item.getAttribute("data-ka")
-      const kaData = knowledgeAreas[kaCode]
-
-      const matches =
-        kaText.includes(searchTerm) ||
-        (kaData && kaData.description.toLowerCase().includes(searchTerm)) ||
-        (kaData && kaData.name.toLowerCase().includes(searchTerm))
-
-      if (searchTerm === "" || matches) {
-        item.style.display = "flex"
-      } else {
-        item.style.display = "none"
-      }
-    })
+document.addEventListener("keydown", (event) => {
+ 
+  if (event.key === "Escape") {
+    closeHelp()
   }
 
-  searchInput.addEventListener("input", performSearch)
-  searchBtn.addEventListener("click", performSearch)
+  if ((event.ctrlKey || event.metaKey) && event.key === "k") {
+    event.preventDefault()
+    const searchInput = document.getElementById("topic-search")
+    if (searchInput && !document.getElementById("main-app").classList.contains("hidden")) {
+      searchInput.focus()
+    }
+  }
+})
 
-  searchInput.addEventListener("keypress", (e) => {
-    if (e.key === "Enter") {
-      performSearch()
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault()
+    const target = document.querySelector(this.getAttribute("href"))
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      })
     }
   })
+})
+
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: "0px 0px -50px 0px",
+}
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("fade-in")
+    }
+  })
+}, observerOptions)
+
+document.addEventListener("DOMContentLoaded", () => {
+  const animateElements = document.querySelectorAll(".feature-card, .about-section, .footer-section")
+  animateElements.forEach((el) => observer.observe(el))
+})
+
+window.addEventListener("resize", () => {
+  const sidebar = document.querySelector(".sidebar")
+  const mainContent = document.querySelector(".main-content")
+
+  if (window.innerWidth <= 768) {
+    if (sidebar && mainContent) {
+      sidebar.style.maxHeight = "400px"
+    }
+  } else {
+    if (sidebar) {
+      sidebar.style.maxHeight = "none"
+    }
+  }
+})
+
+function debounce(func, wait) {
+  let timeout
+  return function executedFunction(...args) {
+    const later = () => {
+      clearTimeout(timeout)
+      func(...args)
+    }
+    clearTimeout(timeout)
+    timeout = setTimeout(later, wait)
+  }
+}
+
+const debouncedSearch = debounce(() => {
+  filterTopics()
+}, 300)
+
+function manageFocus() {
+  const focusableElements = document.querySelectorAll(
+    'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
+  )
+
+  focusableElements.forEach((element) => {
+    element.addEventListener("focus", () => {
+      element.classList.add("focused")
+    })
+
+    element.addEventListener("blur", () => {
+      element.classList.remove("focused")
+    })
+  })
+}
+
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = {
+    proceedToApp,
+    backToLanding,
+    showHelp,
+    closeHelp,
+    selectTopic,
+    csTopics,
+  }
 }
