@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Team - CS Curriculum Navigator</title>
+  <link rel="stylesheet" href="./css/homepage.css" />
+  <link rel="stylesheet" href="./css/graph.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <style>
+    .members-section {
+      padding: 6rem 0;
+      background: var(--gray-50);
+    }
+
+    .member-card {
+      background: white;
+      padding: var(--space-2xl);
+      border-radius: var(--radius-2xl);
+      box-shadow: var(--shadow-md);
+      transition: all 0.4s ease;
+      border: 1px solid var(--gray-200);
+      position: relative;
+      overflow: hidden;
+      text-align: center; 
+      display: flex; 
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .member-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-2xl);
+      border-color: var(--secondary-color);
+    }
+
+    .member-avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: var(--space-lg);
+      border: 4px solid var(--accent-light); 
+      box-shadow: var(--shadow-md);
+    }
+
+    .member-name {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--gray-900);
+      font-family: "Poppins", sans-serif;
+      margin-bottom: var(--space-sm);
+    }
+
+    .member-role {
+      font-size: 1rem;
+      color: var(--secondary-color);
+      font-weight: 600;
+      margin-bottom: var(--space-md);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .member-description {
+      color: var(--gray-600);
+      line-height: 1.7;
+      font-size: 0.95rem;
+      margin-bottom: var(--space-lg);
+    }
+
+    .member-social-icons {
+      display: flex;
+      gap: var(--space-md);
+      margin-top: var(--space-md);
+    }
+
+    .member-social-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--gray-100);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gray-700);
+      font-size: 1.2rem;
+      transition: all 0.2s ease;
+    }
+
+    .member-social-icon:hover {
+      background: var(--secondary-color);
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 1024px) {
+      .members-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      }
+    }
+
+    @media (max-width: 768px) {
+      .members-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="main-app">
+    <header class="app-header">
+      <div class="header-container">
+        <div class="header-logo">
+          <div class="app-logo-small">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="header-text">
+            <span class="header-title">CS Curriculum Navigator</span>
+            <span class="header-subtitle">Our Team</span>
+          </div>
+        </div>
+        <div class="header-actions">
+          <button class="header-btn" onclick="backToLanding()">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="members-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge">The Team</div>
+          <h2 class="section-title">Meet Our Project Team</h2>
+          <p class="section-subtitle">
+            Dedicated students from BS Computer Science 2-2, Team 1, who developed this navigator.
+          </p>
+        </div>
+
+        <div class="features-grid members-grid">
+          <!-- 1 -->
+          <div class="member-card">
+            <img src="https://placehold.co/120x120/a8edea/000000?text=JB" alt="Team Member Avatar"
+              class="member-avatar" />
+            <h3 class="member-name">Biñas, John Benedict, S.</h3>
+            <p class="member-role">Team Lead / Backend Developer</p>
+            <p class="member-description">
+            </p>
+            <div class="member-social-icons">
+              <a href="#" class="member-social-icon"><i class="fab fa-github"></i></a>
+              <a href="#" class="member-social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="member-card">
+            <img src="https://placehold.co/120x120/fed6e3/000000?text=TM" alt="Team Member Avatar"
+              class="member-avatar" />
+            <h3 class="member-name">Esperon, Trisha Mae P.</h3>
+            <p class="member-role">UI/UX Designer</p>
+            <p class="member-description">
+            </p>
+            <div class="member-social-icons">
+              <a href="#" class="member-social-icon"><i class="fab fa-github"></i></a>
+              <a href="#" class="member-social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="member-card">
+            <img src="https://placehold.co/120x120/4facfe/000000?text=DC" alt="Team Member Avatar"
+              class="member-avatar" />
+            <h3 class="member-name">Isais, Dominic Christian</h3>
+            <p class="member-role">Backend Developer</p>
+            <p class="member-description">
+            </p>
+            <div class="member-social-icons">
+              <a href="#" class="member-social-icon"><i class="fab fa-github"></i></a>
+              <a href="#" class="member-social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="member-card">
+            <img src="https://placehold.co/120x120/00f2fe/000000?text=KJ" alt="Team Member Avatar"
+              class="member-avatar" />
+            <h3 class="member-name">Logdat, Karl Joseph M.</h3>
+            <p class="member-role">BACKEND DEVELOPER</p>
+            <p class="member-description">
+            </p>
+            <div class="member-social-icons">
+              <a href="#" class="member-social-icon"><i class="fab fa-github"></i></a>
+              <a href="#" class="member-social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <!-- 5 -->
+          <div class="member-card">
+            <img src="https://placehold.co/120x120/667eea/000000?text=LD" alt="Team Member Avatar"
+              class="member-avatar" />
+            <h3 class="member-name">Samson, Lander D.</h3>
+            <p class="member-role">UI/UX DESIGNER</p>
+            <p class="member-description">
+            </p>
+            <div class="member-social-icons">
+              <a href="#" class="member-social-icon"><i class="fab fa-github"></i></a>
+              <a href="#" class="member-social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="landing-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3 class="footer-title">CS Curriculum Navigator</h3>
+            <p class="footer-text">
+              Project by BS Computer Science 2-2, Team 1
+            </p>
+            <div class="footer-social">
+              <div class="social-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h3 class="footer-title">Team Members</h3>
+            <ul class="team-list">
+              <li>Biñas, John Benedict, S.</li>
+              <li>Esperon, Trisha Mae P.</li>
+              <li>Isais, Dominic Christian</li>
+              <li>Logdat, Karl Joseph M.</li>
+              <li>Samson, Lander D.</li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3 class="footer-title">Academic Project</h3>
+            <p class="footer-text">Computer Science Program</p>
+            <p class="footer-text">Design and Analysis of Algorithm</p>
+            <p class="footer-text">Final Project</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-divider"></div>
+          <p>&copy; 2025 CS Curriculum Navigator. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    function backToLanding() {
+      window.location.href = 'index.html'; 
+    }
+  </script>
+</body>
+
+</html>
