@@ -1,9 +1,15 @@
+import { to_mermaid } from "./graph_renderers.js";
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+
+let limitCourse = document.getElementById("limit-course");
+let isLimitCourse = limitCourse.checked;
+
 let topics = new Map();
 
 async function fetchTopic() {
   try {
     const res = await fetch("/graph");
-    data = await res.json();
+    const data = await res.json();
 
     data.nodes.forEach((node) => {
       const match = node.id.match(/^\[(.+?)\]\s+(.+)$/);
@@ -29,6 +35,21 @@ async function fetchTopic() {
 
 let selectedTopic = null;
 let searchTerm = "";
+
+limitCourse.addEventListener("change", () => {
+  isLimitCourse = limitCourse.checked;
+
+  if (selectedTopic) {
+    // render topic flowchart
+    // Find the selected topic element to get its topicId and topicText
+    const selectedElem = document.querySelector(".topic-item.selected");
+    if (selectedElem) {
+      const topicId = selectedElem.getAttribute("data-topic-id");
+      const topicText = selectedElem.getAttribute("data-topic-text");
+      selectTopic(topicId, topicText);
+    }
+  }
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   fetchTopic();
@@ -170,14 +191,81 @@ function filterTopics() {
 }
 
 function selectTopic(topicId, topicText) {
+  const globalGraph = document.getElementById("graph");
+  globalGraph.classList.add("hidden");
+
   const selectedTopics = document.querySelectorAll(".topic-item.selected");
   selectedTopics.forEach((topic) => topic.classList.remove("selected"));
+
+  isLimitCourse = limitCourse.checked;
+  console.log(`Limit to course: ${isLimitCourse}`);
 
   const currentTopic = document.querySelector(`[data-topic-id="${topicId}"]`);
   if (currentTopic) {
     currentTopic.classList.add("selected");
 
-    currentTopicData = currentTopic.dataset.topic;
+    const currentTopicData = currentTopic.dataset.topic;
+
+    fetch(`/graph/subgraph?target=${encodeURIComponent(currentTopicData)}`)
+      .then((res) => res.json())
+      .then((data) => {
+        const flowchartContainer = document.getElementById("flowchart");
+        let mermaidCode = to_mermaid(data);
+
+        if (isLimitCourse) {
+          const courseCode = currentTopicData.match(/^\[(.+?)\]/)[1];
+
+          // Remove nodes that do NOT start with the current course code
+          data.nodes = data.nodes.filter((node) =>
+            node.id.startsWith(`[${courseCode}]`)
+          );
+          data.links = data.links.filter(
+            (link) =>
+              link.source.startsWith(`[${courseCode}]`) &&
+              link.target.startsWith(`[${courseCode}]`)
+          );
+
+          mermaidCode = to_mermaid(data);
+        }
+
+        flowchartContainer.textContent = mermaidCode;
+
+        flowchartContainer.classList.remove("hidden");
+        flowchartContainer.removeAttribute("data-processed");
+
+        flowchartContainer.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+
+        if (mermaidCode && mermaidCode.trim().length > 0) {
+          mermaid.run({ nodes: [flowchartContainer] });
+        }
+
+        // Wait for Mermaid to render SVG, then apply svg-pan-zoom
+        setTimeout(() => {
+          const svg = flowchartContainer.querySelector("svg");
+          if (svg) {
+            svg.setAttribute("width", "800");
+            svg.setAttribute("height", "600");
+            svg.style.width = "1000px";
+            svg.style.height = "600px";
+            svg.style.maxWidth = "100%";
+            svg.style.maxHeight = "100%";
+          }
+          if (svg && window.svgPanZoom) {
+            window.svgPanZoom(svg, {
+              zoomEnabled: true,
+              controlIconsEnabled: true,
+              fit: true,
+              center: true,
+              minZoom: 0.5,
+              maxZoom: 10,
+              zoomScaleSensitivity: 1,
+            });
+          }
+        }, 500);
+      });
 
     fetch(`/graph/tsort?target=${encodeURIComponent(currentTopicData)}`)
       .then((res) => res.json())
@@ -185,8 +273,15 @@ function selectTopic(topicId, topicText) {
         const tlist = document.getElementById("tlist");
         tlist.replaceChildren();
 
+        if (isLimitCourse) {
+          const courseCode = currentTopicData.match(/^\[(.+?)\]/)[1];
+
+          data = data.filter((topic) => {
+            return topic.startsWith(`[${courseCode}]`);
+          });
+        }
+
         data.forEach((item) => {
-          console.log(`Creating <p> for ${item}`);
           const itemHTML = document.createElement("li");
           itemHTML.textContent = item;
           tlist.appendChild(itemHTML);
@@ -323,3 +418,7 @@ if (typeof module !== "undefined" && module.exports) {
     csTopics,
   };
 }
+
+window.proceedToApp = proceedToApp;
+window.backToLanding = backToLanding;
+window.showHelp = showHelp;

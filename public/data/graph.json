@@ -1,1938 +1,743 @@
 {
-    "nodes": [
-        {
-            "id": "[PF] Introduction to problem solving"
-        },
-        {
-            "id": "[PF] A brief review of Von-Neumann architecture"
-        },
-        {
-            "id": "[PF] Introduction to programming"
-        },
-        {
-            "id": "[PF] Role of compiler and linker"
-        },
-        {
-            "id": "[PF] Introduction to algorithms"
-        },
-        {
-            "id": "[PF] Basic data types and variables"
-        },
-        {
-            "id": "[PF] Input/output constructs"
-        },
-        {
-            "id": "[PF] Arithmetic, comparison and logical operators"
-        },
-        {
-            "id": "[PF] Conditional statements and execution flow for conditional statements"
-        },
-        {
-            "id": "[PF] Repetitive statements and execution flow for repetitive statements"
-        },
-        {
-            "id": "[PF] Lists and their memory organization"
-        },
-        {
-            "id": "[PF] Multidimensional lists"
-        },
-        {
-            "id": "[PF] Introduction to modular programming"
-        },
-        {
-            "id": "[PF] Function definition and calling"
-        },
-        {
-            "id": "[PF] Stack rolling and unrolling"
-        },
-        {
-            "id": "[PF] String and string operations"
-        },
-        {
-            "id": "[PF] Pointers/references"
-        },
-        {
-            "id": "[PF] Static and dynamic memory allocation"
-        },
-        {
-            "id": "[PF] File I/O operations"
-        },
-        {
-            "id": "[DS] Proof by induction"
-        },
-        {
-            "id": "[DS] Proof by contraposition"
-        },
-        {
-            "id": "[DS] Proof by contradiction"
-        },
-        {
-            "id": "[DS] Proof by implication"
-        },
-        {
-            "id": "[DS] Equivalence relations and partitions"
-        },
-        {
-            "id": "[DS] Partial orderings"
-        },
-        {
-            "id": "[DS] Function composition"
-        },
-        {
-            "id": "[DS] Inverse functions"
-        },
-        {
-            "id": "[DS] Recursive functions"
-        },
-        {
-            "id": "[DS] Number Theory"
-        },
-        {
-            "id": "[DS] Sequences and series"
-        },
-        {
-            "id": "[DS] Inclusion and exclusion principle"
-        },
-        {
-            "id": "[DS] Pigeonhole principle"
-        },
-        {
-            "id": "[DS] Permutations and combinations"
-        },
-        {
-            "id": "[DS] Searching and Sorting Algorithms"
-        },
-        {
-            "id": "[DS] Planar graphs"
-        },
-        {
-            "id": "[DS] Graph coloring"
-        },
-        {
-            "id": "[DS] Graph algorithms"
-        },
-        {
-            "id": "[DS] Euler graph"
-        },
-        {
-            "id": "[DS] Hamiltonian path"
-        },
-        {
-            "id": "[DS] Traversals"
-        },
-        {
-            "id": "[DS] Recurrence relations"
-        },
-        {
-            "id": "[DS] Mathematical reasoning"
-        },
-        {
-            "id": "[DS] Propositional and predicate logic"
-        },
-        {
-            "id": "[DS] Rules of inference"
-        },
-        {
-            "id": "[DS] Set theory"
-        },
-        {
-            "id": "[DS] Relations"
-        },
-        {
-            "id": "[DS] Functions and mappings"
-        },
-        {
-            "id": "[DS] Counting"
-        },
-        {
-            "id": "[DS] Algorithms"
-        },
-        {
-            "id": "[DS] Elements of graph theory"
-        },
-        {
-            "id": "[DS] Rooted trees"
-        },
-        {
-            "id": "[Calc] Introduction to functions"
-        },
-        {
-            "id": "[Calc] Introduction to limits"
-        },
-        {
-            "id": "[Calc] Limits and Continuity"
-        },
-        {
-            "id": "[Calc] Techniques of finding limits"
-        },
-        {
-            "id": "[Calc] Indeterminate forms of limits"
-        },
-        {
-            "id": "[Calc] Continuous and discontinuous functions and their applications"
-        },
-        {
-            "id": "[Calc] Differential calculus"
-        },
-        {
-            "id": "[Calc] Concept and idea of differentiation"
-        },
-        {
-            "id": "[Calc] Geometrical and Physical meaning of derivatives"
-        },
-        {
-            "id": "[Calc] Rules of differentiation"
-        },
-        {
-            "id": "[Calc] Techniques of differentiation"
-        },
-        {
-            "id": "[Calc] Chain rule"
-        },
-        {
-            "id": "[Calc] Implicit differentiation"
-        },
-        {
-            "id": "[Calc] Rates of change"
-        },
-        {
-            "id": "[Calc] Tangents and Normals lines"
-        },
-        {
-            "id": "[Calc] Linear approximation"
-        },
-        {
-            "id": "[Calc] Applications of differentiation"
-        },
-        {
-            "id": "[Calc] Extreme value functions"
-        },
-        {
-            "id": "[Calc] Mean value theorems"
-        },
-        {
-            "id": "[Calc] Maxima and Minima of a function for single-variable"
-        },
-        {
-            "id": "[Calc] Concavity"
-        },
-        {
-            "id": "[Calc] Integral calculus"
-        },
-        {
-            "id": "[Calc] Concept and idea of Integration"
-        },
-        {
-            "id": "[Calc] Indefinite Integrals"
-        },
-        {
-            "id": "[Calc] Techniques of integration"
-        },
-        {
-            "id": "[Calc] Riemann sums and Definite Integrals"
-        },
-        {
-            "id": "[Calc] Applications of definite integrals"
-        },
-        {
-            "id": "[Calc] Improper integral"
-        },
-        {
-            "id": "[Calc] Applications of Integration"
-        },
-        {
-            "id": "[OOP] Introduction to object oriented design"
-        },
-        {
-            "id": "[OOP] History and advantages of object oriented design"
-        },
-        {
-            "id": "[OOP] Introduction to object oriented programming concepts"
-        },
-        {
-            "id": "[OOP] Classes"
-        },
-        {
-            "id": "[OOP] Objects"
-        },
-        {
-            "id": "[OOP] Data encapsulation"
-        },
-        {
-            "id": "[OOP] Access modifiers"
-        },
-        {
-            "id": "[OOP] Const vs non-const functions"
-        },
-        {
-            "id": "[OOP] Static data members & functions"
-        },
-        {
-            "id": "[OOP] Constructors"
-        },
-        {
-            "id": "[OOP] Destructors"
-        },
-        {
-            "id": "[OOP] Function overloading"
-        },
-        {
-            "id": "[OOP] Operator overloading"
-        },
-        {
-            "id": "[OOP] Identification of classes and their relationships"
-        },
-        {
-            "id": "[OOP] Composition"
-        },
-        {
-            "id": "[OOP] Aggregation"
-        },
-        {
-            "id": "[OOP] Inheritance"
-        },
-        {
-            "id": "[OOP] Multiple inheritance"
-        },
-        {
-            "id": "[OOP] Polymorphism"
-        },
-        {
-            "id": "[OOP] Abstract classes and interfaces"
-        },
-        {
-            "id": "[OOP] Generic programming concepts"
-        },
-        {
-            "id": "[OOP] Function & class templates"
-        },
-        {
-            "id": "[OOP] Standard template library"
-        },
-        {
-            "id": "[OOP] Object streams"
-        },
-        {
-            "id": "[OOP] Data and object serialization using object streams"
-        },
-        {
-            "id": "[OOP] Exception handling"
-        },
-        {
-            "id": "[DBS] Basic database concepts"
-        },
-        {
-            "id": "[DBS] Database approach vs. file-based system"
-        },
-        {
-            "id": "[DBS] Database architecture, three-level schema architecture, data independence"
-        },
-        {
-            "id": "[DBS] Relational data model: attributes, schemas, tuples, domains, relation instances, keys of relations, integrity constraints"
-        },
-        {
-            "id": "[DBS] Relational algebra: selection, projection, Cartesian product, types of joins"
-        },
-        {
-            "id": "[DBS] Normalization, functional dependencies, normal forms"
-        },
-        {
-            "id": "[DBS] Entity relationship model: entity sets, attributes, relationship, entity-relationship diagrams"
-        },
-        {
-            "id": "[DBS] Structured Query Language (SQL): Joins and sub-queries in SQL, Grouping and aggregation in SQL"
-        },
-        {
-            "id": "[DBS] Concurrency control, database backup and recovery"
-        },
-        {
-            "id": "[DBS] Indexes"
-        },
-        {
-            "id": "[DBS] NoSQL systems"
-        },
-        {
-            "id": "[DLD] Number Systems"
-        },
-        {
-            "id": "[DLD] Logic Gates, Boolean Algebra"
-        },
-        {
-            "id": "[DLD] Simplification Methods (K-Map, Quine-McCluskey method)"
-        },
-        {
-            "id": "[DLD] Combination logic circuits and designs"
-        },
-        {
-            "id": "[DLD] Binary Arithmetic and Arithmetic Circuits"
-        },
-        {
-            "id": "[DLD] Flip Flops and Latches"
-        },
-        {
-            "id": "[DLD] Asynchronous and Synchronous circuits"
-        },
-        {
-            "id": "[DLD] Counters, Shift Registers, Triggered devices & its types"
-        },
-        {
-            "id": "[DLD] Mealy machines and Moore machines"
-        },
-        {
-            "id": "[DLD] Memory Elements, State Machines"
-        },
-        {
-            "id": "[DLD] Introduction Programmable Logic Devices (CPLD, FPGA)"
-        },
-        {
-            "id": "[DLD] Lab Assignments using tools such as Verilog HDL/VHDL, MultiSim"
-        },
-        {
-            "id": "[LA] Systems of equations"
-        },
-        {
-            "id": "[LA] Algebra of linear transformations and matrices"
-        },
-        {
-            "id": "[LA] Determinants"
-        },
-        {
-            "id": "[LA] Rank"
-        },
-        {
-            "id": "[LA] Vector spaces"
-        },
-        {
-            "id": "[LA] Linear dependence"
-        },
-        {
-            "id": "[LA] Linear Independence and bases"
-        },
-        {
-            "id": "[LA] Inner product space and quadratic forms"
-        },
-        {
-            "id": "[LA] Orthogonal transformations"
-        },
-        {
-            "id": "[LA] Eigenvalues and eigenvectors"
-        },
-        {
-            "id": "[LA] Characteristic equations"
-        },
-        {
-            "id": "[DSA] Abstract data types, complexity analysis, Big Oh notation"
-        },
-        {
-            "id": "[DSA] Stacks (linked lists and array implementations), Recursion and analyzing recursive algorithms, divide and conquer algorithms"
-        },
-        {
-            "id": "[DSA] Sorting algorithms (selection, insertion, merge, quick, bubble, heap, shell, radix, bucket)"
-        },
-        {
-            "id": "[DSA] Queue, dequeuer, priority queues (linked and array implementations of queues)"
-        },
-        {
-            "id": "[DSA] Linked list & its various types, sorted linked list"
-        },
-        {
-            "id": "[DSA] Searching an unsorted array, binary search for sorted arrays"
-        },
-        {
-            "id": "[DSA] Hashing and indexing, open addressing and chaining"
-        },
-        {
-            "id": "[DSA] Trees and tree traversals, binary search trees, heaps, M-way tress, balanced trees"
-        },
-        {
-            "id": "[DSA] Graphs, breadth-first and depth-first traversal, topological order, shortest path, adjacency matrix and adjacency list implementations"
-        },
-        {
-            "id": "[DSA] Memory management and garbage collection"
-        },
-        {
-            "id": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies"
-        },
-        {
-            "id": "[CN] Layered architecture, physical layer functionality, data link layer functionality"
-        },
-        {
-            "id": "[CN] Multiple access techniques, circuit switching and packet switching"
-        },
-        {
-            "id": "[CN] LAN technologies, wireless networks, MAC addressing, networking devices (both cn layered and cn access techniques)"
-        },
-        {
-            "id": "[CN] Network layer protocols: IPv4 and IPv6, IP addressing, sub netting, CIDR, routing protocols"
-        },
-        {
-            "id": "[CN] Transport layer protocols: ports and sockets, connection establishment, flow and congestion control"
-        },
-        {
-            "id": "[CN] Application layer protocols"
-        },
-        {
-            "id": "[CN] Latest trends in computer networks"
-        },
-        {
-            "id": "[PS] Introduction to Statistics and Data Analysis"
-        },
-        {
-            "id": "[PS] Statistical Inference, Samples, Populations, and the Role of Probability"
-        },
-        {
-            "id": "[PS] Sampling Procedures"
-        },
-        {
-            "id": "[PS] Discrete and Continuous Data"
-        },
-        {
-            "id": "[PS] Probability: Sample Space, Events, Counting Sample Points, Probability of an Event, Additive Rules, Conditional Probability, Independence, and the Product Rule, Bayes\u2019 Rule"
-        },
-        {
-            "id": "[PS] Random Variables and Probability Distributions"
-        },
-        {
-            "id": "[PS] Mathematical Expectation: Mean of a Random Variable, Variance and Covariance of Random Variables, Means and Variances of Linear Combinations of Random Variables, Chebyshev\u2019s Theorem"
-        },
-        {
-            "id": "[PS] Discrete Probability Distributions"
-        },
-        {
-            "id": "[PS] Continuous Probability Distributions"
-        },
-        {
-            "id": "[PS] Fundamental Sampling Distributions and Data Descriptions: Random Sampling, Sampling Distributions, Sampling Distribution of Means and the Central Limit Theorem, Sampling Distribution of S\u00b2, t-Distribution, F-Quantile and Probability Plots"
-        },
-        {
-            "id": "[PS] Single Sample & One- and Two-Sample Estimation Problems"
-        },
-        {
-            "id": "[PS] Single Sample & One- and Two-Sample Tests of Hypotheses"
-        },
-        {
-            "id": "[PS] The Use of P-Values for Decision Making in Testing Hypotheses (Single Sample & One- and Two-Sample Tests)"
-        },
-        {
-            "id": "[PS] Linear Regression and Correlation"
-        },
-        {
-            "id": "[PS] Least Squares and the Fitted Model"
-        },
-        {
-            "id": "[PS] Multiple Linear Regression and Certain Nonlinear Regression Models"
-        },
-        {
-            "id": "[PS] Linear Regression Model Using Matrices"
-        },
-        {
-            "id": "[PS] Properties of the Least Squares Estimators"
-        },
-        {
-            "id": "[PS] Types of Statistical Studies"
-        },
-        {
-            "id": "[PS] Statistical Modeling"
-        },
-        {
-            "id": "PS] Continuous Probability Distributions"
-        },
-        {
-            "id": "[OS] Operating systems basics, system calls"
-        },
-        {
-            "id": "[OS] Process concept and scheduling, inter-process communication"
-        },
-        {
-            "id": "[OS] Multithreaded programming, multithreading models, threading issues"
-        },
-        {
-            "id": "[OS] Process scheduling algorithms, thread scheduling, multiple-processor scheduling"
-        },
-        {
-            "id": "[OS] Synchronization, critical section, synchronization hardware, synchronization problems, deadlocks, detecting and recovering from deadlocks"
-        },
-        {
-            "id": "[OS] Memory management, swapping, contiguous memory allocation, segmentation & paging"
-        },
-        {
-            "id": "[OS] Virtual memory management, demand paging, thrashing, memory-mapped files"
-        },
-        {
-            "id": "[OS] File systems: file concept, directory and disk structure, directory implementation, free space management"
-        },
-        {
-            "id": "[OS] Disk structure and scheduling, swap space management"
-        },
-        {
-            "id": "[OS] System protection, virtual machines, operating system security"
-        },
-        {
-            "id": "[AoA] Introduction; role of algorithms in computing"
-        },
-        {
-            "id": "[AoA] Analysis on nature of input and size of input"
-        },
-        {
-            "id": "[AoA] Asymptotic notations; Big-O, Big \u03a9, Big \u0398, little-o, little-\u03c9"
-        },
-        {
-            "id": "[AoA] Sorting Algorithm analysis, loop invariants"
-        },
-        {
-            "id": "[AoA] Recursion and recurrence relations"
-        },
-        {
-            "id": "[AoA] Algorithm Design Techniques: Brute Force Approach, Divide-and-conquer approach (Merge, Quick Sort), Greedy approach"
-        },
-        {
-            "id": "[AoA] Dynamic programming: Elements of Dynamic Programming"
-        },
-        {
-            "id": "[AoA] Search trees; Heaps; Hashing"
-        },
-        {
-            "id": "[AoA] Graph algorithms, shortest paths, sparse graphs"
-        },
-        {
-            "id": "[AoA] String matching"
-        },
-        {
-            "id": "[AoA] Introduction to complexity classes"
-        }
-    ],
-    "links": [
-        {
-            "source": "[PF] Introduction to problem solving",
-            "target": "[PF] A brief review of Von-Neumann architecture"
-        },
-        {
-            "source": "[PF] Introduction to problem solving",
-            "target": "[PF] Introduction to programming"
-        },
-        {
-            "source": "[PF] A brief review of Von-Neumann architecture",
-            "target": "[OOP] Introduction to object oriented design"
-        },
-        {
-            "source": "[PF] A brief review of Von-Neumann architecture",
-            "target": "[DSA] Abstract data types, complexity analysis, Big Oh notation"
-        },
-        {
-            "source": "[PF] Introduction to programming",
-            "target": "[PF] Role of compiler and linker"
-        },
-        {
-            "source": "[PF] Introduction to programming",
-            "target": "[PF] Introduction to algorithms"
-        },
-        {
-            "source": "[PF] Introduction to programming",
-            "target": "[PF] Basic data types and variables"
-        },
-        {
-            "source": "[PF] Introduction to programming",
-            "target": "[PF] Introduction to modular programming"
-        },
-        {
-            "source": "[PF] Role of compiler and linker",
-            "target": "[OOP] Introduction to object oriented design"
-        },
-        {
-            "source": "[PF] Role of compiler and linker",
-            "target": "[DSA] Abstract data types, complexity analysis, Big Oh notation"
-        },
-        {
-            "source": "[PF] Introduction to algorithms",
-            "target": "[OOP] Introduction to object oriented design"
-        },
-        {
-            "source": "[PF] Introduction to algorithms",
-            "target": "[DSA] Abstract data types, complexity analysis, Big Oh notation"
-        },
-        {
-            "source": "[PF] Basic data types and variables",
-            "target": "[PF] Input/output constructs"
-        },
-        {
-            "source": "[PF] Basic data types and variables",
-            "target": "[PF] Arithmetic, comparison and logical operators"
-        },
-        {
-            "source": "[PF] Basic data types and variables",
-            "target": "[PF] Conditional statements and execution flow for conditional statements"
-        },
-        {
-            "source": "[PF] Basic data types and variables",
-            "target": "[PF] Repetitive statements and execution flow for repetitive statements"
-        },
-        {
-            "source": "[PF] Basic data types and variables",
-            "target": "[PF] Lists and their memory organization"
-        },
-        {
-            "source": "[PF] Basic data types and variables",
-            "target": "[PF] String and string operations"
-        },
-        {
-            "source": "[PF] Basic data types and variables",
-            "target": "[PF] Pointers/references"
-        },
-        {
-            "source": "[PF] Basic data types and variables",
-            "target": "[PF] Static and dynamic memory allocation"
-        },
-        {
-            "source": "[PF] Basic data types and variables",
-            "target": "[PF] File I/O operations"
-        },
-        {
-            "source": "[PF] Input/output constructs",
-            "target": "[OOP] Introduction to object oriented design"
-        },
-        {
-            "source": "[PF] Input/output constructs",
-            "target": "[DSA] Abstract data types, complexity analysis, Big Oh notation"
-        },
-        {
-            "source": "[PF] Arithmetic, comparison and logical operators",
-            "target": "[OOP] Introduction to object oriented design"
-        },
-        {
-            "source": "[PF] Arithmetic, comparison and logical operators",
-            "target": "[DSA] Abstract data types, complexity analysis, Big Oh notation"
-        },
-        {
-            "source": "[PF] Conditional statements and execution flow for conditional statements",
-            "target": "[OOP] Introduction to object oriented design"
-        },
-        {
-            "source": "[PF] Conditional statements and execution flow for conditional statements",
-            "target": "[DSA] Abstract data types, complexity analysis, Big Oh notation"
-        },
-        {
-            "source": "[PF] Repetitive statements and execution flow for repetitive statements",
-            "target": "[OOP] Introduction to object oriented design"
-        },
-        {
-            "source": "[PF] Repetitive statements and execution flow for repetitive statements",
-            "target": "[DSA] Abstract data types, complexity analysis, Big Oh notation"
-        },
-        {
-            "source": "[PF] Lists and their memory organization",
-            "target": "[PF] Multidimensional lists"
-        },
-        {
-            "source": "[PF] Multidimensional lists",
-            "target": "[OOP] Introduction to object oriented design"
-        },
-        {
-            "source": "[PF] Multidimensional lists",
-            "target": "[DSA] Abstract data types, complexity analysis, Big Oh notation"
-        },
-        {
-            "source": "[PF] Introduction to modular programming",
-            "target": "[PF] Function definition and calling"
-        },
-        {
-            "source": "[PF] Function definition and calling",
-            "target": "[PF] Stack rolling and unrolling"
-        },
-        {
-            "source": "[PF] Stack rolling and unrolling",
-            "target": "[OOP] Introduction to object oriented design"
-        },
-        {
-            "source": "[PF] Stack rolling and unrolling",
-            "target": "[DSA] Abstract data types, complexity analysis, Big Oh notation"
-        },
-        {
-            "source": "[PF] String and string operations",
-            "target": "[OOP] Introduction to object oriented design"
-        },
-        {
-            "source": "[PF] String and string operations",
-            "target": "[DSA] Abstract data types, complexity analysis, Big Oh notation"
-        },
-        {
-            "source": "[PF] Pointers/references",
-            "target": "[OOP] Introduction to object oriented design"
-        },
-        {
-            "source": "[PF] Pointers/references",
-            "target": "[DSA] Abstract data types, complexity analysis, Big Oh notation"
-        },
-        {
-            "source": "[PF] Static and dynamic memory allocation",
-            "target": "[OOP] Introduction to object oriented design"
-        },
-        {
-            "source": "[PF] Static and dynamic memory allocation",
-            "target": "[DSA] Abstract data types, complexity analysis, Big Oh notation"
-        },
-        {
-            "source": "[PF] File I/O operations",
-            "target": "[OOP] Introduction to object oriented design"
-        },
-        {
-            "source": "[PF] File I/O operations",
-            "target": "[DSA] Abstract data types, complexity analysis, Big Oh notation"
-        },
-        {
-            "source": "[DS] Proof by induction",
-            "target": "[PF] Introduction to problem solving"
-        },
-        {
-            "source": "[DS] Proof by induction",
-            "target": "[DBS] Basic database concepts"
-        },
-        {
-            "source": "[DS] Proof by induction",
-            "target": "[DLD] Number Systems"
-        },
-        {
-            "source": "[DS] Proof by induction",
-            "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies"
-        },
-        {
-            "source": "[DS] Proof by contraposition",
-            "target": "[PF] Introduction to problem solving"
-        },
-        {
-            "source": "[DS] Proof by contraposition",
-            "target": "[DBS] Basic database concepts"
-        },
-        {
-            "source": "[DS] Proof by contraposition",
-            "target": "[DLD] Number Systems"
-        },
-        {
-            "source": "[DS] Proof by contraposition",
-            "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies"
-        },
-        {
-            "source": "[DS] Proof by contradiction",
-            "target": "[PF] Introduction to problem solving"
-        },
-        {
-            "source": "[DS] Proof by contradiction",
-            "target": "[DBS] Basic database concepts"
-        },
-        {
-            "source": "[DS] Proof by contradiction",
-            "target": "[DLD] Number Systems"
-        },
-        {
-            "source": "[DS] Proof by contradiction",
-            "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies"
-        },
-        {
-            "source": "[DS] Proof by implication",
-            "target": "[PF] Introduction to problem solving"
-        },
-        {
-            "source": "[DS] Proof by implication",
-            "target": "[DBS] Basic database concepts"
-        },
-        {
-            "source": "[DS] Proof by implication",
-            "target": "[DLD] Number Systems"
-        },
-        {
-            "source": "[DS] Proof by implication",
-            "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies"
-        },
-        {
-            "source": "[DS] Equivalence relations and partitions",
-            "target": "[PF] Introduction to problem solving"
-        },
-        {
-            "source": "[DS] Equivalence relations and partitions",
-            "target": "[DBS] Basic database concepts"
-        },
-        {
-            "source": "[DS] Equivalence relations and partitions",
-            "target": "[DLD] Number Systems"
-        },
-        {
-            "source": "[DS] Equivalence relations and partitions",
-            "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies"
-        },
-        {
-            "source": "[DS] Partial orderings",
-            "target": "[PF] Introduction to problem solving"
-        },
-        {
-            "source": "[DS] Partial orderings",
-            "target": "[DBS] Basic database concepts"
-        },
-        {
-            "source": "[DS] Partial orderings",
-            "target": "[DLD] Number Systems"
-        },
-        {
-            "source": "[DS] Partial orderings",
-            "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies"
-        },
-        {
-            "source": "[DS] Function composition",
-            "target": "[PF] Introduction to problem solving"
-        },
-        {
-            "source": "[DS] Function composition",
-            "target": "[DBS] Basic database concepts"
-        },
-        {
-            "source": "[DS] Function composition",
-            "target": "[DLD] Number Systems"
-        },
-        {
-            "source": "[DS] Function composition",
-            "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies"
-        },
-        {
-            "source": "[DS] Inverse functions",
-            "target": "[PF] Introduction to problem solving"
-        },
-        {
-            "source": "[DS] Inverse functions",
-            "target": "[DBS] Basic database concepts"
-        },
-        {
-            "source": "[DS] Inverse functions",
-            "target": "[DLD] Number Systems"
-        },
-        {
-            "source": "[DS] Inverse functions",
-            "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies"
-        },
-        {
-            "source": "[DS] Recursive functions",
-            "target": "[PF] Introduction to problem solving"
-        },
-        {
-            "source": "[DS] Recursive functions",
-            "target": "[DBS] Basic database concepts"
-        },
-        {
-            "source": "[DS] Recursive functions",
-            "target": "[DLD] Number Systems"
-        },
-        {
-            "source": "[DS] Recursive functions",
-            "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies"
-        },
-        {
-            "source": "[DS] Number Theory",
-            "target": "[PF] Introduction to problem solving"
-        },
-        {
-            "source": "[DS] Number Theory",
-            "target": "[DBS] Basic database concepts"
-        },
-        {
-            "source": "[DS] Number Theory",
-            "target": "[DLD] Number Systems"
-        },
-        {
-            "source": "[DS] Number Theory",
-            "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies"
-        },
-        {
-            "source": "[DS] Sequences and series",
-            "target": "[PF] Introduction to problem solving"
-        },
-        {
-            "source": "[DS] Sequences and series",
-            "target": "[DBS] Basic database concepts"
-        },
-        {
-            "source": "[DS] Sequences and series",
-            "target": "[DLD] Number Systems"
-        },
-        {
-            "source": "[DS] Sequences and series",
-            "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies"
-        },
-        {
-            "source": "[DS] Inclusion and exclusion principle",
-            "target": "[PF] Introduction to problem solving"
-        },
-        {
-            "source": "[DS] Inclusion and exclusion principle",
-            "target": "[DBS] Basic database concepts"
-        },
-        {
-            "source": "[DS] Inclusion and exclusion principle",
-            "target": "[DLD] Number Systems"
-        },
-        {
-            "source": "[DS] Inclusion and exclusion principle",
-            "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies"
-        },
-        {
-            "source": "[DS] Pigeonhole principle",
-            "target": "[PF] Introduction to problem solving"
-        },
-        {
-            "source": "[DS] Pigeonhole principle",
-            "target": "[DBS] Basic database concepts"
-        },
-        {
-            "source": "[DS] Pigeonhole principle",
-            "target": "[DLD] Number Systems"
-        },
-        {
-            "source": "[DS] Pigeonhole principle",
-            "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies"
-        },
-        {
-            "source": "[DS] Permutations and combinations",
-            "target": "[PF] Introduction to problem solving"
-        },
-        {
-            "source": "[DS] Permutations and combinations",
-            "target": "[DBS] Basic database concepts"
-        },
-        {
-            "source": "[DS] Permutations and combinations",
-            "target": "[DLD] Number Systems"
-        },
-        {
-            "source": "[DS] Permutations and combinations",
-            "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies"
-        },
-        {
-            "source": "[DS] Searching and Sorting Algorithms",
-            "target": "[PF] Introduction to problem solving"
-        },
-        {
-            "source": "[DS] Searching and Sorting Algorithms",
-            "target": "[DBS] Basic database concepts"
-        },
-        {
-            "source": "[DS] Searching and Sorting Algorithms",
-            "target": "[DLD] Number Systems"
-        },
-        {
-            "source": "[DS] Searching and Sorting Algorithms",
-            "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies"
-        },
-        {
-            "source": "[DS] Planar graphs",
-            "target": "[PF] Introduction to problem solving"
-        },
-        {
-            "source": "[DS] Planar graphs",
-            "target": "[DBS] Basic database concepts"
-        },
-        {
-            "source": "[DS] Planar graphs",
-            "target": "[DLD] Number Systems"
-        },
-        {
-            "source": "[DS] Planar graphs",
-            "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies"
-        },
-        {
-            "source": "[DS] Graph coloring",
-            "target": "[PF] Introduction to problem solving"
-        },
-        {
-            "source": "[DS] Graph coloring",
-            "target": "[DBS] Basic database concepts"
-        },
-        {
-            "source": "[DS] Graph coloring",
-            "target": "[DLD] Number Systems"
-        },
-        {
-            "source": "[DS] Graph coloring",
-            "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies"
-        },
-        {
-            "source": "[DS] Graph algorithms",
-            "target": "[PF] Introduction to problem solving"
-        },
-        {
-            "source": "[DS] Graph algorithms",
-            "target": "[DBS] Basic database concepts"
-        },
-        {
-            "source": "[DS] Graph algorithms",
-            "target": "[DLD] Number Systems"
-        },
-        {
-            "source": "[DS] Graph algorithms",
-            "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies"
-        },
-        {
-            "source": "[DS] Euler graph",
-            "target": "[PF] Introduction to problem solving"
-        },
-        {
-            "source": "[DS] Euler graph",
-            "target": "[DBS] Basic database concepts"
-        },
-        {
-            "source": "[DS] Euler graph",
-            "target": "[DLD] Number Systems"
-        },
-        {
-            "source": "[DS] Euler graph",
-            "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies"
-        },
-        {
-            "source": "[DS] Hamiltonian path",
-            "target": "[PF] Introduction to problem solving"
-        },
-        {
-            "source": "[DS] Hamiltonian path",
-            "target": "[DBS] Basic database concepts"
-        },
-        {
-            "source": "[DS] Hamiltonian path",
-            "target": "[DLD] Number Systems"
-        },
-        {
-            "source": "[DS] Hamiltonian path",
-            "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies"
-        },
-        {
-            "source": "[DS] Traversals",
-            "target": "[PF] Introduction to problem solving"
-        },
-        {
-            "source": "[DS] Traversals",
-            "target": "[DBS] Basic database concepts"
-        },
-        {
-            "source": "[DS] Traversals",
-            "target": "[DLD] Number Systems"
-        },
-        {
-            "source": "[DS] Traversals",
-            "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies"
-        },
-        {
-            "source": "[DS] Recurrence relations",
-            "target": "[PF] Introduction to problem solving"
-        },
-        {
-            "source": "[DS] Recurrence relations",
-            "target": "[DBS] Basic database concepts"
-        },
-        {
-            "source": "[DS] Recurrence relations",
-            "target": "[DLD] Number Systems"
-        },
-        {
-            "source": "[DS] Recurrence relations",
-            "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies"
-        },
-        {
-            "source": "[DS] Mathematical reasoning",
-            "target": "[DS] Propositional and predicate logic"
-        },
-        {
-            "source": "[DS] Mathematical reasoning",
-            "target": "[DS] Set theory"
-        },
-        {
-            "source": "[DS] Mathematical reasoning",
-            "target": "[DS] Number Theory"
-        },
-        {
-            "source": "[DS] Mathematical reasoning",
-            "target": "[DS] Sequences and series"
-        },
-        {
-            "source": "[DS] Mathematical reasoning",
-            "target": "[DS] Counting"
-        },
-        {
-            "source": "[DS] Mathematical reasoning",
-            "target": "[DS] Algorithms"
-        },
-        {
-            "source": "[DS] Mathematical reasoning",
-            "target": "[DS] Elements of graph theory"
-        },
-        {
-            "source": "[DS] Mathematical reasoning",
-            "target": "[DS] Recurrence relations"
-        },
-        {
-            "source": "[DS] Propositional and predicate logic",
-            "target": "[DS] Rules of inference"
-        },
-        {
-            "source": "[DS] Rules of inference",
-            "target": "[DS] Proof by induction"
-        },
-        {
-            "source": "[DS] Rules of inference",
-            "target": "[DS] Proof by contraposition"
-        },
-        {
-            "source": "[DS] Rules of inference",
-            "target": "[DS] Proof by contradiction"
-        },
-        {
-            "source": "[DS] Rules of inference",
-            "target": "[DS] Proof by implication"
-        },
-        {
-            "source": "[DS] Set theory",
-            "target": "[DS] Relations"
-        },
-        {
-            "source": "[DS] Set theory",
-            "target": "[DS] Functions and mappings"
-        },
-        {
-            "source": "[DS] Relations",
-            "target": "[DS] Equivalence relations and partitions"
-        },
-        {
-            "source": "[DS] Relations",
-            "target": "[DS] Partial orderings"
-        },
-        {
-            "source": "[DS] Functions and mappings",
-            "target": "[DS] Function composition"
-        },
-        {
-            "source": "[DS] Functions and mappings",
-            "target": "[DS] Inverse functions"
-        },
-        {
-            "source": "[DS] Functions and mappings",
-            "target": "[DS] Recursive functions"
-        },
-        {
-            "source": "[DS] Counting",
-            "target": "[DS] Inclusion and exclusion principle"
-        },
-        {
-            "source": "[DS] Counting",
-            "target": "[DS] Pigeonhole principle"
-        },
-        {
-            "source": "[DS] Counting",
-            "target": "[DS] Permutations and combinations"
-        },
-        {
-            "source": "[DS] Algorithms",
-            "target": "[DS] Searching and Sorting Algorithms"
-        },
-        {
-            "source": "[DS] Elements of graph theory",
-            "target": "[DS] Planar graphs"
-        },
-        {
-            "source": "[DS] Elements of graph theory",
-            "target": "[DS] Graph coloring"
-        },
-        {
-            "source": "[DS] Elements of graph theory",
-            "target": "[DS] Graph algorithms"
-        },
-        {
-            "source": "[DS] Elements of graph theory",
-            "target": "[DS] Euler graph"
-        },
-        {
-            "source": "[DS] Elements of graph theory",
-            "target": "[DS] Hamiltonian path"
-        },
-        {
-            "source": "[DS] Elements of graph theory",
-            "target": "[DS] Rooted trees"
-        },
-        {
-            "source": "[DS] Rooted trees",
-            "target": "[DS] Traversals"
-        },
-        {
-            "source": "[Calc] Introduction to functions",
-            "target": "[Calc] Introduction to limits"
-        },
-        {
-            "source": "[Calc] Introduction to limits",
-            "target": "[Calc] Limits and Continuity"
-        },
-        {
-            "source": "[Calc] Limits and Continuity",
-            "target": "[Calc] Techniques of finding limits"
-        },
-        {
-            "source": "[Calc] Limits and Continuity",
-            "target": "[Calc] Continuous and discontinuous functions and their applications"
-        },
-        {
-            "source": "[Calc] Limits and Continuity",
-            "target": "[Calc] Differential calculus"
-        },
-        {
-            "source": "[Calc] Limits and Continuity",
-            "target": "[Calc] Integral calculus"
-        },
-        {
-            "source": "[Calc] Techniques of finding limits",
-            "target": "[Calc] Indeterminate forms of limits"
-        },
-        {
-            "source": "[Calc] Indeterminate forms of limits",
-            "target": "[LA] Systems of equations"
-        },
-        {
-            "source": "[Calc] Continuous and discontinuous functions and their applications",
-            "target": "[LA] Systems of equations"
-        },
-        {
-            "source": "[Calc] Differential calculus",
-            "target": "[Calc] Concept and idea of differentiation"
-        },
-        {
-            "source": "[Calc] Differential calculus",
-            "target": "[Calc] Applications of differentiation"
-        },
-        {
-            "source": "[Calc] Concept and idea of differentiation",
-            "target": "[Calc] Geometrical and Physical meaning of derivatives"
-        },
-        {
-            "source": "[Calc] Concept and idea of differentiation",
-            "target": "[Calc] Rules of differentiation"
-        },
-        {
-            "source": "[Calc] Geometrical and Physical meaning of derivatives",
-            "target": "[LA] Systems of equations"
-        },
-        {
-            "source": "[Calc] Rules of differentiation",
-            "target": "[Calc] Techniques of differentiation"
-        },
-        {
-            "source": "[Calc] Rules of differentiation",
-            "target": "[Calc] Rates of change"
-        },
-        {
-            "source": "[Calc] Rules of differentiation",
-            "target": "[Calc] Tangents and Normals lines"
-        },
-        {
-            "source": "[Calc] Techniques of differentiation",
-            "target": "[Calc] Chain rule"
-        },
-        {
-            "source": "[Calc] Techniques of differentiation",
-            "target": "[Calc] Implicit differentiation"
-        },
-        {
-            "source": "[Calc] Techniques of differentiation",
-            "target": "[Calc] Linear approximation"
-        },
-        {
-            "source": "[Calc] Chain rule",
-            "target": "[LA] Systems of equations"
-        },
-        {
-            "source": "[Calc] Implicit differentiation",
-            "target": "[LA] Systems of equations"
-        },
-        {
-            "source": "[Calc] Rates of change",
-            "target": "[LA] Systems of equations"
-        },
-        {
-            "source": "[Calc] Tangents and Normals lines",
-            "target": "[LA] Systems of equations"
-        },
-        {
-            "source": "[Calc] Linear approximation",
-            "target": "[LA] Systems of equations"
-        },
-        {
-            "source": "[Calc] Applications of differentiation",
-            "target": "[Calc] Extreme value functions"
-        },
-        {
-            "source": "[Calc] Extreme value functions",
-            "target": "[Calc] Mean value theorems"
-        },
-        {
-            "source": "[Calc] Mean value theorems",
-            "target": "[Calc] Maxima and Minima of a function for single-variable"
-        },
-        {
-            "source": "[Calc] Maxima and Minima of a function for single-variable",
-            "target": "[Calc] Concavity"
-        },
-        {
-            "source": "[Calc] Concavity",
-            "target": "[LA] Systems of equations"
-        },
-        {
-            "source": "[Calc] Integral calculus",
-            "target": "[Calc] Concept and idea of Integration"
-        },
-        {
-            "source": "[Calc] Integral calculus",
-            "target": "[Calc] Riemann sums and Definite Integrals"
-        },
-        {
-            "source": "[Calc] Integral calculus",
-            "target": "[Calc] Improper integral"
-        },
-        {
-            "source": "[Calc] Concept and idea of Integration",
-            "target": "[Calc] Indefinite Integrals"
-        },
-        {
-            "source": "[Calc] Indefinite Integrals",
-            "target": "[Calc] Techniques of integration"
-        },
-        {
-            "source": "[Calc] Techniques of integration",
-            "target": "[LA] Systems of equations"
-        },
-        {
-            "source": "[Calc] Riemann sums and Definite Integrals",
-            "target": "[Calc] Applications of definite integrals"
-        },
-        {
-            "source": "[Calc] Applications of definite integrals",
-            "target": "[Calc] Applications of Integration"
-        },
-        {
-            "source": "[Calc] Improper integral",
-            "target": "[LA] Systems of equations"
-        },
-        {
-            "source": "[Calc] Applications of Integration",
-            "target": "[LA] Systems of equations"
-        },
-        {
-            "source": "[OOP] Introduction to object oriented design",
-            "target": "[OOP] History and advantages of object oriented design"
-        },
-        {
-            "source": "[OOP] Introduction to object oriented design",
-            "target": "[OOP] Introduction to object oriented programming concepts"
-        },
-        {
-            "source": "[OOP] Introduction to object oriented programming concepts",
-            "target": "[OOP] Classes"
-        },
-        {
-            "source": "[OOP] Introduction to object oriented programming concepts",
-            "target": "[OOP] Generic programming concepts"
-        },
-        {
-            "source": "[OOP] Introduction to object oriented programming concepts",
-            "target": "[OOP] Exception handling"
-        },
-        {
-            "source": "[OOP] Classes",
-            "target": "[OOP] Objects"
-        },
-        {
-            "source": "[OOP] Classes",
-            "target": "[OOP] Data encapsulation"
-        },
-        {
-            "source": "[OOP] Classes",
-            "target": "[OOP] Access modifiers"
-        },
-        {
-            "source": "[OOP] Classes",
-            "target": "[OOP] Const vs non-const functions"
-        },
-        {
-            "source": "[OOP] Classes",
-            "target": "[OOP] Static data members & functions"
-        },
-        {
-            "source": "[OOP] Classes",
-            "target": "[OOP] Constructors"
-        },
-        {
-            "source": "[OOP] Classes",
-            "target": "[OOP] Destructors"
-        },
-        {
-            "source": "[OOP] Classes",
-            "target": "[OOP] Function overloading"
-        },
-        {
-            "source": "[OOP] Classes",
-            "target": "[OOP] Operator overloading"
-        },
-        {
-            "source": "[OOP] Classes",
-            "target": "[OOP] Identification of classes and their relationships"
-        },
-        {
-            "source": "[OOP] Classes",
-            "target": "[OOP] Object streams"
-        },
-        {
-            "source": "[OOP] Identification of classes and their relationships",
-            "target": "[OOP] Composition"
-        },
-        {
-            "source": "[OOP] Identification of classes and their relationships",
-            "target": "[OOP] Aggregation"
-        },
-        {
-            "source": "[OOP] Identification of classes and their relationships",
-            "target": "[OOP] Inheritance"
-        },
-        {
-            "source": "[OOP] Inheritance",
-            "target": "[OOP] Multiple inheritance"
-        },
-        {
-            "source": "[OOP] Inheritance",
-            "target": "[OOP] Polymorphism"
-        },
-        {
-            "source": "[OOP] Polymorphism",
-            "target": "[OOP] Abstract classes and interfaces"
-        },
-        {
-            "source": "[OOP] Generic programming concepts",
-            "target": "[OOP] Function & class templates"
-        },
-        {
-            "source": "[OOP] Function & class templates",
-            "target": "[OOP] Standard template library"
-        },
-        {
-            "source": "[OOP] Object streams",
-            "target": "[OOP] Data and object serialization using object streams"
-        },
-        {
-            "source": "[DBS] Basic database concepts",
-            "target": "[DBS] Database approach vs. file-based system"
-        },
-        {
-            "source": "[DBS] Basic database concepts",
-            "target": "[DBS] Database architecture, three-level schema architecture, data independence"
-        },
-        {
-            "source": "[DBS] Basic database concepts",
-            "target": "[DBS] Entity relationship model: entity sets, attributes, relationship, entity-relationship diagrams"
-        },
-        {
-            "source": "[DBS] Basic database concepts",
-            "target": "[DBS] NoSQL systems"
-        },
-        {
-            "source": "[DBS] Database architecture, three-level schema architecture, data independence",
-            "target": "[DBS] Relational data model: attributes, schemas, tuples, domains, relation instances, keys of relations, integrity constraints"
-        },
-        {
-            "source": "[DBS] Relational data model: attributes, schemas, tuples, domains, relation instances, keys of relations, integrity constraints",
-            "target": "[DBS] Relational algebra: selection, projection, Cartesian product, types of joins"
-        },
-        {
-            "source": "[DBS] Relational data model: attributes, schemas, tuples, domains, relation instances, keys of relations, integrity constraints",
-            "target": "[DBS] Normalization, functional dependencies, normal forms"
-        },
-        {
-            "source": "[DBS] Relational algebra: selection, projection, Cartesian product, types of joins",
-            "target": "[DBS] Structured Query Language (SQL): Joins and sub-queries in SQL, Grouping and aggregation in SQL"
-        },
-        {
-            "source": "[DBS] Normalization, functional dependencies, normal forms",
-            "target": "[DBS] Structured Query Language (SQL): Joins and sub-queries in SQL, Grouping and aggregation in SQL"
-        },
-        {
-            "source": "[DBS] Structured Query Language (SQL): Joins and sub-queries in SQL, Grouping and aggregation in SQL",
-            "target": "[DBS] Concurrency control, database backup and recovery"
-        },
-        {
-            "source": "[DBS] Structured Query Language (SQL): Joins and sub-queries in SQL, Grouping and aggregation in SQL",
-            "target": "[DBS] Indexes"
-        },
-        {
-            "source": "[DLD] Number Systems",
-            "target": "[DLD] Logic Gates, Boolean Algebra"
-        },
-        {
-            "source": "[DLD] Number Systems",
-            "target": "[DLD] Binary Arithmetic and Arithmetic Circuits"
-        },
-        {
-            "source": "[DLD] Logic Gates, Boolean Algebra",
-            "target": "[DLD] Simplification Methods (K-Map, Quine-McCluskey method)"
-        },
-        {
-            "source": "[DLD] Simplification Methods (K-Map, Quine-McCluskey method)",
-            "target": "[DLD] Combination logic circuits and designs"
-        },
-        {
-            "source": "[DLD] Combination logic circuits and designs",
-            "target": "[DLD] Flip Flops and Latches"
-        },
-        {
-            "source": "[DLD] Flip Flops and Latches",
-            "target": "[DLD] Asynchronous and Synchronous circuits"
-        },
-        {
-            "source": "[DLD] Asynchronous and Synchronous circuits",
-            "target": "[DLD] Counters, Shift Registers, Triggered devices & its types"
-        },
-        {
-            "source": "[DLD] Counters, Shift Registers, Triggered devices & its types",
-            "target": "[DLD] Mealy machines and Moore machines"
-        },
-        {
-            "source": "[DLD] Mealy machines and Moore machines",
-            "target": "[DLD] Memory Elements, State Machines"
-        },
-        {
-            "source": "[DLD] Memory Elements, State Machines",
-            "target": "[DLD] Introduction Programmable Logic Devices (CPLD, FPGA)"
-        },
-        {
-            "source": "[DLD] Introduction Programmable Logic Devices (CPLD, FPGA)",
-            "target": "[DLD] Lab Assignments using tools such as Verilog HDL/VHDL, MultiSim"
-        },
-        {
-            "source": "[LA] Systems of equations",
-            "target": "[LA] Algebra of linear transformations and matrices"
-        },
-        {
-            "source": "[LA] Algebra of linear transformations and matrices",
-            "target": "[LA] Determinants"
-        },
-        {
-            "source": "[LA] Algebra of linear transformations and matrices",
-            "target": "[LA] Rank"
-        },
-        {
-            "source": "[LA] Algebra of linear transformations and matrices",
-            "target": "[LA] Vector spaces"
-        },
-        {
-            "source": "[LA] Algebra of linear transformations and matrices",
-            "target": "[LA] Eigenvalues and eigenvectors"
-        },
-        {
-            "source": "[LA] Vector spaces",
-            "target": "[LA] Linear dependence"
-        },
-        {
-            "source": "[LA] Linear dependence",
-            "target": "[LA] Linear Independence and bases"
-        },
-        {
-            "source": "[LA] Linear Independence and bases",
-            "target": "[LA] Inner product space and quadratic forms"
-        },
-        {
-            "source": "[LA] Inner product space and quadratic forms",
-            "target": "[LA] Orthogonal transformations"
-        },
-        {
-            "source": "[LA] Eigenvalues and eigenvectors",
-            "target": "[LA] Characteristic equations"
-        },
-        {
-            "source": "[DSA] Abstract data types, complexity analysis, Big Oh notation",
-            "target": "[DSA] Stacks (linked lists and array implementations), Recursion and analyzing recursive algorithms, divide and conquer algorithms"
-        },
-        {
-            "source": "[DSA] Abstract data types, complexity analysis, Big Oh notation",
-            "target": "[DSA] Queue, dequeuer, priority queues (linked and array implementations of queues)"
-        },
-        {
-            "source": "[DSA] Abstract data types, complexity analysis, Big Oh notation",
-            "target": "[DSA] Linked list & its various types, sorted linked list"
-        },
-        {
-            "source": "[DSA] Abstract data types, complexity analysis, Big Oh notation",
-            "target": "[DSA] Searching an unsorted array, binary search for sorted arrays"
-        },
-        {
-            "source": "[DSA] Abstract data types, complexity analysis, Big Oh notation",
-            "target": "[DSA] Hashing and indexing, open addressing and chaining"
-        },
-        {
-            "source": "[DSA] Abstract data types, complexity analysis, Big Oh notation",
-            "target": "[DSA] Trees and tree traversals, binary search trees, heaps, M-way tress, balanced trees"
-        },
-        {
-            "source": "[DSA] Abstract data types, complexity analysis, Big Oh notation",
-            "target": "[DSA] Graphs, breadth-first and depth-first traversal, topological order, shortest path, adjacency matrix and adjacency list implementations"
-        },
-        {
-            "source": "[DSA] Abstract data types, complexity analysis, Big Oh notation",
-            "target": "[DSA] Memory management and garbage collection"
-        },
-        {
-            "source": "[DSA] Stacks (linked lists and array implementations), Recursion and analyzing recursive algorithms, divide and conquer algorithms",
-            "target": "[DSA] Sorting algorithms (selection, insertion, merge, quick, bubble, heap, shell, radix, bucket)"
-        },
-        {
-            "source": "[DSA] Sorting algorithms (selection, insertion, merge, quick, bubble, heap, shell, radix, bucket)",
-            "target": "[OS] Operating systems basics, system calls"
-        },
-        {
-            "source": "[DSA] Sorting algorithms (selection, insertion, merge, quick, bubble, heap, shell, radix, bucket)",
-            "target": "[AoA] Introduction; role of algorithms in computing"
-        },
-        {
-            "source": "[DSA] Queue, dequeuer, priority queues (linked and array implementations of queues)",
-            "target": "[OS] Operating systems basics, system calls"
-        },
-        {
-            "source": "[DSA] Queue, dequeuer, priority queues (linked and array implementations of queues)",
-            "target": "[AoA] Introduction; role of algorithms in computing"
-        },
-        {
-            "source": "[DSA] Linked list & its various types, sorted linked list",
-            "target": "[OS] Operating systems basics, system calls"
-        },
-        {
-            "source": "[DSA] Linked list & its various types, sorted linked list",
-            "target": "[AoA] Introduction; role of algorithms in computing"
-        },
-        {
-            "source": "[DSA] Searching an unsorted array, binary search for sorted arrays",
-            "target": "[OS] Operating systems basics, system calls"
-        },
-        {
-            "source": "[DSA] Searching an unsorted array, binary search for sorted arrays",
-            "target": "[AoA] Introduction; role of algorithms in computing"
-        },
-        {
-            "source": "[DSA] Hashing and indexing, open addressing and chaining",
-            "target": "[OS] Operating systems basics, system calls"
-        },
-        {
-            "source": "[DSA] Hashing and indexing, open addressing and chaining",
-            "target": "[AoA] Introduction; role of algorithms in computing"
-        },
-        {
-            "source": "[DSA] Trees and tree traversals, binary search trees, heaps, M-way tress, balanced trees",
-            "target": "[OS] Operating systems basics, system calls"
-        },
-        {
-            "source": "[DSA] Trees and tree traversals, binary search trees, heaps, M-way tress, balanced trees",
-            "target": "[AoA] Introduction; role of algorithms in computing"
-        },
-        {
-            "source": "[DSA] Graphs, breadth-first and depth-first traversal, topological order, shortest path, adjacency matrix and adjacency list implementations",
-            "target": "[OS] Operating systems basics, system calls"
-        },
-        {
-            "source": "[DSA] Graphs, breadth-first and depth-first traversal, topological order, shortest path, adjacency matrix and adjacency list implementations",
-            "target": "[AoA] Introduction; role of algorithms in computing"
-        },
-        {
-            "source": "[DSA] Memory management and garbage collection",
-            "target": "[OS] Operating systems basics, system calls"
-        },
-        {
-            "source": "[DSA] Memory management and garbage collection",
-            "target": "[AoA] Introduction; role of algorithms in computing"
-        },
-        {
-            "source": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies",
-            "target": "[CN] Layered architecture, physical layer functionality, data link layer functionality"
-        },
-        {
-            "source": "[CN] Layered architecture, physical layer functionality, data link layer functionality",
-            "target": "[CN] Multiple access techniques, circuit switching and packet switching"
-        },
-        {
-            "source": "[CN] Multiple access techniques, circuit switching and packet switching",
-            "target": "[CN] LAN technologies, wireless networks, MAC addressing, networking devices (both cn layered and cn access techniques)"
-        },
-        {
-            "source": "[CN] LAN technologies, wireless networks, MAC addressing, networking devices (both cn layered and cn access techniques)",
-            "target": "[CN] Network layer protocols: IPv4 and IPv6, IP addressing, sub netting, CIDR, routing protocols"
-        },
-        {
-            "source": "[CN] Network layer protocols: IPv4 and IPv6, IP addressing, sub netting, CIDR, routing protocols",
-            "target": "[CN] Transport layer protocols: ports and sockets, connection establishment, flow and congestion control"
-        },
-        {
-            "source": "[CN] Transport layer protocols: ports and sockets, connection establishment, flow and congestion control",
-            "target": "[CN] Application layer protocols"
-        },
-        {
-            "source": "[CN] Application layer protocols",
-            "target": "[CN] Latest trends in computer networks"
-        },
-        {
-            "source": "[PS] Introduction to Statistics and Data Analysis",
-            "target": "[PS] Statistical Inference, Samples, Populations, and the Role of Probability"
-        },
-        {
-            "source": "[PS] Introduction to Statistics and Data Analysis",
-            "target": "[PS] Discrete and Continuous Data"
-        },
-        {
-            "source": "[PS] Statistical Inference, Samples, Populations, and the Role of Probability",
-            "target": "[PS] Sampling Procedures"
-        },
-        {
-            "source": "[PS] Statistical Inference, Samples, Populations, and the Role of Probability",
-            "target": "[PS] Probability: Sample Space, Events, Counting Sample Points, Probability of an Event, Additive Rules, Conditional Probability, Independence, and the Product Rule, Bayes\u2019 Rule"
-        },
-        {
-            "source": "[PS] Statistical Inference, Samples, Populations, and the Role of Probability",
-            "target": "[PS] Types of Statistical Studies"
-        },
-        {
-            "source": "[PS] Statistical Inference, Samples, Populations, and the Role of Probability",
-            "target": "[PS] Statistical Modeling"
-        },
-        {
-            "source": "[PS] Sampling Procedures",
-            "target": "[PS] Fundamental Sampling Distributions and Data Descriptions: Random Sampling, Sampling Distributions, Sampling Distribution of Means and the Central Limit Theorem, Sampling Distribution of S\u00b2, t-Distribution, F-Quantile and Probability Plots"
-        },
-        {
-            "source": "[PS] Discrete and Continuous Data",
-            "target": "[PS] Discrete Probability Distributions"
-        },
-        {
-            "source": "[PS] Discrete and Continuous Data",
-            "target": "PS] Continuous Probability Distributions"
-        },
-        {
-            "source": "[PS] Probability: Sample Space, Events, Counting Sample Points, Probability of an Event, Additive Rules, Conditional Probability, Independence, and the Product Rule, Bayes\u2019 Rule",
-            "target": "[PS] Random Variables and Probability Distributions"
-        },
-        {
-            "source": "[PS] Random Variables and Probability Distributions",
-            "target": "[PS] Mathematical Expectation: Mean of a Random Variable, Variance and Covariance of Random Variables, Means and Variances of Linear Combinations of Random Variables, Chebyshev\u2019s Theorem"
-        },
-        {
-            "source": "[PS] Random Variables and Probability Distributions",
-            "target": "[PS] Discrete Probability Distributions"
-        },
-        {
-            "source": "[PS] Random Variables and Probability Distributions",
-            "target": "[PS] Continuous Probability Distributions"
-        },
-        {
-            "source": "[PS] Fundamental Sampling Distributions and Data Descriptions: Random Sampling, Sampling Distributions, Sampling Distribution of Means and the Central Limit Theorem, Sampling Distribution of S\u00b2, t-Distribution, F-Quantile and Probability Plots",
-            "target": "[PS] Single Sample & One- and Two-Sample Estimation Problems"
-        },
-        {
-            "source": "[PS] Single Sample & One- and Two-Sample Estimation Problems",
-            "target": "[PS] Single Sample & One- and Two-Sample Tests of Hypotheses"
-        },
-        {
-            "source": "[PS] Single Sample & One- and Two-Sample Tests of Hypotheses",
-            "target": "[PS] The Use of P-Values for Decision Making in Testing Hypotheses (Single Sample & One- and Two-Sample Tests)"
-        },
-        {
-            "source": "[PS] Single Sample & One- and Two-Sample Tests of Hypotheses",
-            "target": "[PS] Linear Regression and Correlation"
-        },
-        {
-            "source": "[PS] Linear Regression and Correlation",
-            "target": "[PS] Least Squares and the Fitted Model"
-        },
-        {
-            "source": "[PS] Least Squares and the Fitted Model",
-            "target": "[PS] Multiple Linear Regression and Certain Nonlinear Regression Models"
-        },
-        {
-            "source": "[PS] Multiple Linear Regression and Certain Nonlinear Regression Models",
-            "target": "[PS] Linear Regression Model Using Matrices"
-        },
-        {
-            "source": "[PS] Linear Regression Model Using Matrices",
-            "target": "[PS] Properties of the Least Squares Estimators"
-        },
-        {
-            "source": "[OS] Operating systems basics, system calls",
-            "target": "[OS] Process concept and scheduling, inter-process communication"
-        },
-        {
-            "source": "[OS] Process concept and scheduling, inter-process communication",
-            "target": "[OS] Multithreaded programming, multithreading models, threading issues"
-        },
-        {
-            "source": "[OS] Multithreaded programming, multithreading models, threading issues",
-            "target": "[OS] Process scheduling algorithms, thread scheduling, multiple-processor scheduling"
-        },
-        {
-            "source": "[OS] Process scheduling algorithms, thread scheduling, multiple-processor scheduling",
-            "target": "[OS] Synchronization, critical section, synchronization hardware, synchronization problems, deadlocks, detecting and recovering from deadlocks"
-        },
-        {
-            "source": "[OS] Synchronization, critical section, synchronization hardware, synchronization problems, deadlocks, detecting and recovering from deadlocks",
-            "target": "[OS] Memory management, swapping, contiguous memory allocation, segmentation & paging"
-        },
-        {
-            "source": "[OS] Memory management, swapping, contiguous memory allocation, segmentation & paging",
-            "target": "[OS] Virtual memory management, demand paging, thrashing, memory-mapped files"
-        },
-        {
-            "source": "[OS] Virtual memory management, demand paging, thrashing, memory-mapped files",
-            "target": "[OS] File systems: file concept, directory and disk structure, directory implementation, free space management"
-        },
-        {
-            "source": "[OS] File systems: file concept, directory and disk structure, directory implementation, free space management",
-            "target": "[OS] Disk structure and scheduling, swap space management"
-        },
-        {
-            "source": "[OS] Disk structure and scheduling, swap space management",
-            "target": "[OS] System protection, virtual machines, operating system security"
-        },
-        {
-            "source": "[AoA] Introduction; role of algorithms in computing",
-            "target": "[AoA] Analysis on nature of input and size of input"
-        },
-        {
-            "source": "[AoA] Analysis on nature of input and size of input",
-            "target": "[AoA] Asymptotic notations; Big-O, Big \u03a9, Big \u0398, little-o, little-\u03c9"
-        },
-        {
-            "source": "[AoA] Asymptotic notations; Big-O, Big \u03a9, Big \u0398, little-o, little-\u03c9",
-            "target": "[AoA] Sorting Algorithm analysis, loop invariants"
-        },
-        {
-            "source": "[AoA] Asymptotic notations; Big-O, Big \u03a9, Big \u0398, little-o, little-\u03c9",
-            "target": "[AoA] Recursion and recurrence relations"
-        },
-        {
-            "source": "[AoA] Recursion and recurrence relations",
-            "target": "[AoA] Algorithm Design Techniques: Brute Force Approach, Divide-and-conquer approach (Merge, Quick Sort), Greedy approach"
-        },
-        {
-            "source": "[AoA] Algorithm Design Techniques: Brute Force Approach, Divide-and-conquer approach (Merge, Quick Sort), Greedy approach",
-            "target": "[AoA] Dynamic programming: Elements of Dynamic Programming"
-        },
-        {
-            "source": "[AoA] Algorithm Design Techniques: Brute Force Approach, Divide-and-conquer approach (Merge, Quick Sort), Greedy approach",
-            "target": "[AoA] Search trees; Heaps; Hashing"
-        },
-        {
-            "source": "[AoA] Algorithm Design Techniques: Brute Force Approach, Divide-and-conquer approach (Merge, Quick Sort), Greedy approach",
-            "target": "[AoA] Graph algorithms, shortest paths, sparse graphs"
-        },
-        {
-            "source": "[AoA] Algorithm Design Techniques: Brute Force Approach, Divide-and-conquer approach (Merge, Quick Sort), Greedy approach",
-            "target": "[AoA] Introduction to complexity classes"
-        },
-        {
-            "source": "[AoA] Dynamic programming: Elements of Dynamic Programming",
-            "target": "[AoA] Graph algorithms, shortest paths, sparse graphs"
-        },
-        {
-            "source": "[AoA] Graph algorithms, shortest paths, sparse graphs",
-            "target": "[AoA] String matching"
-        }
-    ]
+  "nodes": [
+    { "id": "[PF] Introduction to problem solving" },
+    { "id": "[PF] A brief review of Von-Neumann architecture" },
+    { "id": "[PF] Introduction to programming" },
+    { "id": "[PF] Role of compiler and linker" },
+    { "id": "[PF] Introduction to algorithms" },
+    { "id": "[PF] Basic data types and variables" },
+    { "id": "[PF] Input/output constructs" },
+    { "id": "[PF] Arithmetic, comparison and logical operators" },
+    { "id": "[PF] Conditional statements and execution flow for conditional statements" },
+    { "id": "[PF] Repetitive statements and execution flow for repetitive statements" },
+    { "id": "[PF] Lists and their memory organization" },
+    { "id": "[PF] Multidimensional lists" },
+    { "id": "[PF] Introduction to modular programming" },
+    { "id": "[PF] Function definition and calling" },
+    { "id": "[PF] Stack rolling and unrolling" },
+    { "id": "[PF] String and string operations" },
+    { "id": "[PF] Pointers/references" },
+    { "id": "[PF] Static and dynamic memory allocation" },
+    { "id": "[PF] File I/O operations" },
+    { "id": "[DS] Mathematical reasoning" },
+    { "id": "[DS] Propositional and predicate logic" },
+    { "id": "[DS] Rules of inference" },
+    { "id": "[DS] Proof by induction" },
+    { "id": "[DS] Proof by contraposition" },
+    { "id": "[DS] Proof by contradiction" },
+    { "id": "[DS] Proof by implication" },
+    { "id": "[DS] Set theory" },
+    { "id": "[DS] Relations" },
+    { "id": "[DS] Equivalence relations and partitions" },
+    { "id": "[DS] Partial orderings" },
+    { "id": "[DS] Functions and mappings" },
+    { "id": "[DS] Function composition" },
+    { "id": "[DS] Inverse functions" },
+    { "id": "[DS] Recursive functions" },
+    { "id": "[DS] Number Theory" },
+    { "id": "[DS] Sequences and series" },
+    { "id": "[DS] Counting" },
+    { "id": "[DS] Inclusion and exclusion principle" },
+    { "id": "[DS] Pigeonhole principle" },
+    { "id": "[DS] Permutations and combinations" },
+    { "id": "[DS] Algorithms" },
+    { "id": "[DS] Searching and Sorting Algorithms" },
+    { "id": "[DS] Elements of graph theory" },
+    { "id": "[DS] Planar graphs" },
+    { "id": "[DS] Graph coloring" },
+    { "id": "[DS] Graph algorithms" },
+    { "id": "[DS] Euler graph" },
+    { "id": "[DS] Hamiltonian path" },
+    { "id": "[DS] Rooted trees" },
+    { "id": "[DS] Traversals" },
+    { "id": "[DS] Recurrence relations" },
+    { "id": "[OOP] Introduction to object oriented design" },
+    { "id": "[OOP] History and advantages of object oriented design" },
+    { "id": "[OOP] Introduction to object oriented programming concepts" },
+    { "id": "[OOP] Classes" },
+    { "id": "[OOP] Objects" },
+    { "id": "[OOP] Data encapsulation" },
+    { "id": "[OOP] Constructors" },
+    { "id": "[OOP] Destructors" },
+    { "id": "[OOP] Access modifiers" },
+    { "id": "[OOP] Const vs non-const functions" },
+    { "id": "[OOP] Static data members & functions" },
+    { "id": "[OOP] Function overloading" },
+    { "id": "[OOP] Operator overloading" },
+    { "id": "[OOP] Identification of classes and their relationships" },
+    { "id": "[OOP] Composition" },
+    { "id": "[OOP] Aggregation" },
+    { "id": "[OOP] Inheritance" },
+    { "id": "[OOP] Multiple inheritance" },
+    { "id": "[OOP] Polymorphism" },
+    { "id": "[OOP] Abstract classes and interfaces" },
+    { "id": "[OOP] Generic programming concepts" },
+    { "id": "[OOP] Function & class templates" },
+    { "id": "[OOP] Standard template library" },
+    { "id": "[OOP] Object streams" },
+    { "id": "[OOP] Data and object serialization using object streams" },
+    { "id": "[OOP] Exception handling" },
+    { "id": "[DBS] Basic database concepts" },
+    { "id": "[DBS] Database approach vs. file-based system" },
+    { "id": "[DBS] Database architecture, three-level schema architecture, data independence" },
+    { "id": "[DBS] Relational data model: attributes, schemas, tuples, domains, relation instances, keys of relations, integrity constraints" },
+    { "id": "[DBS] Relational algebra: selection, projection, Cartesian product, types of joins" },
+    { "id": "[DBS] Structured Query Language (SQL): Joins and sub-queries in SQL, Grouping and aggregation in SQL" },
+    { "id": "[DBS] Concurrency control, database backup and recovery" },
+    { "id": "[DBS] Indexes" },
+    { "id": "[DBS] Normalization, functional dependencies, normal forms" },
+    { "id": "[DBS] Entity relationship model: entity sets, attributes, relationship, entity-relationship diagrams" },
+    { "id": "[DBS] NoSQL systems" },
+    { "id": "[DLD] Number Systems" },
+    { "id": "[DLD] Logic Gates, Boolean Algebra" },
+    { "id": "[DLD] Simplification Methods (K-Map, Quine-McCluskey method)" },
+    { "id": "[DLD] Combination logic circuits and designs" },
+    { "id": "[DLD] Binary Arithmetic and Arithmetic Circuits" },
+    { "id": "[DLD] Flip Flops and Latches" },
+    { "id": "[DLD] Asynchronous and Synchronous circuits" },
+    { "id": "[DLD] Counters, Shift Registers, Triggered devices & its types" },
+    { "id": "[DLD] Mealy machines and Moore machines" },
+    { "id": "[DLD] Memory Elements, State Machines" },
+    { "id": "[DLD] Introduction Programmable Logic Devices (CPLD, FPGA)" },
+    { "id": "[DLD] Lab Assignments using tools such as Verilog HDL/VHDL, MultiSim" },
+    { "id": "[DSA] Abstract data types, complexity analysis, Big Oh notation" },
+    { "id": "[DSA] Stacks (linked lists and array implementations), Recursion and analyzing recursive algorithms, divide and conquer algorithms" },
+    { "id": "[DSA] Sorting algorithms (selection, insertion, merge, quick, bubble, heap, shell, radix, bucket)" },
+    { "id": "[DSA] Queue, dequeuer, priority queues (linked and array implementations of queues)" },
+    { "id": "[DSA] Linked list & its various types, sorted linked list" },
+    { "id": "[DSA] Searching an unsorted array, binary search for sorted arrays" },
+    { "id": "[DSA] Hashing and indexing, open addressing and chaining" },
+    { "id": "[DSA] Trees and tree traversals, binary search trees, heaps, M-way tress, balanced trees" },
+    { "id": "[DSA] Graphs, breadth-first and depth-first traversal, topological order, shortest path, adjacency matrix and adjacency list implementations" },
+    { "id": "[DSA] Memory management and garbage collection" },
+    { "id": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies" },
+    { "id": "[CN] Layered architecture, physical layer functionality, data link layer functionality" },
+    { "id": "[CN] Multiple access techniques, circuit switching and packet switching" },
+    { "id": "[CN] LAN technologies, wireless networks, MAC addressing, networking devices (both cn layered and cn access techniques)" },
+    { "id": "[CN] Network layer protocols: IPv4 and IPv6, IP addressing, sub netting, CIDR, routing protocols" },
+    { "id": "[CN] Transport layer protocols: ports and sockets, connection establishment, flow and congestion control" },
+    { "id": "[CN] Application layer protocols" },
+    { "id": "[CN] Latest trends in computer networks" },
+    { "id": "[OS] Operating systems basics, system calls" },
+    { "id": "[OS] Process concept and scheduling, inter-process communication" },
+    { "id": "[OS] Multithreaded programming, multithreading models, threading issues" },
+    { "id": "[OS] Process scheduling algorithms, thread scheduling, multiple-processor scheduling" },
+    { "id": "[OS] Synchronization, critical section, synchronization hardware, synchronization problems, deadlocks, detecting and recovering from deadlocks" },
+    { "id": "[OS] Memory management, swapping, contiguous memory allocation, segmentation & paging" },
+    { "id": "[OS] Virtual memory management, demand paging, thrashing, memory-mapped files" },
+    { "id": "[OS] File systems: file concept, directory and disk structure, directory implementation, free space management" },
+    { "id": "[OS] Disk structure and scheduling, swap space management" },
+    { "id": "[OS] System protection, virtual machines, operating system security" },
+    { "id": "[AoA] Introduction; role of algorithms in computing" },
+    { "id": "[AoA] Analysis on nature of input and size of input" },
+    { "id": "[AoA] Asymptotic notations; Big-O, Big Ω, Big Θ, little-o, little-ω" },
+    { "id": "[AoA] Sorting Algorithm analysis, loop invariants" },
+    { "id": "[AoA] Recursion and recurrence relations" },
+    { "id": "[AoA] Algorithm Design Techniques: Brute Force Approach, Divide-and-conquer approach (Merge, Quick Sort), Greedy approach" },
+    { "id": "[AoA] Dynamic programming: Elements of Dynamic Programming" },
+    { "id": "[AoA] Search trees; Heaps; Hashing" },
+    { "id": "[AoA] Graph algorithms, shortest paths, sparse graphs" },
+    { "id": "[AoA] String matching" },
+    { "id": "[AoA] Introduction to complexity classes" }
+
+  ],
+  "links": [
+    { 
+      "source": "[PF] Introduction to problem solving", 
+      "target": "[PF] A brief review of Von-Neumann architecture" },
+    { 
+      "source": "[PF] Introduction to problem solving", 
+      "target": "[PF] Introduction to programming" },
+    { 
+      "source": "[PF] Introduction to programming", 
+      "target": "[PF] Role of compiler and linker" },
+    { 
+      "source": "[PF] Introduction to programming", 
+      "target": "[PF] Introduction to algorithms" },
+    { 
+      "source": "[PF] Introduction to programming", 
+      "target": "[PF] Basic data types and variables" },
+    { 
+      "source": "[PF] Basic data types and variables", 
+      "target": "[PF] Input/output constructs" },
+    { 
+      "source": "[PF] Basic data types and variables", 
+      "target": "[PF] Arithmetic, comparison and logical operators" },
+    { 
+      "source": "[PF] Basic data types and variables", 
+      "target": "[PF] Conditional statements and execution flow for conditional statements" },
+    { 
+      "source": "[PF] Basic data types and variables", 
+      "target": "[PF] Repetitive statements and execution flow for repetitive statements" },
+    { 
+      "source": "[PF] Basic data types and variables", 
+      "target": "[PF] Lists and their memory organization" },
+    { 
+      "source": "[PF] Lists and their memory organization", 
+      "target": "[PF] Multidimensional lists" },
+    { 
+      "source": "[PF] Introduction to programming", 
+      "target": "[PF] Introduction to modular programming" },
+    { 
+      "source": "[PF] Introduction to modular programming", 
+      "target": "[PF] Function definition and calling" },
+    { 
+      "source": "[PF] Function definition and calling", 
+      "target": "[PF] Stack rolling and unrolling" },
+    { 
+      "source": "[PF] Basic data types and variables", 
+      "target": "[PF] String and string operations" },
+    { 
+      "source": "[PF] Basic data types and variables", 
+      "target": "[PF] Pointers/references" },
+    { 
+      "source": "[PF] Basic data types and variables", 
+      "target": "[PF] Static and dynamic memory allocation" },
+    { 
+      "source": "[PF] Basic data types and variables", 
+      "target": "[PF] File I/O operations" },
+    { 
+      "source": "[DS] Mathematical reasoning", 
+      "target": "[DS] Propositional and predicate logic" },
+    { 
+      "source": "[DS] Propositional and predicate logic", 
+      "target": "[DS] Rules of inference" },
+    { 
+      "source": "[DS] Rules of inference", 
+      "target": "[DS] Proof by induction" },
+    { 
+      "source": "[DS] Rules of inference", 
+      "target": "[DS] Proof by contraposition" },
+    { 
+      "source": "[DS] Rules of inference", 
+      "target": "[DS] Proof by contradiction" },
+    { 
+      "source": "[DS] Rules of inference", 
+      "target": "[DS] Proof by implication" },
+    { 
+      "source": "[DS] Mathematical reasoning", 
+      "target": "[DS] Set theory" },
+    { 
+      "source": "[DS] Set theory", 
+      "target": "[DS] Relations" },
+    { 
+      "source": "[DS] Relations", 
+      "target": "[DS] Equivalence relations and partitions" },
+    { 
+      "source": "[DS] Relations", 
+      "target": "[DS] Partial orderings" },
+    { 
+      "source": "[DS] Set theory", 
+      "target": "[DS] Functions and mappings" },
+    { 
+      "source": "[DS] Functions and mappings", 
+      "target": "[DS] Function composition" },
+    { 
+      "source": "[DS] Functions and mappings", 
+      "target": "[DS] Inverse functions" },
+    { 
+      "source": "[DS] Functions and mappings", 
+      "target": "[DS] Recursive functions" },
+    { 
+      "source": "[DS] Mathematical reasoning", 
+      "target": "[DS] Number Theory" },
+    { 
+      "source": "[DS] Mathematical reasoning", 
+      "target": "[DS] Sequences and series" },
+    { 
+      "source": "[DS] Mathematical reasoning", 
+      "target": "[DS] Counting" },
+    { 
+      "source": "[DS] Counting", 
+      "target": "[DS] Inclusion and exclusion principle" },
+    { 
+      "source": "[DS] Counting", 
+      "target": "[DS] Pigeonhole principle" },
+    { 
+      "source": "[DS] Counting", 
+      "target": "[DS] Permutations and combinations" },
+    { 
+      "source": "[DS] Mathematical reasoning", 
+      "target": "[DS] Algorithms" },
+    { 
+      "source": "[DS] Algorithms", 
+      "target": "[DS] Searching and Sorting Algorithms" },
+    { 
+      "source": "[DS] Mathematical reasoning", 
+      "target": "[DS] Elements of graph theory" },
+    { 
+      "source": "[DS] Elements of graph theory", 
+      "target": "[DS] Planar graphs" },
+    { 
+      "source": "[DS] Elements of graph theory", 
+      "target": "[DS] Graph coloring" },
+    { 
+      "source": "[DS] Elements of graph theory", 
+      "target": "[DS] Graph algorithms" },
+    { 
+      "source": "[DS] Elements of graph theory", 
+      "target": "[DS] Euler graph" },
+    { 
+      "source": "[DS] Elements of graph theory", 
+      "target": "[DS] Hamiltonian path" },
+    { 
+      "source": "[DS] Elements of graph theory", 
+      "target": "[DS] Rooted trees" },
+    { 
+      "source": "[DS] Rooted trees", 
+      "target": "[DS] Traversals" },
+    { 
+      "source": "[DS] Mathematical reasoning", 
+      "target": "[DS] Recurrence relations" },
+    { 
+      "source": "[OOP] Introduction to object oriented design", 
+      "target": "[OOP] History and advantages of object oriented design" },
+    { 
+      "source": "[OOP] Introduction to object oriented design", 
+      "target": "[OOP] Introduction to object oriented programming concepts" },
+    { 
+      "source": "[OOP] Introduction to object oriented programming concepts", 
+      "target": "[OOP] Classes" },
+    { 
+      "source": "[OOP] Classes", 
+      "target": "[OOP] Objects" },
+    { 
+      "source": "[OOP] Classes", 
+      "target": "[OOP] Data encapsulation" },
+    { 
+      "source": "[OOP] Classes", 
+      "target": "[OOP] Access modifiers" },
+    { 
+      "source": "[OOP] Classes", 
+      "target": "[OOP] Const vs non-const functions" },
+    { 
+      "source": "[OOP] Classes", 
+      "target": "[OOP] Static data members & functions" },
+    { 
+      "source": "[OOP] Classes", 
+      "target": "[OOP] Constructors" },
+    { 
+      "source": "[OOP] Classes", 
+      "target": "[OOP] Destructors" },
+    { 
+      "source": "[OOP] Classes", 
+      "target": "[OOP] Function overloading" },
+    { 
+      "source": "[OOP] Classes", 
+      "target": "[OOP] Operator overloading" },
+    { 
+      "source": "[OOP] Classes", 
+      "target": "[OOP] Identification of classes and their relationships" },
+    { 
+      "source": "[OOP] Identification of classes and their relationships", 
+      "target": "[OOP] Composition" },
+    { 
+      "source": "[OOP] Identification of classes and their relationships", 
+      "target": "[OOP] Aggregation" },
+    { 
+      "source": "[OOP] Identification of classes and their relationships", 
+      "target": "[OOP] Inheritance" },
+    { 
+      "source": "[OOP] Inheritance", 
+      "target": "[OOP] Multiple inheritance" },
+    { 
+      "source": "[OOP] Inheritance", 
+      "target": "[OOP] Polymorphism" },
+    { 
+      "source": "[OOP] Polymorphism", 
+      "target": "[OOP] Abstract classes and interfaces" },
+    { 
+      "source": "[OOP] Introduction to object oriented programming concepts", 
+      "target": "[OOP] Generic programming concepts" },
+    { 
+      "source": "[OOP] Generic programming concepts", 
+      "target": "[OOP] Function & class templates" },
+    { 
+      "source": "[OOP] Function & class templates", 
+      "target": "[OOP] Standard template library" },
+    { 
+      "source": "[OOP] Classes", 
+      "target": "[OOP] Object streams" },
+    { 
+      "source": "[OOP] Object streams", 
+      "target": "[OOP] Data and object serialization using object streams" },
+    { 
+      "source": "[OOP] Introduction to object oriented programming concepts", 
+      "target": "[OOP] Exception handling" },
+    {
+      "source": "[DBS] Basic database concepts",
+      "target": "[DBS] Database approach vs. file-based system"
+    },
+    {
+      "source": "[DBS] Basic database concepts",
+      "target": "[DBS] Database architecture, three-level schema architecture, data independence"
+    },
+    {
+      "source": "[DBS] Database architecture, three-level schema architecture, data independence",
+      "target": "[DBS] Relational data model: attributes, schemas, tuples, domains, relation instances, keys of relations, integrity constraints"
+    },
+    {
+      "source": "[DBS] Relational data model: attributes, schemas, tuples, domains, relation instances, keys of relations, integrity constraints",
+      "target": "[DBS] Relational algebra: selection, projection, Cartesian product, types of joins"
+    },
+    {
+      "source": "[DBS] Relational data model: attributes, schemas, tuples, domains, relation instances, keys of relations, integrity constraints",
+      "target": "[DBS] Normalization, functional dependencies, normal forms"
+    },
+    {
+      "source": "[DBS] Basic database concepts",
+      "target": "[DBS] Entity relationship model: entity sets, attributes, relationship, entity-relationship diagrams"
+    },
+    {
+      "source": "[DBS] Relational algebra: selection, projection, Cartesian product, types of joins",
+      "target": "[DBS] Structured Query Language (SQL): Joins and sub-queries in SQL, Grouping and aggregation in SQL"
+    },
+    {
+      "source": "[DBS] Normalization, functional dependencies, normal forms",
+      "target": "[DBS] Structured Query Language (SQL): Joins and sub-queries in SQL, Grouping and aggregation in SQL"
+    },
+    {
+      "source": "[DBS] Structured Query Language (SQL): Joins and sub-queries in SQL, Grouping and aggregation in SQL",
+      "target": "[DBS] Concurrency control, database backup and recovery"
+    },
+    {
+      "source": "[DBS] Structured Query Language (SQL): Joins and sub-queries in SQL, Grouping and aggregation in SQL",
+      "target": "[DBS] Indexes"
+    },
+    {
+      "source": "[DBS] Basic database concepts",
+      "target": "[DBS] NoSQL systems"
+    },
+    {
+      "source": "[DLD] Number Systems",
+      "target": "[DLD] Logic Gates, Boolean Algebra"
+    },
+    {
+      "source": "[DLD] Logic Gates, Boolean Algebra",
+      "target": "[DLD] Simplification Methods (K-Map, Quine-McCluskey method)"
+    },
+    {
+      "source": "[DLD] Simplification Methods (K-Map, Quine-McCluskey method)",
+      "target": "[DLD] Combination logic circuits and designs"
+    },
+    {
+      "source": "[DLD] Number Systems",
+      "target": "[DLD] Binary Arithmetic and Arithmetic Circuits"
+    },
+    {
+      "source": "[DLD] Combination logic circuits and designs",
+      "target": "[DLD] Flip Flops and Latches"
+    },
+    {
+      "source": "[DLD] Flip Flops and Latches",
+      "target": "[DLD] Asynchronous and Synchronous circuits"
+    },
+    {
+      "source": "[DLD] Asynchronous and Synchronous circuits",
+      "target": "[DLD] Counters, Shift Registers, Triggered devices & its types"
+    },
+    {
+      "source": "[DLD] Counters, Shift Registers, Triggered devices & its types",
+      "target": "[DLD] Mealy machines and Moore machines"
+    },
+    {
+      "source": "[DLD] Mealy machines and Moore machines",
+      "target": "[DLD] Memory Elements, State Machines"
+    },
+    {
+      "source": "[DLD] Memory Elements, State Machines",
+      "target": "[DLD] Introduction Programmable Logic Devices (CPLD, FPGA)"
+    },
+    {
+      "source": "[DLD] Introduction Programmable Logic Devices (CPLD, FPGA)",
+      "target": "[DLD] Lab Assignments using tools such as Verilog HDL/VHDL, MultiSim"
+    },
+    {
+      "source": "[DSA] Abstract data types, complexity analysis, Big Oh notation",
+      "target": "[DSA] Stacks (linked lists and array implementations), Recursion and analyzing recursive algorithms, divide and conquer algorithms"
+    },
+    {
+      "source": "[DSA] Stacks (linked lists and array implementations), Recursion and analyzing recursive algorithms, divide and conquer algorithms",
+      "target": "[DSA] Sorting algorithms (selection, insertion, merge, quick, bubble, heap, shell, radix, bucket)"
+    },
+    {
+      "source": "[DSA] Abstract data types, complexity analysis, Big Oh notation",
+      "target": "[DSA] Queue, dequeuer, priority queues (linked and array implementations of queues)"
+    },
+    {
+      "source": "[DSA] Abstract data types, complexity analysis, Big Oh notation",
+      "target": "[DSA] Linked list & its various types, sorted linked list"
+    },
+    {
+      "source": "[DSA] Abstract data types, complexity analysis, Big Oh notation",
+      "target": "[DSA] Searching an unsorted array, binary search for sorted arrays"
+    },
+    {
+      "source": "[DSA] Abstract data types, complexity analysis, Big Oh notation",
+      "target": "[DSA] Hashing and indexing, open addressing and chaining"
+    },
+    {
+      "source": "[DSA] Abstract data types, complexity analysis, Big Oh notation",
+      "target": "[DSA] Trees and tree traversals, binary search trees, heaps, M-way tress, balanced trees"
+    },
+    {
+      "source": "[DSA] Abstract data types, complexity analysis, Big Oh notation",
+      "target": "[DSA] Graphs, breadth-first and depth-first traversal, topological order, shortest path, adjacency matrix and adjacency list implementations"
+    },
+    {
+      "source": "[DSA] Abstract data types, complexity analysis, Big Oh notation",
+      "target": "[DSA] Memory management and garbage collection"
+    },
+    {
+      "source": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies",
+      "target": "[CN] Layered architecture, physical layer functionality, data link layer functionality"
+    },
+    {
+      "source": "[CN] Layered architecture, physical layer functionality, data link layer functionality",
+      "target": "[CN] Multiple access techniques, circuit switching and packet switching"
+    },
+    {
+      "source": "[CN] Multiple access techniques, circuit switching and packet switching",
+      "target": "[CN] LAN technologies, wireless networks, MAC addressing, networking devices (both cn layered and cn access techniques)"
+    },
+    {
+      "source": "[CN] Layered architecture, physical layer functionality, data link layer functionality",
+      "target": "[CN] LAN technologies, wireless networks, MAC addressing, networking devices (both cn layered and cn access techniques)"
+    },
+    {
+      "source": "[CN] LAN technologies, wireless networks, MAC addressing, networking devices (both cn layered and cn access techniques)",
+      "target": "[CN] Network layer protocols: IPv4 and IPv6, IP addressing, sub netting, CIDR, routing protocols"
+    },
+    {
+      "source": "[CN] Network layer protocols: IPv4 and IPv6, IP addressing, sub netting, CIDR, routing protocols",
+      "target": "[CN] Transport layer protocols: ports and sockets, connection establishment, flow and congestion control"
+    },
+    {
+      "source": "[CN] Transport layer protocols: ports and sockets, connection establishment, flow and congestion control",
+      "target": "[CN] Application layer protocols"
+    },
+    {
+      "source": "[CN] Application layer protocols",
+      "target": "[CN] Latest trends in computer networks"
+    },
+    {
+      "source": "[OS] Operating systems basics, system calls",
+      "target": "[OS] Process concept and scheduling, inter-process communication"
+    },
+    {
+      "source": "[OS] Process concept and scheduling, inter-process communication",
+      "target": "[OS] Multithreaded programming, multithreading models, threading issues"
+    },
+    {
+      "source": "[OS] Multithreaded programming, multithreading models, threading issues",
+      "target": "[OS] Process scheduling algorithms, thread scheduling, multiple-processor scheduling"
+    },
+    {
+      "source": "[OS] Process scheduling algorithms, thread scheduling, multiple-processor scheduling",
+      "target": "[OS] Synchronization, critical section, synchronization hardware, synchronization problems, deadlocks, detecting and recovering from deadlocks"
+    },
+    {
+      "source": "[OS] Synchronization, critical section, synchronization hardware, synchronization problems, deadlocks, detecting and recovering from deadlocks",
+      "target": "[OS] Memory management, swapping, contiguous memory allocation, segmentation & paging"
+    },
+    {
+      "source": "[OS] Memory management, swapping, contiguous memory allocation, segmentation & paging",
+      "target": "[OS] Virtual memory management, demand paging, thrashing, memory-mapped files"
+    },
+    {
+      "source": "[OS] Virtual memory management, demand paging, thrashing, memory-mapped files",
+      "target": "[OS] File systems: file concept, directory and disk structure, directory implementation, free space management"
+    },
+    {
+      "source": "[OS] File systems: file concept, directory and disk structure, directory implementation, free space management",
+      "target": "[OS] Disk structure and scheduling, swap space management"
+    },
+    {
+      "source": "[OS] Disk structure and scheduling, swap space management",
+      "target": "[OS] System protection, virtual machines, operating system security"
+    },
+    {
+      "source": "[AoA] Introduction; role of algorithms in computing",
+      "target": "[AoA] Analysis on nature of input and size of input"
+    },
+    {
+      "source": "[AoA] Analysis on nature of input and size of input",
+      "target": "[AoA] Asymptotic notations; Big-O, Big Ω, Big Θ, little-o, little-ω"
+    },
+    {
+      "source": "[AoA] Asymptotic notations; Big-O, Big Ω, Big Θ, little-o, little-ω",
+      "target": "[AoA] Sorting Algorithm analysis, loop invariants"
+    },
+    {
+      "source": "[AoA] Asymptotic notations; Big-O, Big Ω, Big Θ, little-o, little-ω",
+      "target": "[AoA] Recursion and recurrence relations"
+    },
+    {
+      "source": "[AoA] Recursion and recurrence relations",
+      "target": "[AoA] Algorithm Design Techniques: Brute Force Approach, Divide-and-conquer approach (Merge, Quick Sort), Greedy approach"
+    },
+    {
+      "source": "[AoA] Algorithm Design Techniques: Brute Force Approach, Divide-and-conquer approach (Merge, Quick Sort), Greedy approach",
+      "target": "[AoA] Dynamic programming: Elements of Dynamic Programming"
+    },
+    {
+      "source": "[AoA] Algorithm Design Techniques: Brute Force Approach, Divide-and-conquer approach (Merge, Quick Sort), Greedy approach",
+      "target": "[AoA] Search trees; Heaps; Hashing"
+    },
+    {
+      "source": "[AoA] Algorithm Design Techniques: Brute Force Approach, Divide-and-conquer approach (Merge, Quick Sort), Greedy approach",
+      "target": "[AoA] Graph algorithms, shortest paths, sparse graphs"
+    },
+    {
+      "source": "[AoA] Dynamic programming: Elements of Dynamic Programming",
+      "target": "[AoA] Graph algorithms, shortest paths, sparse graphs"
+    },
+    {
+      "source": "[AoA] Graph algorithms, shortest paths, sparse graphs",
+      "target": "[AoA] String matching"
+    },
+    {
+      "source": "[AoA] Algorithm Design Techniques: Brute Force Approach, Divide-and-conquer approach (Merge, Quick Sort), Greedy approach",
+      "target": "[AoA] Introduction to complexity classes"
+    },
+
+    { "source": "[DS] Proof by induction", "target": "[PF] Introduction to problem solving" },
+    { "source": "[DS] Proof by contraposition", "target": "[PF] Introduction to problem solving" },
+    { "source": "[DS] Proof by contradiction", "target": "[PF] Introduction to problem solving" },
+    { "source": "[DS] Proof by implication", "target": "[PF] Introduction to problem solving" },
+    { "source": "[DS] Equivalence relations and partitions", "target": "[PF] Introduction to problem solving" },
+    { "source": "[DS] Partial orderings", "target": "[PF] Introduction to problem solving" },
+    { "source": "[DS] Function composition", "target": "[PF] Introduction to problem solving" },
+    { "source": "[DS] Inverse functions", "target": "[PF] Introduction to problem solving" },
+    { "source": "[DS] Recursive functions", "target": "[PF] Introduction to problem solving" },
+    { "source": "[DS] Number Theory", "target": "[PF] Introduction to problem solving" },
+    { "source": "[DS] Sequences and series", "target": "[PF] Introduction to problem solving" },
+    { "source": "[DS] Inclusion and exclusion principle", "target": "[PF] Introduction to problem solving" },
+    { "source": "[DS] Pigeonhole principle", "target": "[PF] Introduction to problem solving" },
+    { "source": "[DS] Permutations and combinations", "target": "[PF] Introduction to problem solving" },
+    { "source": "[DS] Searching and Sorting Algorithms", "target": "[PF] Introduction to problem solving" },
+    { "source": "[DS] Planar graphs", "target": "[PF] Introduction to problem solving" },
+    { "source": "[DS] Graph coloring", "target": "[PF] Introduction to problem solving" },
+    { "source": "[DS] Graph algorithms", "target": "[PF] Introduction to problem solving" },
+    { "source": "[DS] Euler graph", "target": "[PF] Introduction to problem solving" },
+    { "source": "[DS] Hamiltonian path", "target": "[PF] Introduction to problem solving" },
+    { "source": "[DS] Traversals", "target": "[PF] Introduction to problem solving" },
+    { "source": "[DS] Recurrence relations", "target": "[PF] Introduction to problem solving" },
+
+    { "source": "[PF] A brief review of Von-Neumann architecture", "target": "[OOP] Introduction to object oriented design" },
+    { "source": "[PF] Role of compiler and linker", "target": "[OOP] Introduction to object oriented design" },
+    { "source": "[PF] Introduction to algorithms", "target": "[OOP] Introduction to object oriented design" },
+    { "source": "[PF] Input/output constructs", "target": "[OOP] Introduction to object oriented design" },
+    { "source": "[PF] Arithmetic, comparison and logical operators", "target": "[OOP] Introduction to object oriented design" },
+    { "source": "[PF] Conditional statements and execution flow for conditional statements", "target": "[OOP] Introduction to object oriented design" },
+    { "source": "[PF] Repetitive statements and execution flow for repetitive statements", "target": "[OOP] Introduction to object oriented design" },
+    { "source": "[PF] Multidimensional lists", "target": "[OOP] Introduction to object oriented design" },
+    { "source": "[PF] Stack rolling and unrolling", "target": "[OOP] Introduction to object oriented design" },
+    { "source": "[PF] String and string operations", "target": "[OOP] Introduction to object oriented design" },
+    { "source": "[PF] Pointers/references", "target": "[OOP] Introduction to object oriented design" },
+    { "source": "[PF] Static and dynamic memory allocation", "target": "[OOP] Introduction to object oriented design" },
+    { "source": "[PF] File I/O operations", "target": "[OOP] Introduction to object oriented design" },
+
+    { "source": "[DS] Proof by induction", "target": "[DBS] Basic database concepts" },
+    { "source": "[DS] Proof by contraposition", "target": "[DBS] Basic database concepts" },
+    { "source": "[DS] Proof by contradiction", "target": "[DBS] Basic database concepts" },
+    { "source": "[DS] Proof by implication", "target": "[DBS] Basic database concepts" },
+    { "source": "[DS] Equivalence relations and partitions", "target": "[DBS] Basic database concepts" },
+    { "source": "[DS] Partial orderings", "target": "[DBS] Basic database concepts" },
+    { "source": "[DS] Function composition", "target": "[DBS] Basic database concepts" },
+    { "source": "[DS] Inverse functions", "target": "[DBS] Basic database concepts" },
+    { "source": "[DS] Recursive functions", "target": "[DBS] Basic database concepts" },
+    { "source": "[DS] Number Theory", "target": "[DBS] Basic database concepts" },
+    { "source": "[DS] Sequences and series", "target": "[DBS] Basic database concepts" },
+    { "source": "[DS] Inclusion and exclusion principle", "target": "[DBS] Basic database concepts" },
+    { "source": "[DS] Pigeonhole principle", "target": "[DBS] Basic database concepts" },
+    { "source": "[DS] Permutations and combinations", "target": "[DBS] Basic database concepts" },
+    { "source": "[DS] Searching and Sorting Algorithms", "target": "[DBS] Basic database concepts" },
+    { "source": "[DS] Planar graphs", "target": "[DBS] Basic database concepts" },
+    { "source": "[DS] Graph coloring", "target": "[DBS] Basic database concepts" },
+    { "source": "[DS] Graph algorithms", "target": "[DBS] Basic database concepts" },
+    { "source": "[DS] Euler graph", "target": "[DBS] Basic database concepts" },
+    { "source": "[DS] Hamiltonian path", "target": "[DBS] Basic database concepts" },
+    { "source": "[DS] Traversals", "target": "[DBS] Basic database concepts" },
+    { "source": "[DS] Recurrence relations", "target": "[DBS] Basic database concepts" },
+
+    { "source": "[DS] Proof by induction", "target": "[DLD] Number Systems" },
+    { "source": "[DS] Proof by contraposition", "target": "[DLD] Number Systems" },
+    { "source": "[DS] Proof by contradiction", "target": "[DLD] Number Systems" },
+    { "source": "[DS] Proof by implication", "target": "[DLD] Number Systems" },
+    { "source": "[DS] Equivalence relations and partitions", "target": "[DLD] Number Systems" },
+    { "source": "[DS] Partial orderings", "target": "[DLD] Number Systems" },
+    { "source": "[DS] Function composition", "target": "[DLD] Number Systems" },
+    { "source": "[DS] Inverse functions", "target": "[DLD] Number Systems" },
+    { "source": "[DS] Recursive functions", "target": "[DLD] Number Systems" },
+    { "source": "[DS] Number Theory", "target": "[DLD] Number Systems" },
+    { "source": "[DS] Sequences and series", "target": "[DLD] Number Systems" },
+    { "source": "[DS] Inclusion and exclusion principle", "target": "[DLD] Number Systems" },
+    { "source": "[DS] Pigeonhole principle", "target": "[DLD] Number Systems" },
+    { "source": "[DS] Permutations and combinations", "target": "[DLD] Number Systems" },
+    { "source": "[DS] Searching and Sorting Algorithms", "target": "[DLD] Number Systems" },
+    { "source": "[DS] Planar graphs", "target": "[DLD] Number Systems" },
+    { "source": "[DS] Graph coloring", "target": "[DLD] Number Systems" },
+    { "source": "[DS] Graph algorithms", "target": "[DLD] Number Systems" },
+    { "source": "[DS] Euler graph", "target": "[DLD] Number Systems" },
+    { "source": "[DS] Hamiltonian path", "target": "[DLD] Number Systems" },
+    { "source": "[DS] Traversals", "target": "[DLD] Number Systems" },
+    { "source": "[DS] Recurrence relations", "target": "[DLD] Number Systems" },
+
+    { "source": "[PF] A brief review of Von-Neumann architecture", "target": "[DSA] Abstract data types, complexity analysis, Big Oh notation" },
+    { "source": "[PF] Role of compiler and linker", "target": "[DSA] Abstract data types, complexity analysis, Big Oh notation" },
+    { "source": "[PF] Introduction to algorithms", "target": "[DSA] Abstract data types, complexity analysis, Big Oh notation" },
+    { "source": "[PF] Input/output constructs", "target": "[DSA] Abstract data types, complexity analysis, Big Oh notation" },
+    { "source": "[PF] Arithmetic, comparison and logical operators", "target": "[DSA] Abstract data types, complexity analysis, Big Oh notation" },
+    { "source": "[PF] Conditional statements and execution flow for conditional statements", "target": "[DSA] Abstract data types, complexity analysis, Big Oh notation" },
+    { "source": "[PF] Repetitive statements and execution flow for repetitive statements", "target": "[DSA] Abstract data types, complexity analysis, Big Oh notation" },
+    { "source": "[PF] Multidimensional lists", "target": "[DSA] Abstract data types, complexity analysis, Big Oh notation" },
+    { "source": "[PF] Stack rolling and unrolling", "target": "[DSA] Abstract data types, complexity analysis, Big Oh notation" },
+    { "source": "[PF] String and string operations", "target": "[DSA] Abstract data types, complexity analysis, Big Oh notation" },
+    { "source": "[PF] Pointers/references", "target": "[DSA] Abstract data types, complexity analysis, Big Oh notation" },
+    { "source": "[PF] Static and dynamic memory allocation", "target": "[DSA] Abstract data types, complexity analysis, Big Oh notation" },
+    { "source": "[PF] File I/O operations", "target": "[DSA] Abstract data types, complexity analysis, Big Oh notation" },
+
+    { "source": "[DS] Proof by induction", "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies" },
+    { "source": "[DS] Proof by contraposition", "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies" },
+    { "source": "[DS] Proof by contradiction", "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies" },
+    { "source": "[DS] Proof by implication", "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies" },
+    { "source": "[DS] Equivalence relations and partitions", "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies" },
+    { "source": "[DS] Partial orderings", "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies" },
+    { "source": "[DS] Function composition", "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies" },
+    { "source": "[DS] Inverse functions", "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies" },
+    { "source": "[DS] Recursive functions", "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies" },
+    { "source": "[DS] Number Theory", "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies" },
+    { "source": "[DS] Sequences and series", "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies" },
+    { "source": "[DS] Inclusion and exclusion principle", "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies" },
+    { "source": "[DS] Pigeonhole principle", "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies" },
+    { "source": "[DS] Permutations and combinations", "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies" },
+    { "source": "[DS] Searching and Sorting Algorithms", "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies" },
+    { "source": "[DS] Planar graphs", "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies" },
+    { "source": "[DS] Graph coloring", "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies" },
+    { "source": "[DS] Graph algorithms", "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies" },
+    { "source": "[DS] Euler graph", "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies" },
+    { "source": "[DS] Hamiltonian path", "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies" },
+    { "source": "[DS] Traversals", "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies" },
+    { "source": "[DS] Recurrence relations", "target": "[CN] Introduction and protocols architecture, basic concepts of networking, network topologies" },
+
+    { "source": "[DSA] Sorting algorithms (selection, insertion, merge, quick, bubble, heap, shell, radix, bucket)", "target": "[OS] Operating systems basics, system calls" },
+    { "source": "[DSA] Queue, dequeuer, priority queues (linked and array implementations of queues)", "target": "[OS] Operating systems basics, system calls" },
+    { "source": "[DSA] Linked list & its various types, sorted linked list", "target": "[OS] Operating systems basics, system calls" },
+    { "source": "[DSA] Searching an unsorted array, binary search for sorted arrays", "target": "[OS] Operating systems basics, system calls" },
+    { "source": "[DSA] Hashing and indexing, open addressing and chaining", "target": "[OS] Operating systems basics, system calls" },
+    { "source": "[DSA] Trees and tree traversals, binary search trees, heaps, M-way tress, balanced trees", "target": "[OS] Operating systems basics, system calls" },
+    { "source": "[DSA] Graphs, breadth-first and depth-first traversal, topological order, shortest path, adjacency matrix and adjacency list implementations", "target": "[OS] Operating systems basics, system calls" },
+    { "source": "[DSA] Memory management and garbage collection", "target": "[OS] Operating systems basics, system calls" },
+
+    { "source": "[DSA] Sorting algorithms (selection, insertion, merge, quick, bubble, heap, shell, radix, bucket)", "target": "[AoA] Introduction; role of algorithms in computing" },
+    { "source": "[DSA] Queue, dequeuer, priority queues (linked and array implementations of queues)", "target": "[AoA] Introduction; role of algorithms in computing" },
+    { "source": "[DSA] Linked list & its various types, sorted linked list", "target": "[AoA] Introduction; role of algorithms in computing" },
+    { "source": "[DSA] Searching an unsorted array, binary search for sorted arrays", "target": "[AoA] Introduction; role of algorithms in computing" },
+    { "source": "[DSA] Hashing and indexing, open addressing and chaining", "target": "[AoA] Introduction; role of algorithms in computing" },
+    { "source": "[DSA] Trees and tree traversals, binary search trees, heaps, M-way tress, balanced trees", "target": "[AoA] Introduction; role of algorithms in computing" },
+    { "source": "[DSA] Graphs, breadth-first and depth-first traversal, topological order, shortest path, adjacency matrix and adjacency list implementations", "target": "[AoA] Introduction; role of algorithms in computing" },
+    { "source": "[DSA] Memory management and garbage collection", "target": "[AoA] Introduction; role of algorithms in computing" }
+
+  ]
 }
