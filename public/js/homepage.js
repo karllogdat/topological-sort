@@ -128,7 +128,7 @@ function renderAllTopics(topics) {
     html += `<div class="subject-header">${course}</div>`;
 
     subjects.forEach((topic, index) => {
-      const topicId = `${topic}-${index}`;
+      const topicId = `${course}-${index}`;
       html += `
             <div class="topic-item" data-topic-id="${topicId}" data-topic-text="${topic}">
               ${topic}
@@ -155,24 +155,25 @@ function filterTopics() {
 
   let html = "";
 
-  Object.entries(csTopics).forEach(([subjectKey, subjectData]) => {
-    let filteredTopics = subjectData.topics;
+  topics.forEach((courseTopics, course) => {
+    let filteredTopics = courseTopics;
 
     if (searchTerm) {
-      filteredTopics = subjectData.topics.filter((topic) =>
-        topic.toLowerCase().includes(searchTerm)
-      );
+      filteredTopics = courseTopics.filter((topic) => {
+        return topic.toLowerCase().includes(searchTerm);
+      });
     }
 
     if (filteredTopics.length > 0) {
-      html += `<div class="subject-header">${subjectData.name}</div>`;
+      html += `<div class="subject-header">${course}</div>`;
 
       filteredTopics.forEach((topic) => {
-        const originalIndex = subjectData.topics.indexOf(topic);
-        const topicId = `${subjectKey}-${originalIndex}`;
+        const originalIndex = courseTopics.indexOf(topic);
+        const topicId = `${course}-${originalIndex}`;
+
         html += `
           <div class="topic-item" data-topic-id="${topicId}" data-topic-text="${topic}">
-            • ${topic}
+            ${topic}
           </div>
         `;
       });
