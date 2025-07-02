@@ -1,456 +1,226 @@
 {
     "nodes": [
         {
-            "id": "MSF-Discrete: Discrete Mathematics"
+            "id": "[DS] Mathematical reasoning"
         },
         {
-            "id": "AL-Foundational: Foundational Data Structures and Algorithms"
+            "id": "[DS] Propositional and predicate logic"
         },
         {
-            "id": "AL-Strategies: Algorithmic Strategies"
+            "id": "[DS] Rules of inference"
         },
         {
-            "id": "AL-Complexity: Complexity"
+            "id": "[DS] Proof by induction"
         },
         {
-            "id": "AL-Models: Computational Models and Formal Languages"
+            "id": "[DS] Proof by contraposition"
         },
         {
-            "id": "\"MSF-Discrete: Discrete Mathematics"
+            "id": "[DS] Proof by contradiction"
         },
         {
-            "id": "AL-SEP: Society, Ethics, and the Profession\""
+            "id": "[DS] Proof by implication"
         },
         {
-            "id": "DM-Modeling: Data Modeling"
+            "id": "[DS] Set theory"
         },
         {
-            "id": "DM-Relational: Relational Databases"
+            "id": "[DS] Relations"
         },
         {
-            "id": "DM-Querying: Query Construction"
+            "id": "[DS] Equivalence relations and partitions"
         },
         {
-            "id": "DM-Processing: Query Processing"
+            "id": "[DS] Partial orderings"
         },
         {
-            "id": "DM-Internals: DBMS Internals"
+            "id": "[DS] Functions and mappings"
         },
         {
-            "id": "DM-NoSQL: NoSQL Systems"
+            "id": "[DS] Function composition"
         },
         {
-            "id": "DM-Security: Data Security and Privacy"
+            "id": "[DS] Inverse functions"
         },
         {
-            "id": "DM-Analytics: Data Analytics"
+            "id": "[DS] Recursive functions"
         },
         {
-            "id": "DM-Distributed: Distributed Databases/Cloud Computing"
+            "id": "[DS] Number Theory"
         },
         {
-            "id": "DM-Unstructured: Semi-structured and Unstructured Databases"
+            "id": "[DS] Sequences and series"
         },
         {
-            "id": "DM-SEP: Society, Ethics, and the Profession\""
+            "id": "[DS] Counting"
         },
         {
-            "id": "FPL-OOP: Object-Oriented Programming"
+            "id": "[DS] Inclusion and exclusion principle"
         },
         {
-            "id": "FPL-Functional: Functional Programming"
+            "id": "[DS] Pigeonhole principle"
         },
         {
-            "id": "FPL-Logic: Logic Programming"
+            "id": "[DS] Permutations and combinations"
         },
         {
-            "id": "FPL-Scripting: Shell Scripting"
+            "id": "[DS] Algorithms"
         },
         {
-            "id": "FPL-Event-Driven: Event-Driven and Reactive Programming"
+            "id": "[DS] Searching and Sorting Algorithms"
         },
         {
-            "id": "FPL-Parallel: Parallel and Distributed Computing"
+            "id": "[DS] Elements of graph theory"
         },
         {
-            "id": "FPL-Aspect: Aspect-Oriented Programming"
+            "id": "[DS] Planar graphs"
         },
         {
-            "id": "FPL-Types: Type Systems"
+            "id": "[DS] Graph coloring"
         },
         {
-            "id": "FPL-Systems: Systems Execution and Memory Mode"
+            "id": "[DS] Graph algorithms"
         },
         {
-            "id": "FPL-Translation: Language Translation and Execution"
+            "id": "[DS] Euler graph"
         },
         {
-            "id": "FPL-Abstraction: Program Abstraction and Representation"
+            "id": "[DS] Hamiltonian path"
         },
         {
-            "id": "FPL-Syntax: Syntax Analysis"
+            "id": "[DS] Rooted trees"
         },
         {
-            "id": "FPL-Semantics: Compiler Semantic Analysis"
+            "id": "[DS] Traversals"
         },
         {
-            "id": "FPL-Analysis: Program Analysis and Analyzers"
-        },
-        {
-            "id": "FPL-Code: Code Generation"
-        },
-        {
-            "id": "FPL-Run-Time: Run-time Behavior and Systems"
-        },
-        {
-            "id": "FPL-Constructs: Advanced Programming Constructs"
-        },
-        {
-            "id": "FPL-Pragmatics: Language Pragmatics"
-        },
-        {
-            "id": "FPL-Formalism: Formal Semantics"
-        },
-        {
-            "id": "FPL-Methodologies: Formal Development Methodologies"
-        },
-        {
-            "id": "FPL-Design: Design Principles of Programming Languages"
-        },
-        {
-            "id": "FPL-SEP: Society, Ethics, and the Profession\""
-        },
-        {
-            "id": "MSF-Pre: Pre Calculus"
-        },
-        {
-            "id": "MSF-Probability: Probability"
-        },
-        {
-            "id": "MSF-Statistics: Statistics"
-        },
-        {
-            "id": "MSF-Linear: Linear Algebra"
-        },
-        {
-            "id": "MSF-Calculus"
-        },
-        {
-            "id": "NC-Fundamentals: Fundamentals"
-        },
-        {
-            "id": "NC-Applications: Networked Applications"
-        },
-        {
-            "id": "NC-Reliability: Reliability Support"
-        },
-        {
-            "id": "NC-Routing: Routing and Forwarding"
-        },
-        {
-            "id": "NC-SingleHop: Single Hop Communication"
-        },
-        {
-            "id": "NC-Security: Network Security"
-        },
-        {
-            "id": "NC-Mobility: Mobility"
-        },
-        {
-            "id": "NC-Emerging: Emerging Topics"
-        },
-        {
-            "id": "NC-Security: Security"
+            "id": "[DS] Recurrence relations"
         }
     ],
     "links": [
         {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "AL-Foundational: Foundational Data Structures and Algorithms"
+            "source": "[DS] Mathematical reasoning",
+            "target": "[DS] Propositional and predicate logic"
         },
         {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "AL-Strategies: Algorithmic Strategies"
+            "source": "[DS] Mathematical reasoning",
+            "target": "[DS] Set theory"
         },
         {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "AL-Complexity: Complexity"
+            "source": "[DS] Mathematical reasoning",
+            "target": "[DS] Number Theory"
         },
         {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "AL-Models: Computational Models and Formal Languages"
+            "source": "[DS] Mathematical reasoning",
+            "target": "[DS] Sequences and series"
         },
         {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "DM-Modeling: Data Modeling"
+            "source": "[DS] Mathematical reasoning",
+            "target": "[DS] Counting"
         },
         {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "DM-Relational: Relational Databases"
+            "source": "[DS] Mathematical reasoning",
+            "target": "[DS] Algorithms"
         },
         {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "DM-Querying: Query Construction"
+            "source": "[DS] Mathematical reasoning",
+            "target": "[DS] Elements of graph theory"
         },
         {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "DM-Processing: Query Processing"
+            "source": "[DS] Mathematical reasoning",
+            "target": "[DS] Recurrence relations"
         },
         {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "DM-Internals: DBMS Internals"
+            "source": "[DS] Propositional and predicate logic",
+            "target": "[DS] Rules of inference"
         },
         {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "DM-NoSQL: NoSQL Systems"
+            "source": "[DS] Rules of inference",
+            "target": "[DS] Proof by induction"
         },
         {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "DM-Security: Data Security and Privacy"
+            "source": "[DS] Rules of inference",
+            "target": "[DS] Proof by contraposition"
         },
         {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "DM-Analytics: Data Analytics"
+            "source": "[DS] Rules of inference",
+            "target": "[DS] Proof by contradiction"
         },
         {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "DM-Distributed: Distributed Databases/Cloud Computing"
+            "source": "[DS] Rules of inference",
+            "target": "[DS] Proof by implication"
         },
         {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "DM-Unstructured: Semi-structured and Unstructured Databases"
+            "source": "[DS] Set theory",
+            "target": "[DS] Relations"
         },
         {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "FPL-OOP: Object-Oriented Programming"
+            "source": "[DS] Set theory",
+            "target": "[DS] Functions and mappings"
         },
         {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "FPL-Functional: Functional Programming"
+            "source": "[DS] Relations",
+            "target": "[DS] Equivalence relations and partitions"
         },
         {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "FPL-Logic: Logic Programming"
+            "source": "[DS] Relations",
+            "target": "[DS] Partial orderings"
         },
         {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "FPL-Scripting: Shell Scripting"
+            "source": "[DS] Functions and mappings",
+            "target": "[DS] Function composition"
         },
         {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "FPL-Event-Driven: Event-Driven and Reactive Programming"
+            "source": "[DS] Functions and mappings",
+            "target": "[DS] Inverse functions"
         },
         {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "FPL-Parallel: Parallel and Distributed Computing"
+            "source": "[DS] Functions and mappings",
+            "target": "[DS] Recursive functions"
         },
         {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "FPL-Aspect: Aspect-Oriented Programming"
+            "source": "[DS] Counting",
+            "target": "[DS] Inclusion and exclusion principle"
         },
         {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "FPL-Types: Type Systems"
+            "source": "[DS] Counting",
+            "target": "[DS] Pigeonhole principle"
         },
         {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "FPL-Systems: Systems Execution and Memory Mode"
+            "source": "[DS] Counting",
+            "target": "[DS] Permutations and combinations"
         },
         {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "FPL-Translation: Language Translation and Execution"
+            "source": "[DS] Algorithms",
+            "target": "[DS] Searching and Sorting Algorithms"
         },
         {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "FPL-Abstraction: Program Abstraction and Representation"
+            "source": "[DS] Elements of graph theory",
+            "target": "[DS] Planar graphs"
         },
         {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "FPL-Syntax: Syntax Analysis"
+            "source": "[DS] Elements of graph theory",
+            "target": "[DS] Graph coloring"
         },
         {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "FPL-Semantics: Compiler Semantic Analysis"
+            "source": "[DS] Elements of graph theory",
+            "target": "[DS] Graph algorithms"
         },
         {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "FPL-Analysis: Program Analysis and Analyzers"
+            "source": "[DS] Elements of graph theory",
+            "target": "[DS] Euler graph"
         },
         {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "FPL-Code: Code Generation"
+            "source": "[DS] Elements of graph theory",
+            "target": "[DS] Hamiltonian path"
         },
         {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "FPL-Run-Time: Run-time Behavior and Systems"
+            "source": "[DS] Elements of graph theory",
+            "target": "[DS] Rooted trees"
         },
         {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "FPL-Constructs: Advanced Programming Constructs"
-        },
-        {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "FPL-Pragmatics: Language Pragmatics"
-        },
-        {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "FPL-Formalism: Formal Semantics"
-        },
-        {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "FPL-Methodologies: Formal Development Methodologies"
-        },
-        {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "FPL-Design: Design Principles of Programming Languages"
-        },
-        {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "MSF-Probability: Probability"
-        },
-        {
-            "source": "MSF-Discrete: Discrete Mathematics",
-            "target": "NC-Fundamentals: Fundamentals"
-        },
-        {
-            "source": "\"MSF-Discrete: Discrete Mathematics",
-            "target": "AL-SEP: Society, Ethics, and the Profession\""
-        },
-        {
-            "source": "\"MSF-Discrete: Discrete Mathematics",
-            "target": "DM-SEP: Society, Ethics, and the Profession\""
-        },
-        {
-            "source": "\"MSF-Discrete: Discrete Mathematics",
-            "target": "FPL-SEP: Society, Ethics, and the Profession\""
-        },
-        {
-            "source": "MSF-Pre: Pre Calculus",
-            "target": "MSF-Discrete: Discrete Mathematics"
-        },
-        {
-            "source": "MSF-Pre: Pre Calculus",
-            "target": "MSF-Probability: Probability"
-        },
-        {
-            "source": "MSF-Pre: Pre Calculus",
-            "target": "MSF-Statistics: Statistics"
-        },
-        {
-            "source": "MSF-Pre: Pre Calculus",
-            "target": "MSF-Linear: Linear Algebra"
-        },
-        {
-            "source": "MSF-Pre: Pre Calculus",
-            "target": "MSF-Calculus"
-        },
-        {
-            "source": "MSF-Probability: Probability",
-            "target": "MSF-Statistics: Statistics"
-        },
-        {
-            "source": "MSF-Probability: Probability",
-            "target": "NC-Fundamentals: Fundamentals"
-        },
-        {
-            "source": "MSF-Statistics: Statistics",
-            "target": "NC-Fundamentals: Fundamentals"
-        },
-        {
-            "source": "MSF-Linear: Linear Algebra",
-            "target": "MSF-Statistics: Statistics"
-        },
-        {
-            "source": "MSF-Linear: Linear Algebra",
-            "target": "NC-Fundamentals: Fundamentals"
-        },
-        {
-            "source": "MSF-Calculus",
-            "target": "MSF-Probability: Probability"
-        },
-        {
-            "source": "MSF-Calculus",
-            "target": "MSF-Statistics: Statistics"
-        },
-        {
-            "source": "NC-Fundamentals: Fundamentals",
-            "target": "NC-Applications: Networked Applications"
-        },
-        {
-            "source": "NC-Fundamentals: Fundamentals",
-            "target": "NC-Reliability: Reliability Support"
-        },
-        {
-            "source": "NC-Fundamentals: Fundamentals",
-            "target": "NC-Routing: Routing and Forwarding"
-        },
-        {
-            "source": "NC-Fundamentals: Fundamentals",
-            "target": "NC-SingleHop: Single Hop Communication"
-        },
-        {
-            "source": "NC-Fundamentals: Fundamentals",
-            "target": "NC-Security: Network Security"
-        },
-        {
-            "source": "NC-Fundamentals: Fundamentals",
-            "target": "NC-Mobility: Mobility"
-        },
-        {
-            "source": "NC-Fundamentals: Fundamentals",
-            "target": "NC-Emerging: Emerging Topics"
-        },
-        {
-            "source": "NC-Applications: Networked Applications",
-            "target": "NC-Security: Security"
-        },
-        {
-            "source": "NC-Applications: Networked Applications",
-            "target": "NC-Emerging: Emerging Topics"
-        },
-        {
-            "source": "NC-Reliability: Reliability Support",
-            "target": "NC-Mobility: Mobility"
-        },
-        {
-            "source": "NC-Reliability: Reliability Support",
-            "target": "NC-Emerging: Emerging Topics"
-        },
-        {
-            "source": "NC-Routing: Routing and Forwarding",
-            "target": "NC-Applications: Networked Applications"
-        },
-        {
-            "source": "NC-Routing: Routing and Forwarding",
-            "target": "NC-Reliability: Reliability Support"
-        },
-        {
-            "source": "NC-Routing: Routing and Forwarding",
-            "target": "NC-Security: Security"
-        },
-        {
-            "source": "NC-Routing: Routing and Forwarding",
-            "target": "NC-Mobility: Mobility"
-        },
-        {
-            "source": "NC-SingleHop: Single Hop Communication",
-            "target": "NC-Routing: Routing and Forwarding"
-        },
-        {
-            "source": "NC-SingleHop: Single Hop Communication",
-            "target": "NC-Security: Security"
-        },
-        {
-            "source": "NC-SingleHop: Single Hop Communication",
-            "target": "NC-Mobility: Mobility"
-        },
-        {
-            "source": "NC-Security: Network Security",
-            "target": "NC-Emerging: Emerging Topics"
-        },
-        {
-            "source": "NC-Mobility: Mobility",
-            "target": "NC-Emerging: Emerging Topics"
+            "source": "[DS] Rooted trees",
+            "target": "[DS] Traversals"
         }
     ]
 }

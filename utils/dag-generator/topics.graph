@@ -1,72 +1,31 @@
-MSF-Discrete: Discrete Mathematics--AL-Foundational: Foundational Data Structures and Algorithms
-MSF-Discrete: Discrete Mathematics--AL-Strategies: Algorithmic Strategies
-MSF-Discrete: Discrete Mathematics--AL-Complexity: Complexity
-MSF-Discrete: Discrete Mathematics--AL-Models: Computational Models and Formal Languages
-"MSF-Discrete: Discrete Mathematics--AL-SEP: Society, Ethics, and the Profession"
-MSF-Discrete: Discrete Mathematics--DM-Modeling: Data Modeling
-MSF-Discrete: Discrete Mathematics--DM-Relational: Relational Databases
-MSF-Discrete: Discrete Mathematics--DM-Querying: Query Construction
-MSF-Discrete: Discrete Mathematics--DM-Processing: Query Processing
-MSF-Discrete: Discrete Mathematics--DM-Internals: DBMS Internals
-MSF-Discrete: Discrete Mathematics--DM-NoSQL: NoSQL Systems
-MSF-Discrete: Discrete Mathematics--DM-Security: Data Security and Privacy
-MSF-Discrete: Discrete Mathematics--DM-Analytics: Data Analytics
-MSF-Discrete: Discrete Mathematics--DM-Distributed: Distributed Databases/Cloud Computing
-MSF-Discrete: Discrete Mathematics--DM-Unstructured: Semi-structured and Unstructured Databases
-"MSF-Discrete: Discrete Mathematics--DM-SEP: Society, Ethics, and the Profession"
-MSF-Discrete: Discrete Mathematics--FPL-OOP: Object-Oriented Programming
-MSF-Discrete: Discrete Mathematics--FPL-Functional: Functional Programming
-MSF-Discrete: Discrete Mathematics--FPL-Logic: Logic Programming
-MSF-Discrete: Discrete Mathematics--FPL-Scripting: Shell Scripting
-MSF-Discrete: Discrete Mathematics--FPL-Event-Driven: Event-Driven and Reactive Programming
-MSF-Discrete: Discrete Mathematics--FPL-Parallel: Parallel and Distributed Computing
-MSF-Discrete: Discrete Mathematics--FPL-Aspect: Aspect-Oriented Programming
-MSF-Discrete: Discrete Mathematics--FPL-Types: Type Systems
-MSF-Discrete: Discrete Mathematics--FPL-Systems: Systems Execution and Memory Mode
-MSF-Discrete: Discrete Mathematics--FPL-Translation: Language Translation and Execution
-MSF-Discrete: Discrete Mathematics--FPL-Abstraction: Program Abstraction and Representation
-MSF-Discrete: Discrete Mathematics--FPL-Syntax: Syntax Analysis
-MSF-Discrete: Discrete Mathematics--FPL-Semantics: Compiler Semantic Analysis
-MSF-Discrete: Discrete Mathematics--FPL-Analysis: Program Analysis and Analyzers
-MSF-Discrete: Discrete Mathematics--FPL-Code: Code Generation
-MSF-Discrete: Discrete Mathematics--FPL-Run-Time: Run-time Behavior and Systems
-MSF-Discrete: Discrete Mathematics--FPL-Constructs: Advanced Programming Constructs
-MSF-Discrete: Discrete Mathematics--FPL-Pragmatics: Language Pragmatics
-MSF-Discrete: Discrete Mathematics--FPL-Formalism: Formal Semantics
-MSF-Discrete: Discrete Mathematics--FPL-Methodologies: Formal Development Methodologies
-MSF-Discrete: Discrete Mathematics--FPL-Design: Design Principles of Programming Languages
-"MSF-Discrete: Discrete Mathematics--FPL-SEP: Society, Ethics, and the Profession"
-MSF-Pre: Pre Calculus--MSF-Discrete: Discrete Mathematics
-MSF-Pre: Pre Calculus--MSF-Probability: Probability
-MSF-Pre: Pre Calculus--MSF-Statistics: Statistics
-MSF-Pre: Pre Calculus--MSF-Linear: Linear Algebra
-MSF-Pre: Pre Calculus--MSF-Calculus
-MSF-Discrete: Discrete Mathematics--MSF-Probability: Probability
-MSF-Calculus--MSF-Probability: Probability
-MSF-Probability: Probability--MSF-Statistics: Statistics
-MSF-Linear: Linear Algebra--MSF-Statistics: Statistics
-MSF-Calculus--MSF-Statistics: Statistics
-MSF-Discrete: Discrete Mathematics--NC-Fundamentals: Fundamentals
-MSF-Probability: Probability--NC-Fundamentals: Fundamentals
-MSF-Statistics: Statistics--NC-Fundamentals: Fundamentals
-MSF-Linear: Linear Algebra--NC-Fundamentals: Fundamentals
-NC-Fundamentals: Fundamentals--NC-Applications: Networked Applications
-NC-Fundamentals: Fundamentals--NC-Reliability: Reliability Support
-NC-Fundamentals: Fundamentals--NC-Routing: Routing and Forwarding
-NC-Fundamentals: Fundamentals--NC-SingleHop: Single Hop Communication
-NC-Fundamentals: Fundamentals--NC-Security: Network Security
-NC-Fundamentals: Fundamentals--NC-Mobility: Mobility
-NC-Fundamentals: Fundamentals--NC-Emerging: Emerging Topics
-NC-SingleHop: Single Hop Communication--NC-Routing: Routing and Forwarding
-NC-Routing: Routing and Forwarding--NC-Applications: Networked Applications
-NC-Routing: Routing and Forwarding--NC-Reliability: Reliability Support
-NC-SingleHop: Single Hop Communication--NC-Security: Security
-NC-Routing: Routing and Forwarding--NC-Security: Security
-NC-Applications: Networked Applications--NC-Security: Security
-NC-SingleHop: Single Hop Communication--NC-Mobility: Mobility
-NC-Routing: Routing and Forwarding--NC-Mobility: Mobility
-NC-Reliability: Reliability Support--NC-Mobility: Mobility
-NC-Applications: Networked Applications--NC-Emerging: Emerging Topics
-NC-Reliability: Reliability Support--NC-Emerging: Emerging Topics
-NC-Security: Network Security--NC-Emerging: Emerging Topics
-NC-Mobility: Mobility--NC-Emerging: Emerging Topics
+[DS] Mathematical reasoning--[DS] Propositional and predicate logic
+[DS] Propositional and predicate logic--[DS] Rules of inference
+[DS] Rules of inference--[DS] Proof by induction
+[DS] Rules of inference--[DS] Proof by contraposition
+[DS] Rules of inference--[DS] Proof by contradiction
+[DS] Rules of inference--[DS] Proof by implication
+[DS] Mathematical reasoning--[DS] Set theory
+[DS] Set theory--[DS] Relations
+[DS] Relations--[DS] Equivalence relations and partitions
+[DS] Relations--[DS] Partial orderings
+[DS] Set theory--[DS] Functions and mappings
+[DS] Functions and mappings--[DS] Function composition
+[DS] Functions and mappings--[DS] Inverse functions
+[DS] Functions and mappings--[DS] Recursive functions
+[DS] Mathematical reasoning--[DS] Number Theory
+[DS] Mathematical reasoning--[DS] Sequences and series
+[DS] Mathematical reasoning--[DS] Counting
+[DS] Counting--[DS] Inclusion and exclusion principle
+[DS] Counting--[DS] Pigeonhole principle
+[DS] Counting--[DS] Permutations and combinations
+[DS] Mathematical reasoning--[DS] Algorithms
+[DS] Algorithms--[DS] Searching and Sorting Algorithms
+[DS] Mathematical reasoning--[DS] Elements of graph theory
+[DS] Elements of graph theory--[DS] Planar graphs
+[DS] Elements of graph theory--[DS] Graph coloring
+[DS] Elements of graph theory--[DS] Graph algorithms
+[DS] Elements of graph theory--[DS] Euler graph
+[DS] Elements of graph theory--[DS] Hamiltonian path
+[DS] Elements of graph theory--[DS] Rooted trees
+[DS] Rooted trees--[DS] Traversals
+[DS] Mathematical reasoning--[DS] Recurrence relations
