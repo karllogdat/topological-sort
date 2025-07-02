@@ -678,6 +678,12 @@ body {
   line-height: 1.6;
 }
 
+.footer-link {
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
 .footer-social {
   margin-top: var(--space-lg);
 }
