@@ -199,3 +199,25 @@ function drag(simulation) {
     .on("drag", dragged)
     .on("end", dragended);
 }
+
+export function to_mermaid(graph) {
+  let mermaid = "flowchart LR\n";
+  let nodes = [];
+
+  graph.links.forEach((link) => {
+    if (nodes.indexOf(link.source) === -1) {
+      nodes.push(link.source);
+    }
+    if (nodes.indexOf(link.target) === -1) {
+      nodes.push(link.target);
+    }
+  });
+
+  graph.links.forEach((link, i) => {
+    mermaid += `\t${nodes.indexOf(link.source)}["${
+      link.source
+    }"]-->${nodes.indexOf(link.target)}["${link.target}"]\n`;
+  });
+
+  return mermaid;
+}

@@ -1,210 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CS Curriculum Navigator</title>
+    <link rel="stylesheet" href="./css/homepage.css" />
+    <link rel="stylesheet" href="./css/graph.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CS Curriculum Navigator</title>
-  <link rel="stylesheet" href="./css/homepage.css" />
-  <link rel="stylesheet" href="./css/graph.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet" />
-</head>
+    <script type="module">
+      import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+      window.mermaid = mermaid;
+      mermaid.initialize({ startOnLoad: false });
+    </script>
+    <!-- Add svg-pan-zoom from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js"></script>
+  </head>
 
-<body>
-  <div id="landing-page" class="landing-page">
-    <div class="hero-section">
-      <div class="hero-background">
-        <div class="gradient-orbs">
-          <div class="orb orb-1"></div>
-          <div class="orb orb-2"></div>
-          <div class="orb orb-3"></div>
-          <div class="orb orb-4"></div>
-        </div>
-        <div class="grid-pattern"></div>
-      </div>
-
-      <div class="hero-content">
-        <div class="hero-container">
-          <div class="logo-section">
-            <div class="app-logo">
-              <div class="logo-inner">
-                <i class="fas fa-graduation-cap"></i>
-              </div>
-              <div class="logo-rings">
-                <div class="ring ring-1"></div>
-                <div class="ring ring-2"></div>
-                <div class="ring ring-3"></div>
-              </div>
-            </div>
+  <body>
+    <div id="landing-page" class="landing-page">
+      <div class="hero-section">
+        <div class="hero-background">
+          <div class="gradient-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+            <div class="orb orb-4"></div>
           </div>
-
-          <div class="hero-text">
-            <h1 class="hero-title">
-              <span class="title-line-1">CS Curriculum</span>
-              <span class="title-line-2">Navigator</span>
-            </h1>
-
-            <p class="hero-description">
-              Simple and structured learning paths for Computer Science
-              fundamentals
-            </p>
-          </div>
-
-          <div class="hero-actions">
-            <button class="cta-button primary" onclick="proceedToApp()">
-              <span class="button-content">
-                <span class="button-text">Start Learning</span>
-                <i class="fas fa-arrow-right button-icon"></i>
-              </span>
-              <div class="button-glow"></div>
-            </button>
-
-            <button class="cta-button secondary" onclick="scrollToAbout()">
-              <span class="button-content">
-                <span class="button-text">Discover More</span>
-                <i class="fas fa-chevron-down button-icon"></i>
-              </span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="features-section">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-badge">Features</div>
-          <h2 class="section-title">Simple Learning System</h2>
-          <p class="section-subtitle">
-            Basic tools designed to help organize your Computer Science
-            learning journey
-          </p>
+          <div class="grid-pattern"></div>
         </div>
 
-        <div class="features-grid">
-          <div class="feature-card">
-            <div class="feature-header">
-              <div class="feature-icon">
-                <i class="fas fa-sitemap"></i>
-              </div>
-              <h3 class="feature-title">Topic Organization</h3>
-            </div>
-            <p class="feature-description">
-              Browse through organized Computer Science topics arranged by
-              subject areas for easy navigation.
-            </p>
-            <div class="feature-highlight"></div>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-header">
-              <div class="feature-icon">
-                <i class="fas fa-route"></i>
-              </div>
-              <h3 class="feature-title">Structured Learning</h3>
-            </div>
-            <p class="feature-description">
-              Follow a clear sequence of topics designed for Computer Science
-              2nd year and below students.
-            </p>
-            <div class="feature-highlight"></div>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-header">
-              <div class="feature-icon">
-                <i class="fas fa-compass"></i>
-              </div>
-              <h3 class="feature-title">Easy Navigation</h3>
-            </div>
-            <p class="feature-description">
-              Simple interface that makes it easy to explore different topics
-              and find what you need to learn.
-            </p>
-            <div class="feature-highlight"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="about-section" id="about-section">
-      <div class="container">
-        <div class="about-content">
-          <div class="about-text">
-            <div class="section-badge">About Project</div>
-            <h2 class="about-title">Organized CS Education</h2>
-            <p class="about-description">
-              Our CS Curriculum Navigator provides a simple way to explore
-              Computer Science topics. Designed specifically for 2nd year and
-              below students, it organizes essential CS concepts into clear
-              subject areas for easier learning.
-            </p>
-
-            <div class="about-stats">
-              <div class="stat-item">
-                <div class="stat-number">5</div>
-                <div class="stat-label">Core Subjects</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-number">25</div>
-                <div class="stat-label">Topics Covered</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-number">100%</div>
-                <div class="stat-label">Organized</div>
-              </div>
-            </div>
-
-            <div class="about-features">
-              <div class="about-feature">
-                <div class="feature-check">
-                  <i class="fas fa-check"></i>
+        <div class="hero-content">
+          <div class="hero-container">
+            <div class="logo-section">
+              <div class="app-logo">
+                <div class="logo-inner">
+                  <i class="fas fa-graduation-cap"></i>
                 </div>
-                <span>Adaptive learning sequences</span>
-              </div>
-              <div class="about-feature">
-                <div class="feature-check">
-                  <i class="fas fa-check"></i>
+                <div class="logo-rings">
+                  <div class="ring ring-1"></div>
+                  <div class="ring ring-2"></div>
+                  <div class="ring ring-3"></div>
                 </div>
-                <span>Visual learning support</span>
               </div>
             </div>
 
-            <button class="cta-button primary" onclick="proceedToApp()">
-              <span class="button-content">
-                <span class="button-text">Explore Navigator</span>
-                <i class="fas fa-compass button-icon"></i>
-              </span>
-              <div class="button-glow"></div>
-            </button>
-          </div>
+            <div class="hero-text">
+              <h1 class="hero-title">
+                <span class="title-line-1">CS Curriculum</span>
+                <span class="title-line-2">Navigator</span>
+              </h1>
 
-          <div class="about-visual">
-            <div class="visual-container">
-              <img src="./cs.jpg" alt="Computer Science Concepts" height="300" width="350" />
+              <p class="hero-description">
+                Simple and structured learning paths for Computer Science
+                fundamentals
+              </p>
+            </div>
+
+            <div class="hero-actions">
+              <button class="cta-button primary" onclick="proceedToApp()">
+                <span class="button-content">
+                  <span class="button-text">Start Learning</span>
+                  <i class="fas fa-arrow-right button-icon"></i>
+                </span>
+                <div class="button-glow"></div>
+              </button>
+
+              <button class="cta-button secondary" onclick="scrollToAbout()">
+                <span class="button-content">
+                  <span class="button-text">Discover More</span>
+                  <i class="fas fa-chevron-down button-icon"></i>
+                </span>
+              </button>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <footer class="landing-footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-section">
-            <h3 class="footer-title">CS Curriculum Navigator</h3>
-            <p class="footer-text">
-              Project by BS Computer Science 2-2, Team 1
+      <div class="features-section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-badge">Features</div>
+            <h2 class="section-title">Simple Learning System</h2>
+            <p class="section-subtitle">
+              Basic tools designed to help organize your Computer Science
+              learning journey
             </p>
-            <div class="footer-social">
-              <div class="social-icon">
-                <i class="fas fa-graduation-cap"></i>
+          </div>
+
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-header">
+                <div class="feature-icon">
+                  <i class="fas fa-sitemap"></i>
+                </div>
+                <h3 class="feature-title">Topic Organization</h3>
               </div>
+              <p class="feature-description">
+                Browse through organized Computer Science topics arranged by
+                subject areas for easy navigation.
+              </p>
+              <div class="feature-highlight"></div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-header">
+                <div class="feature-icon">
+                  <i class="fas fa-route"></i>
+                </div>
+                <h3 class="feature-title">Structured Learning</h3>
+              </div>
+              <p class="feature-description">
+                Follow a clear sequence of topics designed for Computer Science
+                2nd year and below students.
+              </p>
+              <div class="feature-highlight"></div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-header">
+                <div class="feature-icon">
+                  <i class="fas fa-compass"></i>
+                </div>
+                <h3 class="feature-title">Easy Navigation</h3>
+              </div>
+              <p class="feature-description">
+                Simple interface that makes it easy to explore different topics
+                and find what you need to learn.
+              </p>
+              <div class="feature-highlight"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-section" id="about-section">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-text">
+              <div class="section-badge">About Project</div>
+              <h2 class="about-title">Organized CS Education</h2>
+              <p class="about-description">
+                Our CS Curriculum Navigator provides a simple way to explore
+                Computer Science topics. Designed specifically for 2nd year and
+                below students, it organizes essential CS concepts into clear
+                subject areas for easier learning.
+              </p>
+
+              <div class="about-stats">
+                <div class="stat-item">
+                  <div class="stat-number">5</div>
+                  <div class="stat-label">Core Subjects</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">25</div>
+                  <div class="stat-label">Topics Covered</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">100%</div>
+                  <div class="stat-label">Organized</div>
+                </div>
+              </div>
+
+              <div class="about-features">
+                <div class="about-feature">
+                  <div class="feature-check">
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <span>Adaptive learning sequences</span>
+                </div>
+                <div class="about-feature">
+                  <div class="feature-check">
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <span>Visual learning support</span>
+                </div>
+              </div>
+
+              <button class="cta-button primary" onclick="proceedToApp()">
+                <span class="button-content">
+                  <span class="button-text">Explore Navigator</span>
+                  <i class="fas fa-compass button-icon"></i>
+                </span>
+                <div class="button-glow"></div>
+              </button>
+            </div>
+
+            <div class="about-visual">
+              <div class="visual-container">
+                <img
+                  src="./cs.jpg"
+                  alt="Computer Science Concepts"
+                  height="300"
+                  width="350"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="landing-footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-section">
+              <h3 class="footer-title">CS Curriculum Navigator</h3>
+              <p class="footer-text">
+                Project by BS Computer Science 2-2, Team 1
+              </p>
+              <div class="footer-social">
+                <div class="social-icon">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+              </div>
+            </div>
+            <div class="footer-section">
+              <h3 class="footer-title">Team Members</h3>
+              <ul class="team-list">
+                <li>Biñas, John Benedict, S.</li>
+                <li>Esperon, Trisha Mae P.</li>
+                <li>Isais, Dominic Christian</li>
+                <li>Logdat, Karl Joseph M.</li>
+                <li>Samson, Lander D.</li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h3 class="footer-title">Academic Project</h3>
+              <p class="footer-text">Computer Science Program</p>
+              <p class="footer-text">Design and Analysis of Algorithm</p>
+              <p class="footer-text">Final Project</p>
             </div>
           </div>
           <div class="footer-section">
@@ -230,132 +263,143 @@
             <p class="footer-text">Final Project</p>
           </div>
         </div>
-        <div class="footer-bottom">
-          <div class="footer-divider"></div>
-          <p>&copy; 2025 CS Curriculum Navigator. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
-  </div>
-
-  <div id="main-app" class="main-app hidden">
-    <header class="app-header">
-      <div class="header-container">
-        <div class="header-logo">
-          <div class="app-logo-small">
-            <i class="fas fa-graduation-cap"></i>
-          </div>
-          <div class="header-text">
-            <span class="header-title">CS Curriculum Navigator</span>
-            <span class="header-subtitle">Computer Science 1st-2nd Year Topics</span>
-          </div>
-        </div>
-        <div class="header-actions">
-          <button class="header-btn" onclick="showHelp()">
-            <i class="fas fa-question-circle"></i>
-            <span>Help</span>
-          </button>
-          <button class="header-btn" onclick="backToLanding()">
-            <i class="fas fa-home"></i>
-            <span>Home</span>
-          </button>
-        </div>
-      </div>
-    </header>
-
-    <!-- Main Content -->
-    <div class="app-content">
-      <!-- Sidebar -->
-      <aside class="sidebar">
-        <div class="sidebar-header">
-          <h3>Computer Science Topics</h3>
-          <p class="sidebar-subtitle">Select a topic to explore</p>
-        </div>
-
-        <div class="search-container">
-          <div class="search-wrapper">
-            <input type="text" id="topic-search" placeholder="Search topics..." class="search-input" />
-            <button class="search-btn"><i class="fas fa-search"></i></button>
-          </div>
-        </div>
-
-        <div class="topics-container">
-          <div class="topic-list" id="topic-list"></div>
-        </div>
-      </aside>
-
-      <main class="main-content">
-        <div class="content-header">
-          <h2 class="content-title">Learning Path Generator</h2>
-          <div class="selected-topic" id="selected-topic">
-            Select a Computer Science topic to generate your learning path
-          </div>
-        </div>
-
-        <div class="visualization-section">
-          <h3 class="visualization-title">Learning Path Visualization</h3>
-          <div class="visualization-area" id="visualization-area">
-            <div id="tooltip"></div>
-            <svg id="graph" width="800" height="575"></svg>
-          </div>
-        </div>
-
-        <div class="order-section">
-          <h3 class="order-title">Learning Order</h3>
-          <ol id="tlist" class="learning-order"></ol>
-        </div>
-      </main>
+      </footer>
     </div>
-  </div>
 
-  <div id="help-modal" class="modal">
-    <div class="modal-content">
-      <span class="close-modal" onclick="closeHelp()">&times;</span>
-      <h2 class="modal-title">How to Use CS Curriculum Navigator</h2>
+    <div id="main-app" class="main-app hidden">
+      <header class="app-header">
+        <div class="header-container">
+          <div class="header-logo">
+            <div class="app-logo-small">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="header-text">
+              <span class="header-title">CS Curriculum Navigator</span>
+              <span class="header-subtitle"
+                >Computer Science 1st-2nd Year Topics</span
+              >
+            </div>
+          </div>
+          <div class="header-actions">
+            <button class="header-btn" onclick="showHelp()">
+              <i class="fas fa-question-circle"></i>
+              <span>Help</span>
+            </button>
+            <button class="header-btn" onclick="backToLanding()">
+              <i class="fas fa-home"></i>
+              <span>Home</span>
+            </button>
+          </div>
+        </div>
+      </header>
 
-      <div class="help-section">
-        <h3 class="help-title">1. Browse Subjects</h3>
-        <p class="help-text">
-          Click on any of the 5 main subjects to see all related topics. These
-          cover CS 2nd year and below curriculum.
-        </p>
-      </div>
+      <!-- Main Content -->
+      <div class="app-content">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <div class="sidebar-header">
+            <h3>Computer Science Topics</h3>
+            <p class="sidebar-subtitle">Select a topic to explore</p>
+          </div>
 
-      <div class="help-section">
-        <h3 class="help-title">2. Select Topics</h3>
-        <p class="help-text">
-          Choose specific topics from the subject list to focus your learning.
-        </p>
-      </div>
+          <div class="search-container">
+            <div class="search-wrapper">
+              <input
+                type="text"
+                id="topic-search"
+                placeholder="Search topics..."
+                class="search-input"
+              />
+              <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+          </div>
 
-      <div class="help-section">
-        <h3 class="help-title">3. Search Functionality</h3>
-        <p class="help-text">
-          Use the search bar to quickly find specific topics across all
-          subjects.
-        </p>
-      </div>
+          <div class="topics-container">
+            <div class="topic-list" id="topic-list"></div>
+          </div>
+        </aside>
 
-      <div class="help-section">
-        <h3 class="help-title">4. Learning Path</h3>
-        <p class="help-text">
-          The system will help organize your learning sequence based on the
-          selected topics.
-        </p>
-      </div>
+        <main class="main-content">
+          <div class="content-header">
+            <h2 class="content-title">Learning Path Generator</h2>
+            <div class="selected-topic" id="selected-topic">
+              Select a Computer Science topic to generate your learning path
+            </div>
+          </div>
 
-      <div class="help-footer">
-        <p>
-          This tool is designed specifically for Computer Science students in
-          their 2nd year and below.
-        </p>
+          <div class="visualization-section">
+            <h3 class="visualization-title">Learning Path Visualization</h3>
+            <div class="visualization-area" id="visualization-area">
+              <div id="tooltip"></div>
+              <svg id="graph" width="800" height="575"></svg>
+              <pre
+                id="flowchart"
+                class="mermaid hidden"
+                width="800"
+                height="575"
+              ></pre>
+            </div>
+          </div>
+
+          <div class="order-section">
+            <h3 class="order-title">Learning Order</h3>
+            <input type="checkbox" name="limit-course" id="limit-course" />
+            <label for="limit-course" id="limit-course-label"
+              >Limit to selected course only</label
+            >
+            <ol id="tlist" class="learning-order"></ol>
+          </div>
+        </main>
       </div>
     </div>
-  </div>
 
-  <script src="https://d3js.org/d3.v7.min.js"></script>
-  <script type="module" src="./js/script.js"></script>
-  <script src="./js/homepage.js"></script>
-</body>
+    <div id="help-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal" onclick="closeHelp()">&times;</span>
+        <h2 class="modal-title">How to Use CS Curriculum Navigator</h2>
 
+        <div class="help-section">
+          <h3 class="help-title">1. Browse Subjects</h3>
+          <p class="help-text">
+            Click on any of the 5 main subjects to see all related topics. These
+            cover CS 2nd year and below curriculum.
+          </p>
+        </div>
+
+        <div class="help-section">
+          <h3 class="help-title">2. Select Topics</h3>
+          <p class="help-text">
+            Choose specific topics from the subject list to focus your learning.
+          </p>
+        </div>
+
+        <div class="help-section">
+          <h3 class="help-title">3. Search Functionality</h3>
+          <p class="help-text">
+            Use the search bar to quickly find specific topics across all
+            subjects.
+          </p>
+        </div>
+
+        <div class="help-section">
+          <h3 class="help-title">4. Learning Path</h3>
+          <p class="help-text">
+            The system will help organize your learning sequence based on the
+            selected topics.
+          </p>
+        </div>
+
+        <div class="help-footer">
+          <p>
+            This tool is designed specifically for Computer Science students in
+            their 2nd year and below.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script type="module" src="./js/script.js"></script>
+    <script type="module" src="./js/homepage.js"></script>
+  </body>
 </html>
