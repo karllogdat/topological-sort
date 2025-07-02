@@ -1,26 +1,3 @@
-const csTopics = {
-  subject1: {
-    name: "Subject1",
-    topics: ["Topic 1", "Topic 2", "Topic 3", "Topic 4", "Topic 5"],
-  },
-  subject2: {
-    name: "Subject2",
-    topics: ["Topic 1", "Topic 2", "Topic 3", "Topic 4", "Topic 5"],
-  },
-  subject3: {
-    name: "Subject3",
-    topics: ["Topic 1", "Topic 2", "Topic 3", "Topic 4", "Topic 5"],
-  },
-  subject4: {
-    name: "Subject4",
-    topics: ["Topic 1", "Topic 2", "Topic 3", "Topic 4", "Topic 5"],
-  },
-  subject5: {
-    name: "Subject5",
-    topics: ["Topic 1", "Topic 2", "Topic 3", "Topic 4", "Topic 5"],
-  },
-};
-
 let topics = new Map();
 
 async function fetchTopic() {
@@ -130,7 +107,7 @@ function renderAllTopics(topics) {
     subjects.forEach((topic, index) => {
       const topicId = `${course}-${index}`;
       html += `
-            <div class="topic-item" data-topic-id="${topicId}" data-topic-text="${topic}">
+            <div class="topic-item" data-topic-id="${topicId}" data-topic-text="${topic}" data-topic="[${course}] ${topic}">
               ${topic}
             </div>
           `;
@@ -172,7 +149,7 @@ function filterTopics() {
         const topicId = `${course}-${originalIndex}`;
 
         html += `
-          <div class="topic-item" data-topic-id="${topicId}" data-topic-text="${topic}">
+          <div class="topic-item" data-topic-id="${topicId}" data-topic-text="${topic}" data-topic="[${course}] ${topic}">
             ${topic}
           </div>
         `;
@@ -199,6 +176,22 @@ function selectTopic(topicId, topicText) {
   const currentTopic = document.querySelector(`[data-topic-id="${topicId}"]`);
   if (currentTopic) {
     currentTopic.classList.add("selected");
+
+    currentTopicData = currentTopic.dataset.topic;
+
+    fetch(`/graph/tsort?target=${encodeURIComponent(currentTopicData)}`)
+      .then((res) => res.json())
+      .then((data) => {
+        const tlist = document.getElementById("tlist");
+        tlist.replaceChildren();
+
+        data.forEach((item) => {
+          console.log(`Creating <p> for ${item}`);
+          const itemHTML = document.createElement("li");
+          itemHTML.textContent = item;
+          tlist.appendChild(itemHTML);
+        })
+      })
   }
 
   selectedTopic = topicText;
