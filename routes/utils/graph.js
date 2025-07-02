@@ -29,6 +29,10 @@ export function subgraph(graph, target) {
   const visited = new Set(target);
   // do a dfs to get nodes in subgraph
   function dfs(node) {
+    if(!visited.has(node)) {
+      visited.add(node);
+    }
+
     const deps = adj_list.get(node) || [];
     for (const dependency of deps) {
       if (!visited.has(dependency)) {
