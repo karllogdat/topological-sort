@@ -190,8 +190,8 @@ function selectTopic(topicId, topicText) {
           const itemHTML = document.createElement("li");
           itemHTML.textContent = item;
           tlist.appendChild(itemHTML);
-        })
-      })
+        });
+      });
   }
 
   selectedTopic = topicText;
