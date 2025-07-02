@@ -535,7 +535,7 @@
             "id": "[PS] Statistical Modeling"
         },
         {
-            "id": "PS] Continuous Probability Distributions"
+            "id": "[PS] Continuous Probability Distributions"
         },
         {
             "id": "[OS] Operating systems basics, system calls"
@@ -1804,7 +1804,7 @@
         },
         {
             "source": "[PS] Discrete and Continuous Data",
-            "target": "PS] Continuous Probability Distributions"
+            "target": "[PS] Continuous Probability Distributions"
         },
         {
             "source": "[PS] Probability: Sample Space, Events, Counting Sample Points, Probability of an Event, Additive Rules, Conditional Probability, Independence, and the Product Rule, Bayes\u2019 Rule",

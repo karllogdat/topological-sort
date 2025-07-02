@@ -1,9 +1,12 @@
+import { draw_graph_arrowless, to_mermaid } from "./graph_renderers.js";
+import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+
 let topics = new Map();
 
 async function fetchTopic() {
   try {
     const res = await fetch("/graph");
-    data = await res.json();
+    const data = await res.json();
 
     data.nodes.forEach((node) => {
       const match = node.id.match(/^\[(.+?)\]\s+(.+)$/);
@@ -54,6 +57,31 @@ function proceedToApp() {
   document.getElementById("landing-page").classList.add("hidden");
   document.getElementById("main-app").classList.remove("hidden");
   document.getElementById("main-app").classList.add("fade-in");
+
+  fetch("/graph")
+    .then((res) => res.json())
+    .then((data) => {
+      console.log("Graph data: ", data);
+      const flowchart = to_mermaid(data);
+
+      const graphContainer = document.getElementById("flowchart");
+      graphContainer.textContent = flowchart;
+      mermaid.run({ nodes: [graphContainer] });
+
+      const observer = new MutationObserver(() => {
+        const svg = graphContainer.querySelector("svg");
+        if (svg && svg.getBBox().width > 0 && svg.getBBox().height > 0) {
+          svgPanZoom(svg, {
+            zoomEnabled: true,
+            controlIconsEnabled: true,
+            fit: true,
+            center: true,
+          });
+          observer.disconnect();
+        }
+      });
+      observer.observe(graphContainer, { childList: true, subtree: true });
+    });
 }
 
 function backToLanding() {
@@ -177,7 +205,7 @@ function selectTopic(topicId, topicText) {
   if (currentTopic) {
     currentTopic.classList.add("selected");
 
-    currentTopicData = currentTopic.dataset.topic;
+    let currentTopicData = currentTopic.dataset.topic;
 
     fetch(`/graph/tsort?target=${encodeURIComponent(currentTopicData)}`)
       .then((res) => res.json())
@@ -323,3 +351,7 @@ if (typeof module !== "undefined" && module.exports) {
     csTopics,
   };
 }
+
+window.proceedToApp = proceedToApp;
+window.backToLanding = backToLanding;
+window.showHelp = showHelp;

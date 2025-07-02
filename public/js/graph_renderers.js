@@ -199,3 +199,31 @@ function drag(simulation) {
     .on("drag", dragged)
     .on("end", dragended);
 }
+
+export function to_mermaid(graph) {
+  let mermaid = "flowchart TD\n";
+  let nodes = [];
+
+  graph.links.forEach((link) => {
+    let source = link.source.replace("[", "").replace("]", "");
+    let target = link.target.replace("[", "").replace("]", "");
+
+    if (nodes.indexOf(source) === -1) {
+      nodes.push(source);
+    }
+    if (nodes.indexOf(target) === -1) {
+      nodes.push(target);
+    }
+  });
+
+  graph.links.forEach((link, i) => {
+    let source = link.source.replace("[", "").replace("]", "");
+    let target = link.target.replace("[", "").replace("]", "");
+
+    mermaid += `\t${nodes.indexOf(source)}["${source}"]-->${nodes.indexOf(
+      target
+    )}["${target}"]\n`;
+  });
+
+  return mermaid;
+}
