@@ -1,3 +1,43 @@
+[PF] Introduction to problem solving--[PF] A brief review of Von-Neumann architecture
+[PF] Introduction to problem solving--[PF] Introduction to programming
+[PF] Introduction to programming--[PF] Role of compiler and linker
+[PF] Introduction to programming--[PF] Introduction to algorithms
+[PF] Introduction to programming--[PF] Basic data types and variables
+[PF] Basic data types and variables--[PF] Input/output constructs
+[PF] Basic data types and variables--[PF] Arithmetic, comparison and logical operators
+[PF] Basic data types and variables--[PF] Conditional statements and execution flow for conditional statements
+[PF] Basic data types and variables--[PF] Repetitive statements and execution flow for repetitive statements
+[PF] Basic data types and variables--[PF] Lists and their memory organization
+[PF] Lists and their memory organization--[PF] Multidimensional lists
+[PF] Introduction to programming--[PF] Introduction to modular programming
+[PF] Introduction to modular programming--[PF] Function definition and calling
+[PF] Function definition and calling--[PF] Stack rolling and unrolling
+[PF] Basic data types and variables--[PF] String and string operations
+[PF] Basic data types and variables--[PF] Pointers/references
+[PF] Basic data types and variables--[PF] Static and dynamic memory allocation
+[PF] Basic data types and variables--[PF] File I/O operations
+[DS] Proof by induction--[PF] Introduction to problem solving
+[DS] Proof by contraposition--[PF] Introduction to problem solving
+[DS] Proof by contradiction--[PF] Introduction to problem solving
+[DS] Proof by implication--[PF] Introduction to problem solving
+[DS] Equivalence relations and partitions--[PF] Introduction to problem solving
+[DS] Partial orderings--[PF] Introduction to problem solving
+[DS] Function composition--[PF] Introduction to problem solving
+[DS] Inverse functions--[PF] Introduction to problem solving
+[DS] Recursive functions--[PF] Introduction to problem solving
+[DS] Number Theory--[PF] Introduction to problem solving
+[DS] Sequences and series--[PF] Introduction to problem solving
+[DS] Inclusion and exclusion principle--[PF] Introduction to problem solving
+[DS] Pigeonhole principle--[PF] Introduction to problem solving
+[DS] Permutations and combinations--[PF] Introduction to problem solving
+[DS] Searching and Sorting Algorithms--[PF] Introduction to problem solving
+[DS] Planar graphs--[PF] Introduction to problem solving
+[DS] Graph coloring--[PF] Introduction to problem solving
+[DS] Graph algorithms--[PF] Introduction to problem solving
+[DS] Euler graph--[PF] Introduction to problem solving
+[DS] Hamiltonian path--[PF] Introduction to problem solving
+[DS] Traversals--[PF] Introduction to problem solving
+[DS] Recurrence relations--[PF] Introduction to problem solving
 [DS] Mathematical reasoning--[DS] Propositional and predicate logic
 [DS] Propositional and predicate logic--[DS] Rules of inference
 [DS] Rules of inference--[DS] Proof by induction
@@ -29,3 +69,265 @@
 [DS] Elements of graph theory--[DS] Rooted trees
 [DS] Rooted trees--[DS] Traversals
 [DS] Mathematical reasoning--[DS] Recurrence relations
+[Calc] Introduction to functions--[Calc] Introduction to limits
+[Calc] Introduction to limits--[Calc] Limits and Continuity
+[Calc] Limits and Continuity--[Calc] Techniques of finding limits
+[Calc] Techniques of finding limits--[Calc] Indeterminate forms of limits
+[Calc] Limits and Continuity--[Calc] Continuous and discontinuous functions and their applications
+[Calc] Limits and Continuity--[Calc] Differential calculus
+[Calc] Differential calculus--[Calc] Concept and idea of differentiation
+[Calc] Concept and idea of differentiation--[Calc] Geometrical and Physical meaning of derivatives
+[Calc] Concept and idea of differentiation--[Calc] Rules of differentiation
+[Calc] Rules of differentiation--[Calc] Techniques of differentiation
+[Calc] Techniques of differentiation--[Calc] Chain rule
+[Calc] Techniques of differentiation--[Calc] Implicit differentiation
+[Calc] Rules of differentiation--[Calc] Rates of change
+[Calc] Rules of differentiation--[Calc] Tangents and Normals lines
+[Calc] Techniques of differentiation--[Calc] Linear approximation
+[Calc] Differential calculus--[Calc] Applications of differentiation
+[Calc] Applications of differentiation--[Calc] Extreme value functions
+[Calc] Extreme value functions--[Calc] Mean value theorems
+[Calc] Mean value theorems--[Calc] Maxima and Minima of a function for single-variable
+[Calc] Maxima and Minima of a function for single-variable--[Calc] Concavity
+[Calc] Limits and Continuity--[Calc] Integral calculus
+[Calc] Integral calculus--[Calc] Concept and idea of Integration
+[Calc] Concept and idea of Integration--[Calc] Indefinite Integrals
+[Calc] Indefinite Integrals--[Calc] Techniques of integration
+[Calc] Integral calculus--[Calc] Riemann sums and Definite Integrals
+[Calc] Riemann sums and Definite Integrals--[Calc] Applications of definite integrals
+[Calc] Integral calculus--[Calc] Improper integral
+[Calc] Applications of definite integrals--[Calc] Applications of Integration
+[OOP] Introduction to object oriented design--[OOP] History and advantages of object oriented design
+[OOP] Introduction to object oriented design--[OOP] Introduction to object oriented programming concepts
+[OOP] Introduction to object oriented programming concepts--[OOP] Classes
+[OOP] Classes--[OOP] Objects
+[OOP] Classes--[OOP] Data encapsulation
+[OOP] Classes--[OOP] Access modifiers
+[OOP] Classes--[OOP] Const vs non-const functions
+[OOP] Classes--[OOP] Static data members & functions
+[OOP] Classes--[OOP] Constructors
+[OOP] Classes--[OOP] Destructors
+[OOP] Classes--[OOP] Function overloading
+[OOP] Classes--[OOP] Operator overloading
+[OOP] Classes--[OOP] Identification of classes and their relationships
+[OOP] Identification of classes and their relationships--[OOP] Composition
+[OOP] Identification of classes and their relationships--[OOP] Aggregation
+[OOP] Identification of classes and their relationships--[OOP] Inheritance
+[OOP] Inheritance--[OOP] Multiple inheritance
+[OOP] Inheritance--[OOP] Polymorphism
+[OOP] Polymorphism--[OOP] Abstract classes and interfaces
+[OOP] Introduction to object oriented programming concepts--[OOP] Generic programming concepts
+[OOP] Generic programming concepts--[OOP] Function & class templates
+[OOP] Function & class templates--[OOP] Standard template library
+[OOP] Classes--[OOP] Object streams
+[OOP] Object streams--[OOP] Data and object serialization using object streams
+[OOP] Introduction to object oriented programming concepts--[OOP] Exception handling
+[PF] A brief review of Von-Neumann architecture--[OOP] Introduction to object oriented design
+[PF] Role of compiler and linker--[OOP] Introduction to object oriented design
+[PF] Introduction to algorithms--[OOP] Introduction to object oriented design
+[PF] Input/output constructs--[OOP] Introduction to object oriented design
+[PF] Arithmetic, comparison and logical operators--[OOP] Introduction to object oriented design
+[PF] Conditional statements and execution flow for conditional statements--[OOP] Introduction to object oriented design
+[PF] Repetitive statements and execution flow for repetitive statements--[OOP] Introduction to object oriented design
+[PF] Multidimensional lists--[OOP] Introduction to object oriented design
+[PF] Stack rolling and unrolling--[OOP] Introduction to object oriented design
+[PF] String and string operations--[OOP] Introduction to object oriented design
+[PF] Pointers/references--[OOP] Introduction to object oriented design
+[PF] Static and dynamic memory allocation--[OOP] Introduction to object oriented design
+[PF] File I/O operations--[OOP] Introduction to object oriented design
+[DBS] Basic database concepts--[DBS] Database approach vs. file-based system
+[DBS] Basic database concepts--[DBS] Database architecture, three-level schema architecture, data independence
+[DBS] Database architecture, three-level schema architecture, data independence--[DBS] Relational data model: attributes, schemas, tuples, domains, relation instances, keys of relations, integrity constraints
+[DBS] Relational data model: attributes, schemas, tuples, domains, relation instances, keys of relations, integrity constraints--[DBS] Relational algebra: selection, projection, Cartesian product, types of joins
+[DBS] Relational data model: attributes, schemas, tuples, domains, relation instances, keys of relations, integrity constraints--[DBS] Normalization, functional dependencies, normal forms
+[DBS] Basic database concepts--[DBS] Entity relationship model: entity sets, attributes, relationship, entity-relationship diagrams
+[DBS] Relational algebra: selection, projection, Cartesian product, types of joins--[DBS] Structured Query Language (SQL): Joins and sub-queries in SQL, Grouping and aggregation in SQL
+[DBS] Normalization, functional dependencies, normal forms--[DBS] Structured Query Language (SQL): Joins and sub-queries in SQL, Grouping and aggregation in SQL
+[DBS] Structured Query Language (SQL): Joins and sub-queries in SQL, Grouping and aggregation in SQL--[DBS] Concurrency control, database backup and recovery
+[DBS] Structured Query Language (SQL): Joins and sub-queries in SQL, Grouping and aggregation in SQL--[DBS] Indexes
+[DBS] Basic database concepts--[DBS] NoSQL systems
+[DS] Proof by induction--[DBS] Basic database concepts
+[DS] Proof by contraposition--[DBS] Basic database concepts
+[DS] Proof by contradiction--[DBS] Basic database concepts
+[DS] Proof by implication--[DBS] Basic database concepts
+[DS] Equivalence relations and partitions--[DBS] Basic database concepts
+[DS] Partial orderings--[DBS] Basic database concepts
+[DS] Function composition--[DBS] Basic database concepts
+[DS] Inverse functions--[DBS] Basic database concepts
+[DS] Recursive functions--[DBS] Basic database concepts
+[DS] Number Theory--[DBS] Basic database concepts
+[DS] Sequences and series--[DBS] Basic database concepts
+[DS] Inclusion and exclusion principle--[DBS] Basic database concepts
+[DS] Pigeonhole principle--[DBS] Basic database concepts
+[DS] Permutations and combinations--[DBS] Basic database concepts
+[DS] Searching and Sorting Algorithms--[DBS] Basic database concepts
+[DS] Planar graphs--[DBS] Basic database concepts
+[DS] Graph coloring--[DBS] Basic database concepts
+[DS] Graph algorithms--[DBS] Basic database concepts
+[DS] Euler graph--[DBS] Basic database concepts
+[DS] Hamiltonian path--[DBS] Basic database concepts
+[DS] Traversals--[DBS] Basic database concepts
+[DS] Recurrence relations--[DBS] Basic database concepts
+[DLD] Number Systems--[DLD] Logic Gates, Boolean Algebra
+[DLD] Logic Gates, Boolean Algebra--[DLD] Simplification Methods (K-Map, Quine-McCluskey method)
+[DLD] Simplification Methods (K-Map, Quine-McCluskey method)--[DLD] Combination logic circuits and designs
+[DLD] Number Systems--[DLD] Binary Arithmetic and Arithmetic Circuits
+[DLD] Combination logic circuits and designs--[DLD] Flip Flops and Latches
+[DLD] Flip Flops and Latches--[DLD] Asynchronous and Synchronous circuits
+[DLD] Asynchronous and Synchronous circuits--[DLD] Counters, Shift Registers, Triggered devices & its types
+[DLD] Counters, Shift Registers, Triggered devices & its types--[DLD] Mealy machines and Moore machines
+[DLD] Mealy machines and Moore machines--[DLD] Memory Elements, State Machines
+[DLD] Memory Elements, State Machines--[DLD] Introduction Programmable Logic Devices (CPLD, FPGA)
+[DLD] Introduction Programmable Logic Devices (CPLD, FPGA)--[DLD] Lab Assignments using tools such as Verilog HDL/VHDL, MultiSim
+[DS] Proof by induction--[DLD] Number Systems
+[DS] Proof by contraposition--[DLD] Number Systems
+[DS] Proof by contradiction--[DLD] Number Systems
+[DS] Proof by implication--[DLD] Number Systems
+[DS] Equivalence relations and partitions--[DLD] Number Systems
+[DS] Partial orderings--[DLD] Number Systems
+[DS] Function composition--[DLD] Number Systems
+[DS] Inverse functions--[DLD] Number Systems
+[DS] Recursive functions--[DLD] Number Systems
+[DS] Number Theory--[DLD] Number Systems
+[DS] Sequences and series--[DLD] Number Systems
+[DS] Inclusion and exclusion principle--[DLD] Number Systems
+[DS] Pigeonhole principle--[DLD] Number Systems
+[DS] Permutations and combinations--[DLD] Number Systems
+[DS] Searching and Sorting Algorithms--[DLD] Number Systems
+[DS] Planar graphs--[DLD] Number Systems
+[DS] Graph coloring--[DLD] Number Systems
+[DS] Graph algorithms--[DLD] Number Systems
+[DS] Euler graph--[DLD] Number Systems
+[DS] Hamiltonian path--[DLD] Number Systems
+[DS] Traversals--[DLD] Number Systems
+[DS] Recurrence relations--[DLD] Number Systems
+[LA] Systems of equations--[LA] Algebra of linear transformations and matrices
+[LA] Algebra of linear transformations and matrices--[LA] Determinants
+[LA] Algebra of linear transformations and matrices--[LA] Rank
+[LA] Algebra of linear transformations and matrices--[LA] Vector spaces
+[LA] Vector spaces--[LA] Linear dependence
+[LA] Linear dependence--[LA] Linear Independence and bases
+[LA] Linear Independence and bases--[LA] Inner product space and quadratic forms
+[LA] Inner product space and quadratic forms--[LA] Orthogonal transformations
+[LA] Algebra of linear transformations and matrices--[LA] Eigenvalues and eigenvectors
+[LA] Eigenvalues and eigenvectors--[LA] Characteristic equations
+[Calc] Indeterminate forms of limits--[LA] Systems of equations
+[Calc] Continuous and discontinuous functions and their applications--[LA] Systems of equations
+[Calc] Geometrical and Physical meaning of derivatives--[LA] Systems of equations
+[Calc] Chain rule--[LA] Systems of equations
+[Calc] Implicit differentiation--[LA] Systems of equations
+[Calc] Linear approximation--[LA] Systems of equations
+[Calc] Rates of change--[LA] Systems of equations
+[Calc] Tangents and Normals lines--[LA] Systems of equations
+[Calc] Concavity--[LA] Systems of equations
+[Calc] Techniques of integration--[LA] Systems of equations
+[Calc] Applications of Integration--[LA] Systems of equations
+[Calc] Improper integral--[LA] Systems of equations
+[DSA] Abstract data types, complexity analysis, Big Oh notation--[DSA] Stacks (linked lists and array implementations), Recursion and analyzing recursive algorithms, divide and conquer algorithms
+[DSA] Stacks (linked lists and array implementations), Recursion and analyzing recursive algorithms, divide and conquer algorithms--[DSA] Sorting algorithms (selection, insertion, merge, quick, bubble, heap, shell, radix, bucket)
+[DSA] Abstract data types, complexity analysis, Big Oh notation--[DSA] Queue, dequeuer, priority queues (linked and array implementations of queues)
+[DSA] Abstract data types, complexity analysis, Big Oh notation--[DSA] Linked list & its various types, sorted linked list
+[DSA] Abstract data types, complexity analysis, Big Oh notation--[DSA] Searching an unsorted array, binary search for sorted arrays
+[DSA] Abstract data types, complexity analysis, Big Oh notation--[DSA] Hashing and indexing, open addressing and chaining
+[DSA] Abstract data types, complexity analysis, Big Oh notation--[DSA] Trees and tree traversals, binary search trees, heaps, M-way tress, balanced trees
+[DSA] Abstract data types, complexity analysis, Big Oh notation--[DSA] Graphs, breadth-first and depth-first traversal, topological order, shortest path, adjacency matrix and adjacency list implementations
+[DSA] Abstract data types, complexity analysis, Big Oh notation--[DSA] Memory management and garbage collection
+[PF] A brief review of Von-Neumann architecture--[DSA] Abstract data types, complexity analysis, Big Oh notation
+[PF] Role of compiler and linker--[DSA] Abstract data types, complexity analysis, Big Oh notation
+[PF] Introduction to algorithms--[DSA] Abstract data types, complexity analysis, Big Oh notation
+[PF] Input/output constructs--[DSA] Abstract data types, complexity analysis, Big Oh notation
+[PF] Arithmetic, comparison and logical operators--[DSA] Abstract data types, complexity analysis, Big Oh notation
+[PF] Conditional statements and execution flow for conditional statements--[DSA] Abstract data types, complexity analysis, Big Oh notation
+[PF] Repetitive statements and execution flow for repetitive statements--[DSA] Abstract data types, complexity analysis, Big Oh notation
+[PF] Multidimensional lists--[DSA] Abstract data types, complexity analysis, Big Oh notation
+[PF] Stack rolling and unrolling--[DSA] Abstract data types, complexity analysis, Big Oh notation
+[PF] String and string operations--[DSA] Abstract data types, complexity analysis, Big Oh notation
+[PF] Pointers/references--[DSA] Abstract data types, complexity analysis, Big Oh notation
+[PF] Static and dynamic memory allocation--[DSA] Abstract data types, complexity analysis, Big Oh notation
+[PF] File I/O operations--[DSA] Abstract data types, complexity analysis, Big Oh notation
+[CN] Introduction and protocols architecture, basic concepts of networking, network topologies--[CN] Layered architecture, physical layer functionality, data link layer functionality
+[CN] Layered architecture, physical layer functionality, data link layer functionality--[CN] Multiple access techniques, circuit switching and packet switching
+[CN] Multiple access techniques, circuit switching and packet switching--[CN] LAN technologies, wireless networks, MAC addressing, networking devices (both cn layered and cn access techniques)
+[CN] LAN technologies, wireless networks, MAC addressing, networking devices (both cn layered and cn access techniques)--[CN] Network layer protocols: IPv4 and IPv6, IP addressing, sub netting, CIDR, routing protocols
+[CN] Network layer protocols: IPv4 and IPv6, IP addressing, sub netting, CIDR, routing protocols--[CN] Transport layer protocols: ports and sockets, connection establishment, flow and congestion control
+[CN] Transport layer protocols: ports and sockets, connection establishment, flow and congestion control--[CN] Application layer protocols
+[CN] Application layer protocols--[CN] Latest trends in computer networks
+[DS] Proof by induction--[CN] Introduction and protocols architecture, basic concepts of networking, network topologies
+[DS] Proof by contraposition--[CN] Introduction and protocols architecture, basic concepts of networking, network topologies
+[DS] Proof by contradiction--[CN] Introduction and protocols architecture, basic concepts of networking, network topologies
+[DS] Proof by implication--[CN] Introduction and protocols architecture, basic concepts of networking, network topologies
+[DS] Equivalence relations and partitions--[CN] Introduction and protocols architecture, basic concepts of networking, network topologies
+[DS] Partial orderings--[CN] Introduction and protocols architecture, basic concepts of networking, network topologies
+[DS] Function composition--[CN] Introduction and protocols architecture, basic concepts of networking, network topologies
+[DS] Inverse functions--[CN] Introduction and protocols architecture, basic concepts of networking, network topologies
+[DS] Recursive functions--[CN] Introduction and protocols architecture, basic concepts of networking, network topologies
+[DS] Number Theory--[CN] Introduction and protocols architecture, basic concepts of networking, network topologies
+[DS] Sequences and series--[CN] Introduction and protocols architecture, basic concepts of networking, network topologies
+[DS] Inclusion and exclusion principle--[CN] Introduction and protocols architecture, basic concepts of networking, network topologies
+[DS] Pigeonhole principle--[CN] Introduction and protocols architecture, basic concepts of networking, network topologies
+[DS] Permutations and combinations--[CN] Introduction and protocols architecture, basic concepts of networking, network topologies
+[DS] Searching and Sorting Algorithms--[CN] Introduction and protocols architecture, basic concepts of networking, network topologies
+[DS] Planar graphs--[CN] Introduction and protocols architecture, basic concepts of networking, network topologies
+[DS] Graph coloring--[CN] Introduction and protocols architecture, basic concepts of networking, network topologies
+[DS] Graph algorithms--[CN] Introduction and protocols architecture, basic concepts of networking, network topologies
+[DS] Euler graph--[CN] Introduction and protocols architecture, basic concepts of networking, network topologies
+[DS] Hamiltonian path--[CN] Introduction and protocols architecture, basic concepts of networking, network topologies
+[DS] Traversals--[CN] Introduction and protocols architecture, basic concepts of networking, network topologies
+[DS] Recurrence relations--[CN] Introduction and protocols architecture, basic concepts of networking, network topologies
+[PS] Introduction to Statistics and Data Analysis--[PS] Statistical Inference, Samples, Populations, and the Role of Probability
+[PS] Statistical Inference, Samples, Populations, and the Role of Probability--[PS] Sampling Procedures
+[PS] Introduction to Statistics and Data Analysis--[PS] Discrete and Continuous Data
+[PS] Statistical Inference, Samples, Populations, and the Role of Probability--[PS] Probability: Sample Space, Events, Counting Sample Points, Probability of an Event, Additive Rules, Conditional Probability, Independence, and the Product Rule, Bayes’ Rule
+[PS] Probability: Sample Space, Events, Counting Sample Points, Probability of an Event, Additive Rules, Conditional Probability, Independence, and the Product Rule, Bayes’ Rule--[PS] Random Variables and Probability Distributions
+[PS] Random Variables and Probability Distributions--[PS] Mathematical Expectation: Mean of a Random Variable, Variance and Covariance of Random Variables, Means and Variances of Linear Combinations of Random Variables, Chebyshev’s Theorem
+[PS] Random Variables and Probability Distributions--[PS] Discrete Probability Distributions
+[PS] Random Variables and Probability Distributions--[PS] Continuous Probability Distributions
+[PS] Sampling Procedures--[PS] Fundamental Sampling Distributions and Data Descriptions: Random Sampling, Sampling Distributions, Sampling Distribution of Means and the Central Limit Theorem, Sampling Distribution of S², t-Distribution, F-Quantile and Probability Plots
+[PS] Fundamental Sampling Distributions and Data Descriptions: Random Sampling, Sampling Distributions, Sampling Distribution of Means and the Central Limit Theorem, Sampling Distribution of S², t-Distribution, F-Quantile and Probability Plots--[PS] Single Sample & One- and Two-Sample Estimation Problems
+[PS] Single Sample & One- and Two-Sample Estimation Problems--[PS] Single Sample & One- and Two-Sample Tests of Hypotheses
+[PS] Single Sample & One- and Two-Sample Tests of Hypotheses--[PS] The Use of P-Values for Decision Making in Testing Hypotheses (Single Sample & One- and Two-Sample Tests)
+[PS] Single Sample & One- and Two-Sample Tests of Hypotheses--[PS] Linear Regression and Correlation
+[PS] Linear Regression and Correlation--[PS] Least Squares and the Fitted Model
+[PS] Least Squares and the Fitted Model--[PS] Multiple Linear Regression and Certain Nonlinear Regression Models
+[PS] Multiple Linear Regression and Certain Nonlinear Regression Models--[PS] Linear Regression Model Using Matrices
+[PS] Linear Regression Model Using Matrices--[PS] Properties of the Least Squares Estimators
+[PS] Statistical Inference, Samples, Populations, and the Role of Probability--[PS] Types of Statistical Studies
+[PS] Statistical Inference, Samples, Populations, and the Role of Probability--[PS] Statistical Modeling
+[PS] Discrete and Continuous Data--[PS] Discrete Probability Distributions
+[PS] Discrete and Continuous Data--PS] Continuous Probability Distributions
+[OS] Operating systems basics, system calls--[OS] Process concept and scheduling, inter-process communication
+[OS] Process concept and scheduling, inter-process communication--[OS] Multithreaded programming, multithreading models, threading issues
+[OS] Multithreaded programming, multithreading models, threading issues--[OS] Process scheduling algorithms, thread scheduling, multiple-processor scheduling
+[OS] Process scheduling algorithms, thread scheduling, multiple-processor scheduling--[OS] Synchronization, critical section, synchronization hardware, synchronization problems, deadlocks, detecting and recovering from deadlocks
+[OS] Synchronization, critical section, synchronization hardware, synchronization problems, deadlocks, detecting and recovering from deadlocks--[OS] Memory management, swapping, contiguous memory allocation, segmentation & paging
+[OS] Memory management, swapping, contiguous memory allocation, segmentation & paging--[OS] Virtual memory management, demand paging, thrashing, memory-mapped files
+[OS] Virtual memory management, demand paging, thrashing, memory-mapped files--[OS] File systems: file concept, directory and disk structure, directory implementation, free space management
+[OS] File systems: file concept, directory and disk structure, directory implementation, free space management--[OS] Disk structure and scheduling, swap space management
+[OS] Disk structure and scheduling, swap space management--[OS] System protection, virtual machines, operating system security
+[DSA] Sorting algorithms (selection, insertion, merge, quick, bubble, heap, shell, radix, bucket)--[OS] Operating systems basics, system calls
+[DSA] Queue, dequeuer, priority queues (linked and array implementations of queues)--[OS] Operating systems basics, system calls
+[DSA] Linked list & its various types, sorted linked list--[OS] Operating systems basics, system calls
+[DSA] Searching an unsorted array, binary search for sorted arrays--[OS] Operating systems basics, system calls
+[DSA] Hashing and indexing, open addressing and chaining--[OS] Operating systems basics, system calls
+[DSA] Trees and tree traversals, binary search trees, heaps, M-way tress, balanced trees--[OS] Operating systems basics, system calls
+[DSA] Graphs, breadth-first and depth-first traversal, topological order, shortest path, adjacency matrix and adjacency list implementations--[OS] Operating systems basics, system calls
+[DSA] Memory management and garbage collection--[OS] Operating systems basics, system calls
+[AoA] Introduction; role of algorithms in computing--[AoA] Analysis on nature of input and size of input
+[AoA] Analysis on nature of input and size of input--[AoA] Asymptotic notations; Big-O, Big Ω, Big Θ, little-o, little-ω
+[AoA] Asymptotic notations; Big-O, Big Ω, Big Θ, little-o, little-ω--[AoA] Sorting Algorithm analysis, loop invariants
+[AoA] Asymptotic notations; Big-O, Big Ω, Big Θ, little-o, little-ω--[AoA] Recursion and recurrence relations
+[AoA] Recursion and recurrence relations--[AoA] Algorithm Design Techniques: Brute Force Approach, Divide-and-conquer approach (Merge, Quick Sort), Greedy approach
+[AoA] Algorithm Design Techniques: Brute Force Approach, Divide-and-conquer approach (Merge, Quick Sort), Greedy approach--[AoA] Dynamic programming: Elements of Dynamic Programming
+[AoA] Algorithm Design Techniques: Brute Force Approach, Divide-and-conquer approach (Merge, Quick Sort), Greedy approach--[AoA] Search trees; Heaps; Hashing
+[AoA] Algorithm Design Techniques: Brute Force Approach, Divide-and-conquer approach (Merge, Quick Sort), Greedy approach--[AoA] Graph algorithms, shortest paths, sparse graphs
+[AoA] Dynamic programming: Elements of Dynamic Programming--[AoA] Graph algorithms, shortest paths, sparse graphs
+[AoA] Graph algorithms, shortest paths, sparse graphs--[AoA] String matching
+[AoA] Algorithm Design Techniques: Brute Force Approach, Divide-and-conquer approach (Merge, Quick Sort), Greedy approach--[AoA] Introduction to complexity classes
+[DSA] Sorting algorithms (selection, insertion, merge, quick, bubble, heap, shell, radix, bucket)--[AoA] Introduction; role of algorithms in computing
+[DSA] Queue, dequeuer, priority queues (linked and array implementations of queues)--[AoA] Introduction; role of algorithms in computing
+[DSA] Linked list & its various types, sorted linked list--[AoA] Introduction; role of algorithms in computing
+[DSA] Searching an unsorted array, binary search for sorted arrays--[AoA] Introduction; role of algorithms in computing
+[DSA] Hashing and indexing, open addressing and chaining--[AoA] Introduction; role of algorithms in computing
+[DSA] Trees and tree traversals, binary search trees, heaps, M-way tress, balanced trees--[AoA] Introduction; role of algorithms in computing
+[DSA] Graphs, breadth-first and depth-first traversal, topological order, shortest path, adjacency matrix and adjacency list implementations--[AoA] Introduction; role of algorithms in computing
+[DSA] Memory management and garbage collection--[AoA] Introduction; role of algorithms in computing

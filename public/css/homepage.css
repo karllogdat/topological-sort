@@ -1004,6 +1004,10 @@ body {
   border: 1px solid var(--gray-200);
 }
 
+.learning-order {
+  margin: 0 var(--space-3xl);
+}
+
 .modal {
   display: none;
   position: fixed;
